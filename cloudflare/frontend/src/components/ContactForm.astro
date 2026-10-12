@@ -1,0 +1,16 @@
+---
+const { context = 'Contato' } = Astro.props;
+---
+<form class="contact-form" action="https://confronto-cibernetico-api.dcpthost.workers.dev/contact" method="post" data-contact-form>
+  <input type="hidden" name="context" value={context}>
+  <div class="contact-form-grid">
+    <label>Seu nome <input name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required></label>
+    <label>Seu e-mail <input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+  </div>
+  <label>Assunto <select name="topic" required><option value="" disabled selected>Selecione um assunto</option><option value="imprensa">Imprensa e entrevistas</option><option value="evento">Eventos e palestras</option><option value="leitor">Mensagem de leitor</option><option value="outro">Outro assunto</option></select></label>
+  <label>Mensagem <textarea name="message" rows="6" minlength="20" maxlength="4000" required placeholder="Conte brevemente como podemos ajudar."></textarea></label>
+  <div class="contact-trap" aria-hidden="true"><label>Deixe este campo em branco <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAAFUtBQPeXsG31Pew" data-action="contact" data-theme="dark"></div>
+  <div class="contact-form-bottom"><button class="button primary" type="submit">Enviar mensagem <span aria-hidden="true">↗</span></button><p>Seus dados serão usados apenas para responder ao contato.</p></div>
+  <p class="contact-feedback" role="status" aria-live="polite" data-contact-feedback></p>
+</form>
