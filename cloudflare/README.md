@@ -1,6 +1,6 @@
 # Cloudflare Workers
 
-O frontend em `frontend/` é gerado com Astro e servido pelo Cloudflare Workers Static Assets. Ele oferece 11 páginas estáticas de leitura, cada uma com título, descrição e URL canônica próprios. O backend em `backend/` é um Python Worker com metadados editoriais em `/book`, índice dos capítulos em `/chapters` e teste em `/health`.
+O frontend em `frontend/` é gerado com Astro e servido pelo Cloudflare Workers Static Assets. Ele oferece 11 páginas estáticas com trechos do manuscrito original, cada uma com título, descrição e URL canônica próprios. O manuscrito tem 418 páginas e 11 capítulos; a edição da Brasport tem 300 páginas e 8 capítulos. O backend em `backend/` é um Python Worker com metadados editoriais em `/book`, índice dos trechos em `/chapters` e teste em `/health`.
 
 - Site em teste: https://confronto-cibernetico-web.dcpthost.workers.dev/
 - API em teste: https://confronto-cibernetico-api.dcpthost.workers.dev/book

@@ -30,7 +30,7 @@ BOOK = {
     ],
     "website": "https://confrontocibernetico.com.br/",
     "pressContact": "hiago@decripte.com.br",
-    "chaptersUrl": "https://confrontocibernetico.com.br/capitulos/",
+    "manuscriptExcerptsUrl": "https://confrontocibernetico.com.br/capitulos/",
 }
 
 CHAPTERS = [
@@ -50,7 +50,8 @@ CHAPTERS = [
 def chapter_record(item, number):
     slug, title = item
     return {
-        "number": number,
+        "manuscriptChapter": number,
+        "sourceEdition": "author_manuscript",
         "slug": slug,
         "title": title,
         "url": f"https://confrontocibernetico.com.br/capitulos/{slug}/",

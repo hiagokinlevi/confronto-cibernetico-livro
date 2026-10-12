@@ -5,7 +5,7 @@ Site de divulgação do livro **Confronto Cibernético: Técnicas e táticas de 
 O livro discute resposta a incidentes cibernéticos, APTs, análise forense, inteligência tática e coordenação de equipes.
 
 - [Página principal do livro](https://confrontocibernetico.com.br/)
-- [Trechos por capítulo](https://confrontocibernetico.com.br/capitulos/)
+- [Trechos temáticos do manuscrito original](https://confrontocibernetico.com.br/capitulos/)
 - [Kit de imprensa](https://confrontocibernetico.com.br/imprensa/)
 - [Espelho no GitHub Pages](https://hiagokinlevi.github.io/confronto-cibernetico-livro/)
 - [Livro impresso na Brasport](https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758)
@@ -26,3 +26,4 @@ python3 cloudflare/sync-github-pages.py
 ```
 
 Os PDFs e DOCX do manuscrito não são publicados no repositório. Somente trechos selecionados aparecem nas páginas de leitura.
+O manuscrito fornecido pelo autor tem 418 páginas e 11 capítulos; a edição publicada pela Brasport tem 300 páginas e 8 capítulos. As páginas de trechos indicam essa diferença até que seja possível confrontá-las com o arquivo final da editora.
