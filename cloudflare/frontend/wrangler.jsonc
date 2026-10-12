@@ -1,0 +1,13 @@
+{
+  "name": "confronto-cibernetico-web",
+  "workers_dev": true,
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {"pattern": "confrontocibernetico.com.br", "custom_domain": true},
+    {"pattern": "www.confrontocibernetico.com.br", "custom_domain": true}
+  ]
+}

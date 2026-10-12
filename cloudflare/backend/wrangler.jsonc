@@ -1,0 +1,10 @@
+{
+  "name": "confronto-cibernetico-api",
+  "workers_dev": true,
+  "main": "src/entry.py",
+  "compatibility_date": "2026-10-12",
+  "compatibility_flags": ["python_workers"],
+  "routes": [
+    {"pattern": "api.confrontocibernetico.com.br", "custom_domain": true}
+  ]
+}
