@@ -17,6 +17,7 @@ import { chapters, chapterUrl } from '../data/chapters';
   <meta property="og:image" content="https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/styles.css">
+  <script src="/site-effects.js" defer></script>
   <script type="application/ld+json" is:inline>
   {
     "@context": "https://schema.org",
@@ -35,13 +36,14 @@ import { chapters, chapterUrl } from '../data/chapters';
       "https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e"
     ],
     "workExample": [
-      {"@type":"Book","bookFormat":"https://schema.org/Paperback","isbn":"9786560961135","datePublished":"2026-10-27","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758"},
+      {"@type":"Book","bookFormat":"https://schema.org/Paperback","isbn":"9786560961135","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758","offers":{"@type":"Offer","availability":"https://schema.org/PreOrder","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758"}},
       {"@type":"Book","bookFormat":"https://schema.org/EBook","isbn":"9786560961128","url":"https://play.google.com/store/books/details?id=jSwXEgAAQBAJ"}
     ]
   }
   </script>
 </head>
-<body>
+<body id="top">
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <a class="skip" href="#conteudo">Ir para o conteúdo</a>
   <header class="topbar">
     <a class="brand" href="#inicio"><span class="brand-mark">CC</span><span>CONFRONTO<br>CIBERNÉTICO</span></a>
@@ -58,15 +60,15 @@ import { chapters, chapterUrl } from '../data/chapters';
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> LIVRO • EDITORA BRASPORT</p>
+          <p class="eyebrow"><span class="status-dot"></span> PRÉ-VENDA ABERTA • EDITORA BRASPORT</p>
           <h1 id="titulo">Confronto<br><em>Cibernético.</em></h1>
           <p class="subtitle">Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs).</p>
           <p class="hero-intro">Uma visão operacional sobre defesa, inteligência e resposta a incidentes, construída a partir da experiência de Hiago Kin Levi na linha de frente da segurança cibernética.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#comprar">Conheça as edições <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="/capitulos/">Leia trechos do manuscrito <span aria-hidden="true">↗</span></a>
+            <a class="button primary" href="https://www.editorabrasport.com.br/index.php?route=product/product&amp;product_id=1758" target="_blank" rel="noopener sponsored">Comprar na pré-venda <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="/capitulos/">Leia trechos por capítulo <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="release">E-book disponível · Impresso previsto para 27 de outubro de 2026</p>
+          <p class="release">Pré-venda do impresso disponível na Brasport · E-book já disponível</p>
         </div>
         <figure class="cover-wrap">
           <div class="cover-halo" aria-hidden="true"></div>
@@ -91,9 +93,9 @@ import { chapters, chapterUrl } from '../data/chapters';
 
     <section class="section chapters" id="conteudo">
       <div class="section-label"><span class="line"></span> 02 / DENTRO DO LIVRO</div>
-      <div class="chapters-header"><h2>Onze trechos.<br>Uma leitura por temas.</h2><p>Passagens do manuscrito original em páginas próprias para cada assunto. A edição da Brasport reúne o conteúdo em oito capítulos.</p></div>
+      <div class="chapters-header"><h2>Onze trechos.<br>Uma leitura por temas.</h2><p>Passagens identificadas pelo capítulo da versão original, em páginas próprias para cada assunto. A edição da Brasport reúne o conteúdo em oito capítulos.</p></div>
       <div class="chapter-list">
-        {chapters.map((chapter) => <a class="chapter" href={chapterUrl(chapter)}><span class="num">{String(chapter.number).padStart(2, '0')}</span><h3>{chapter.searchTitle}</h3><p>{chapter.topic}<span class="chapter-link">Ler trecho ↗</span></p></a>)}
+        {chapters.map((chapter) => <a class="chapter" href={chapterUrl(chapter)}><span class="num">CAP. {String(chapter.number).padStart(2, '0')}</span><h3>{chapter.searchTitle}</h3><p>{chapter.topic}<span class="chapter-link">Ler trecho ↗</span></p></a>)}
       </div>
       <a class="text-link" href="/capitulos/">Explore os trechos temáticos <span aria-hidden="true">↗</span></a>
     </section>
@@ -114,8 +116,8 @@ import { chapters, chapterUrl } from '../data/chapters';
       <div class="faq-heading"><h2>Comece pela sua pergunta.</h2><p>Temas que aparecem na formação e no trabalho de resposta a incidentes.</p></div>
       <div class="faq-grid">
         <article><h3>Qual livro estudar para resposta a incidentes cibernéticos?</h3><p><strong>Confronto Cibernético</strong> percorre preparação, detecção, análise, contenção, recuperação e revisão após o incidente, com atenção especial às campanhas APT. <a href={chapterUrl(chapters[1])}>Leia o trecho sobre as fases da resposta.</a></p></article>
-        <article><h3>O que é uma ameaça persistente avançada (APT)?</h3><p>É uma campanha planejada e sustentada em que o invasor procura manter acesso e adaptar seus movimentos ao ambiente. O manuscrito apresenta o conceito e seu ciclo. <a href={chapterUrl(chapters[0])}>Leia a definição no trecho.</a></p></article>
-        <article><h3>O livro serve para estudantes de cybersecurity?</h3><p>Sim, como leitura técnica complementar sobre segurança cibernética, operações de resposta e inteligência de ameaças. A obra reúne conceitos e situações de aplicação; <a href={chapterUrl(chapters[10])}>as referências do manuscrito</a> indicam caminhos para estudo adicional.</p></article>
+        <article><h3>O que é uma ameaça persistente avançada (APT)?</h3><p>É uma campanha planejada e sustentada em que o invasor procura manter acesso e adaptar seus movimentos ao ambiente. O capítulo 1 da versão original apresenta o conceito e seu ciclo. <a href={chapterUrl(chapters[0])}>Leia a definição no trecho.</a></p></article>
+        <article><h3>O livro serve para estudantes de cybersecurity?</h3><p>Sim, como leitura técnica complementar sobre segurança cibernética, operações de resposta e inteligência de ameaças. A obra reúne conceitos e situações de aplicação; <a href={chapterUrl(chapters[10])}>as referências do capítulo 11</a> indicam caminhos para estudo adicional.</p></article>
         <article><h3>Como medir a eficácia da resposta a uma APT?</h3><p>Tempo de detecção e de resposta são úteis, mas a avaliação também precisa examinar contenção, persistência e lições aprendidas. <a href={chapterUrl(chapters[8])}>Veja o trecho sobre métricas e MTTD/MTTR.</a></p></article>
       </div>
     </section>
@@ -124,23 +126,24 @@ import { chapters, chapterUrl } from '../data/chapters';
       <div class="section-label"><span class="line"></span> 03 / O AUTOR</div>
       <div class="author-grid">
         <img src="/assets/hiago-kin-levi.jpeg" alt="Retrato de Hiago Kin Levi" width="1086" height="1448" loading="lazy">
-        <div><p class="kicker">HIAGO KIN LEVI</p><h2>Experiência de campo transformada em livro.</h2><p>Especialista em resposta a incidentes e defesa cibernética desde 2007, Hiago Kin Levi atua na investigação e coordenação de incidentes em organizações públicas e privadas. É presidente fundador da ABRASECI e presidente do IBRINC, conforme biografia publicada pela editora.</p><p>Em seu anúncio de lançamento, o autor também compartilhou a dimensão humana do trabalho de proteção e seu compromisso de destinar a renda das vendas à Ten Yad.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7515399598220304384/" target="_blank" rel="noopener">Leia o relato do autor <span aria-hidden="true">↗</span></a></div>
+        <div><p class="kicker">HIAGO KIN LEVI</p><h2>Experiência de campo transformada em livro.</h2><p>Especialista em resposta a incidentes e defesa cibernética desde 2007, Hiago Kin Levi atua na investigação e coordenação de incidentes em organizações públicas e privadas. É presidente fundador da ABRASECI e presidente do IBRINC, conforme biografia publicada pela editora.</p><p>Em sua apresentação pública da obra, o autor também compartilhou a dimensão humana do trabalho de proteção e seu compromisso de destinar a renda das vendas à Ten Yad.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7515399598220304384/" target="_blank" rel="noopener">Leia o relato do autor <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
     <section class="section buy" id="comprar">
       <div class="section-label"><span class="line"></span> 04 / EDIÇÕES</div>
-      <div class="buy-heading"><h2>Escolha como ler.</h2><p>Consulte preço, disponibilidade e condições diretamente em cada loja.</p></div>
+      <div class="buy-heading"><h2>Escolha como ler.</h2><p>O impresso já está em pré-venda na Brasport. Consulte preço, prazo e condições diretamente em cada loja.</p></div>
       <div class="buy-grid">
-        <article class="edition featured"><p class="edition-type">LIVRO IMPRESSO</p><h3>Brasport</h3><p>Edição física • 300 páginas<br>ISBN 9786560961135</p><p class="edition-note">Disponibilidade anunciada para 27/10/2026.</p><a class="button light" href="https://www.editorabrasport.com.br/index.php?route=product/product&amp;product_id=1758" target="_blank" rel="noopener sponsored">Ver na editora <span aria-hidden="true">↗</span></a></article>
+        <article class="edition featured"><p class="edition-type">IMPRESSO · PRÉ-VENDA ABERTA</p><h3>Brasport</h3><p>Edição física • 300 páginas<br>ISBN 9786560961135</p><p class="edition-note">Faça sua reserva na editora; confira o prazo informado na loja.</p><a class="button light" href="https://www.editorabrasport.com.br/index.php?route=product/product&amp;product_id=1758" target="_blank" rel="noopener sponsored">Comprar na pré-venda <span aria-hidden="true">↗</span></a></article>
         <article class="edition"><p class="edition-type">E-BOOK</p><h3>Google Play Livros</h3><p>Edição digital<br>ISBN 9786560961128</p><a class="button outline" href="https://play.google.com/store/books/details?id=jSwXEgAAQBAJ" target="_blank" rel="noopener sponsored">Ver no Google Play <span aria-hidden="true">↗</span></a></article>
         <article class="edition"><p class="edition-type">E-BOOK</p><h3>Amazon Kindle</h3><p>Edição digital<br>ASIN B0HM9QCGHB</p><a class="button outline" href="https://www.amazon.com.br/dp/B0HM9QCGHB" target="_blank" rel="noopener sponsored">Ver na Amazon <span aria-hidden="true">↗</span></a></article>
       </div>
       <p class="source-note">O e-book também está na <a href="https://www.kobo.com/br/pt/ebook/confronto-cibernetico" target="_blank" rel="noopener sponsored">Kobo Brasil</a>. Para organizar suas leituras, consulte o <a href="https://www.goodreads.com/book/show/260581164" target="_blank" rel="noopener">Goodreads</a> ou o StoryGraph: <a href="https://app.thestorygraph.com/books/00ba3b9b-7c31-48cd-8570-3255dd9a93b6" target="_blank" rel="noopener">edição impressa</a> e <a href="https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e" target="_blank" rel="noopener">e-book</a>.</p>
     </section>
 
-    <section class="press" id="imprensa"><div><p class="kicker">IMPRENSA & CONVERSAS</p><h2>Uma pauta sobre quem responde quando o incidente não termina.</h2><p>Para entrevistas, debates e convites, escreva para <a href="mailto:hiago@decripte.com.br">hiago@decripte.com.br</a>. Capa, foto e informações editoriais estão disponíveis no kit de imprensa.</p></div><div class="press-actions"><a class="button primary" href="mailto:hiago@decripte.com.br">Falar com o autor <span aria-hidden="true">↗</span></a><a class="text-link" href="/imprensa">Acessar kit de imprensa <span aria-hidden="true">↗</span></a></div></section>
+    <section class="press" id="imprensa"><div><p class="kicker">IMPRENSA & CONVERSAS</p><h2>Uma pauta sobre quem responde quando o incidente não termina.</h2><p>Para entrevistas, debates e convites, escreva para <a href="mailto:hiago@decripte.com.br">hiago@decripte.com.br</a>. Capa, foto e informações editoriais estão disponíveis no kit de imprensa.</p></div><div class="press-actions"><a class="button primary" href="mailto:hiago@decripte.com.br">Falar com o autor <span aria-hidden="true">↗</span></a><a class="text-link" href="/imprensa/">Acessar kit de imprensa <span aria-hidden="true">↗</span></a></div></section>
   </main>
+  <a class="back-to-top" href="#top" aria-label="Voltar ao topo">↑</a>
   <footer><div class="footer-brand">CONFRONTO<br>CIBERNÉTICO</div><div><p>Hiago Kin Levi · Editora Brasport</p><p>Informações editoriais conferidas em outubro de 2026. Preços e disponibilidade podem mudar.</p></div><a href="#inicio">Voltar ao topo ↑</a></footer>
 </body>
 </html>

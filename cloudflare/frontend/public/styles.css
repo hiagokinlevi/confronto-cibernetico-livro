@@ -13,3 +13,53 @@
 @media(max-width:600px){.reading-intro{padding:75px 0 55px}.reading-intro h1{font-size:clamp(48px,12vw,68px)}.reading-intro>p:not(.eyebrow){font-size:16px}.reading-card{grid-template-columns:45px 1fr 18px;gap:10px;padding:25px 0}.reading-card strong{font-size:20px}.reading-card:hover{padding-left:8px;padding-right:8px}.reading-desc{font-size:13px}.chapter-layout{padding:52px 0 70px}.chapter-heading h1{font-size:clamp(42px,11vw,62px)}.chapter-deck{margin-bottom:45px}.book-excerpt{margin:45px 0;padding:34px 25px}.book-excerpt blockquote{font-size:21px}.chapter-next>div{grid-template-columns:1fr}.chapter-aside{grid-template-columns:95px 1fr}.chapter-aside img{width:90px}}
 .faq-section{border-top:1px solid var(--line)}.faq-heading{display:flex;justify-content:space-between;align-items:end;gap:30px}.faq-heading h2{max-width:700px}.faq-heading p{max-width:300px;color:var(--muted);line-height:1.6}.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:30px}.faq-grid article{padding:35px;background:#1a1411;border:1px solid #46342c}.faq-grid h3{font-size:21px;line-height:1.35;letter-spacing:-.03em}.faq-grid p{font-size:15px;line-height:1.75;color:#c7b8ae;margin-bottom:0}.faq-grid strong{color:#f3dfd1}.faq-grid a{color:#f5a27b;text-underline-offset:4px}
 @media(max-width:700px){.faq-heading{display:block}.faq-grid{grid-template-columns:1fr}.faq-grid article{padding:27px}}
+
+/* Reading layout and restrained motion across the book site. */
+body{overflow-x:hidden}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(11,9,8,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+main[id],section[id],figure[id]{scroll-margin-top:104px}
+a:focus-visible,button:focus-visible{outline:2px solid #ffae83;outline-offset:4px}
+.chapter-heading{max-width:850px}
+.chapter-heading h1{overflow-wrap:normal;text-wrap:balance}
+.chapter-deck{margin-bottom:28px}
+.chapter-origin{display:inline-block;max-width:730px;padding:12px 17px;margin:0 0 34px;border-left:2px solid var(--accent);background:#1b120f;color:#c8b7aa;font-size:13px;line-height:1.6}
+.chapter-origin strong{color:#f6d2bd;font-weight:700}
+.chapter-copy{max-width:69ch}
+.book-excerpt{border-radius:0 8px 8px 0}
+.book-excerpt blockquote{font-size:clamp(20px,2vw,28px);line-height:1.58}
+.chapter-aside{background:#17110f;border:1px solid #493329;border-top:2px solid var(--accent);padding:22px;border-radius:0 0 7px 7px;box-shadow:0 20px 45px #0003}
+.chapter-aside>a:first-of-type{display:block;width:min(100%,170px)}
+.chapter-aside img{display:block;width:100%;height:auto;aspect-ratio:11/16;object-fit:contain;margin:22px 0 25px;box-shadow:10px 14px 32px #0008}
+.chapter-aside h2{font-size:21px}
+.reading-intro{background:radial-gradient(circle at 92% 24%,#3f1b14 0,transparent 47%)}
+.reading-topic{line-height:1.5}
+.reading-card:hover .reading-arrow,.chapter:hover .chapter-link{transform:translate(3px,-2px)}
+.reading-arrow,.chapter-link{transition:transform .22s ease}
+.press-kit{max-width:980px}
+.press-kit h2{border-top:1px solid #46342c;padding-top:28px}
+.press-kit>p:not(.eyebrow):not(.fine){max-width:72ch}
+.asset-grid img{height:auto;aspect-ratio:4/3;object-fit:contain;padding:12px}
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:100;pointer-events:none}
+.scroll-progress span{display:block;width:100%;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#f4743c,#ffc08b);box-shadow:0 0 12px #fa754b99}
+.back-to-top{position:fixed;right:24px;bottom:24px;z-index:35;width:45px;height:45px;display:grid;place-items:center;border:1px solid #9c5b40;border-radius:50%;background:#20120e;color:#ffd1b7;text-decoration:none;font:700 21px Manrope,sans-serif;box-shadow:0 14px 30px #0008;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s,transform .25s,background .25s}
+.back-to-top.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.back-to-top:hover{background:#512819}
+[data-reveal].is-visible{animation:reveal-in .58s cubic-bezier(.21,.6,.35,1) both}
+.hero-copy>*{animation:rise-in .7s cubic-bezier(.21,.6,.35,1) both}
+.hero-copy>*:nth-child(2){animation-delay:.08s}.hero-copy>*:nth-child(3){animation-delay:.16s}.hero-copy>*:nth-child(4){animation-delay:.22s}.hero-copy>*:nth-child(5){animation-delay:.3s}.hero-copy>*:nth-child(6){animation-delay:.36s}
+.cover-wrap{animation:cover-arrive .9s cubic-bezier(.21,.6,.35,1) .12s both}
+.reading-intro>*{animation:rise-in .65s cubic-bezier(.21,.6,.35,1) both}
+.reading-intro>*:nth-child(2){animation-delay:.08s}.reading-intro>*:nth-child(3){animation-delay:.16s}.reading-intro>*:nth-child(4){animation-delay:.23s}
+.chapter-heading>*{animation:rise-in .62s cubic-bezier(.21,.6,.35,1) both}
+.chapter-heading>*:nth-child(2){animation-delay:.08s}.chapter-heading>*:nth-child(3){animation-delay:.15s}.chapter-heading>*:nth-child(4){animation-delay:.22s}
+@keyframes rise-in{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+@keyframes reveal-in{from{opacity:.55;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cover-arrive{from{opacity:0;transform:translate(18px,14px) scale(.96)}to{opacity:1;transform:none}}
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:.16s ease both page-exit}
+::view-transition-new(root){animation:.25s ease both page-enter}
+@keyframes page-exit{to{opacity:0;transform:translateY(-5px)}}
+@keyframes page-enter{from{opacity:0;transform:translateY(8px)}}
+@media(max-width:900px){.chapter-aside>a:first-of-type{width:120px}.chapter-aside img{width:100%;margin:10px 0}.chapter-aside{padding:18px}}
+@media(max-width:600px){.chapter-aside>a:first-of-type{width:90px}.chapter-origin{margin-bottom:18px}.back-to-top{right:14px;bottom:14px;width:42px;height:42px}.chapter-heading h1{overflow-wrap:break-word}}
+@media(prefers-reduced-motion:reduce){.hero-copy>*,.cover-wrap,.reading-intro>*,.chapter-heading>*,[data-reveal].is-visible{animation:none!important}.back-to-top,.reading-arrow,.chapter-link{transition:none!important}::view-transition-old(root),::view-transition-new(root){animation:none!important}}

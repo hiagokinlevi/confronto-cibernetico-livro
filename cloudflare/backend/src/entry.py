@@ -19,7 +19,7 @@ BOOK = {
             "format": "printed",
             "isbn": "9786560961135",
             "pages": 300,
-            "announcedPublicationDate": "2026-10-27",
+            "availability": "preorder",
             "url": "https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758",
         },
         {
@@ -30,7 +30,7 @@ BOOK = {
     ],
     "website": "https://confrontocibernetico.com.br/",
     "pressContact": "hiago@decripte.com.br",
-    "manuscriptExcerptsUrl": "https://confrontocibernetico.com.br/capitulos/",
+    "chapterExcerptsUrl": "https://confrontocibernetico.com.br/capitulos/",
 }
 
 CHAPTERS = [
@@ -50,8 +50,8 @@ CHAPTERS = [
 def chapter_record(item, number):
     slug, title = item
     return {
-        "manuscriptChapter": number,
-        "sourceEdition": "author_manuscript",
+        "chapterNumber": number,
+        "sourceVersion": "author_original_version",
         "slug": slug,
         "title": title,
         "url": f"https://confrontocibernetico.com.br/capitulos/{slug}/",

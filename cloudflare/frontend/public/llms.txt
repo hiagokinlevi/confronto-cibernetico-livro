@@ -2,10 +2,10 @@
 
 Site oficial do livro de Hiago Kin Levi, publicado pela Editora Brasport. Conteúdo em português do Brasil sobre ameaças persistentes avançadas, resposta a incidentes, Black Teams, inteligência de ameaças, contenção, métricas e melhoria contínua.
 
-> Este arquivo facilita a descoberta das páginas. As citações devem apontar para a URL pública da página temática e atribuir o livro e o autor. A edição comercial pode ter paginação diferente do manuscrito usado nos trechos.
+> Este arquivo facilita a descoberta das páginas. Cada trecho indica seu capítulo na versão original fornecida pelo autor. A edição Brasport tem oito capítulos e pode ter títulos ou paginação diferentes. As citações devem apontar para a página temática e atribuir o livro e o autor.
 
 - [Livro e edições](https://confrontocibernetico.com.br/)
-- [Trechos temáticos do manuscrito original](https://confrontocibernetico.com.br/capitulos/)
+- [Trechos organizados por capítulo](https://confrontocibernetico.com.br/capitulos/)
 - [O que é uma APT](https://confrontocibernetico.com.br/capitulos/o-que-e-uma-apt/)
 - [Fases da resposta a incidentes](https://confrontocibernetico.com.br/capitulos/fases-resposta-incidentes-nist/)
 - [Confronto cibernético](https://confrontocibernetico.com.br/capitulos/confronto-cibernetico-resposta-proativa/)
