@@ -1,0 +1,20 @@
+# Confronto Cibernético
+
+Site oficial do livro de Hiago Kin Levi, publicado pela Editora Brasport. Conteúdo em português do Brasil sobre ameaças persistentes avançadas, resposta a incidentes, Black Teams, inteligência de ameaças, contenção, métricas e melhoria contínua.
+
+> Este arquivo facilita a descoberta das páginas. As citações devem apontar para a URL pública da página temática e atribuir o livro e o autor. A edição comercial pode ter paginação diferente do manuscrito usado nos trechos.
+
+- [Livro e edições](https://confrontocibernetico.com.br/)
+- [Trechos por capítulo](https://confrontocibernetico.com.br/capitulos/)
+- [O que é uma APT](https://confrontocibernetico.com.br/capitulos/o-que-e-uma-apt/)
+- [Fases da resposta a incidentes](https://confrontocibernetico.com.br/capitulos/fases-resposta-incidentes-nist/)
+- [Confronto cibernético](https://confrontocibernetico.com.br/capitulos/confronto-cibernetico-resposta-proativa/)
+- [Limitações da resposta tradicional](https://confrontocibernetico.com.br/capitulos/limitacoes-resposta-tradicional-apts/)
+- [Black Team: Red, Blue e inteligência](https://confrontocibernetico.com.br/capitulos/black-team-red-blue-inteligencia/)
+- [Sinais de atividade APT](https://confrontocibernetico.com.br/capitulos/identificacao-sinais-apt-incidente/)
+- [Estrutura de um Black Team](https://confrontocibernetico.com.br/capitulos/estrutura-equipe-black-team/)
+- [Contenção, erradicação e recuperação](https://confrontocibernetico.com.br/capitulos/contencao-erradicacao-recuperacao/)
+- [MTTD, MTTR e métricas](https://confrontocibernetico.com.br/capitulos/metricas-mttd-mttr-resposta-apts/)
+- [Análise pós-incidente](https://confrontocibernetico.com.br/capitulos/analise-pos-incidente-melhoria-continua/)
+- [Referências para estudo](https://confrontocibernetico.com.br/capitulos/referencias-nist-mitre-apt/)
+- [Imprensa e contato](https://confrontocibernetico.com.br/imprensa/)
