@@ -1,0 +1,61 @@
+---
+import { articles, articleUrl, referenceByCategory, type Article } from '../../data/articles';
+import { chapters, chapterUrl } from '../../data/chapters';
+import BrandMeta from '../../components/BrandMeta.astro';
+import MobileNav from '../../components/MobileNav.astro';
+import MarkdownIt from 'markdown-it';
+import { terms, termUrl } from '../../data/glossary';
+import { termsForArticle } from '../../data/relations';
+
+const articleFiles = import.meta.glob('../../content/articles/*.md', { query: '?raw', import: 'default', eager: true });
+const slugifyHeading = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+export function getStaticPaths() {
+  return articles.map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+const { article } = Astro.props as { article: Article };
+const canonical = `https://confrontocibernetico.com.br${articleUrl(article)}`;
+const chapter = chapters[article.chapterNumber - 1];
+const reference = referenceByCategory[article.category];
+const related = articles.filter((item) => item.category === article.category && item.slug !== article.slug).slice(0, 3);
+const relatedTerms = termsForArticle(article, terms);
+const position = articles.findIndex((item) => item.slug === article.slug);
+const previous = articles[position - 1];
+const following = articles[position + 1];
+const categoryAnchor = article.category.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-');
+const description = `${article.answer} Leia o guia e conheça o livro Confronto Cibernético.`;
+const editorialText = articleFiles[`../../content/articles/${article.slug}.md`] as string | undefined;
+const visibleLength = editorialText ? editorialText.replace(/[#*_`\[\]()>-]/g, '').length : 0;
+if (editorialText && visibleLength < 20000) throw new Error(`Artigo editorial com menos de 20.000 caracteres: ${article.slug} (${visibleLength})`);
+const markdown = new MarkdownIt({ html: false, linkify: true, breaks: false });
+const tokens = editorialText ? markdown.parse(editorialText.replace(/^# .+\n+/, ''), {}) : [];
+const toc: { id: string; title: string }[] = [];
+const usedHeadingIds = new Set<string>();
+for (let i = 0; i < tokens.length; i++) {
+  if (tokens[i].type !== 'heading_open' || tokens[i].tag !== 'h2') continue;
+  const title = tokens[i + 1]?.content ?? '';
+  const baseId = slugifyHeading(title) || 'secao';
+  let id = baseId;
+  for (let suffix = 2; usedHeadingIds.has(id); suffix++) id = `${baseId}-${suffix}`;
+  usedHeadingIds.add(id);
+  tokens[i].attrSet('id', id);
+  toc.push({ id, title });
+}
+const editorialHtml = editorialText ? markdown.renderer.render(tokens, markdown.options, {}) : '';
+const ld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'Article', '@id': `${canonical}#artigo`, headline: article.keyword, description: article.answer, url: canonical, inLanguage: 'pt-BR', datePublished: '2026-10-14', dateModified: '2026-10-14', author: { '@type': 'Organization', name: 'Confronto Cibernético', url: 'https://confrontocibernetico.com.br/' }, image: 'https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg', about: { '@id': 'https://confrontocibernetico.com.br/#livro' }, keywords: article.keyword, articleSection: article.category },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://confrontocibernetico.com.br/' },
+      { '@type': 'ListItem', position: 2, name: 'Artigos', item: 'https://confrontocibernetico.com.br/artigos/' },
+      { '@type': 'ListItem', position: 3, name: article.keyword, item: canonical },
+    ] },
+  ],
+};
+---
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{article.keyword} | Confronto Cibernético</title><meta name="description" content={description.slice(0, 250)}><link rel="canonical" href={canonical}><meta property="og:type" content="article"><meta property="og:locale" content="pt_BR"><meta property="og:title" content={`${article.keyword} | Confronto Cibernético`}><meta property="og:description" content={article.answer}><meta property="og:url" content={canonical}><BrandMeta /><script type="application/ld+json" set:html={JSON.stringify(ld)} /><link rel="stylesheet" href="/styles.css"><script src="/site-effects.js" defer></script></head>
+<body id="top"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><a class="brand" href="/"><span class="brand-mark">CC</span><span>CONFRONTO<br>CIBERNÉTICO</span></a><nav aria-label="Navegação principal"><a href="/">O livro</a><a href="/capitulos/">Capítulos</a><a href="/artigos/" aria-current="page">Artigos</a><a href="/glossario/">Glossário</a><a class="nav-cta" href="/#comprar">Onde comprar <span aria-hidden="true">↗</span></a></nav><MobileNav /></header>
+<main id="conteudo" class="article-page"><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href="/">Início</a><span aria-hidden="true">/</span><a href="/artigos/">Artigos</a><span aria-hidden="true">/</span><a href={`/artigos/#${categoryAnchor}`}>{article.category}</a></nav><div class="article-layout"><article class="article-body"><header><p class="eyebrow">{article.category.toUpperCase()} · GUIA DE LEITURA</p><h1>{article.keyword}</h1>{!editorialText && <p class="article-lead">{article.answer}</p>}</header>{editorialText ? <><nav class="article-toc" aria-label="Neste artigo"><strong>Neste artigo</strong><ol>{toc.map((item) => <li><a href={`#${item.id}`}>{item.title}</a></li>)}</ol></nav><div class="article-prose" set:html={editorialHtml} /></> : <><section><h2>Como aplicar essa ideia</h2><p>{article.practice}</p></section><section><h2>O que observar antes de decidir</h2><p>{article.caution}</p></section></>}<section class="article-book"><p class="eyebrow">CONTINUE NO LIVRO</p><h2>Confronto Cibernético</h2><p>Este assunto se relaciona ao <strong>capítulo {chapter.number} da versão original</strong>, “{chapter.title}”. {editorialText ? 'Leia o trecho identificado na página do capítulo.' : chapter.overview}</p><a class="text-link" href={chapterUrl(chapter)}>Leia o trecho identificado do capítulo ↗</a><a class="button primary" href="/#comprar">Veja onde encontrar o livro ↗</a></section><section class="article-reference"><h2>Referência para aprofundar</h2><p>Consulte também a fonte primária <a href={reference.url} target="_blank" rel="noopener">{reference.label}</a>. O artigo apresenta uma síntese editorial para estudo; decisões em incidentes reais dependem do contexto, da autorização e da equipe responsável.</p></section></article><aside class="article-aside"><a href="/"><img src="/assets/capa-confronto-cibernetico.jpeg" alt="Capa do livro Confronto Cibernético" width="1100" height="1600" loading="lazy"></a><p>Hiago Kin Levi · Editora Brasport</p><a href="/#comprar">Conheça as edições ↗</a></aside></div><nav class="article-pagination" aria-label="Navegar entre artigos">{previous && <a href={articleUrl(previous)}><small>← ARTIGO ANTERIOR</small><strong>{previous.keyword}</strong></a>}{following && <a href={articleUrl(following)}><small>PRÓXIMO ARTIGO →</small><strong>{following.keyword}</strong></a>}</nav>{relatedTerms.length > 0 && <section class="article-related article-terms"><h2>Conceitos deste tema</h2><div>{relatedTerms.map((term) => <a href={termUrl(term)}>{term.name} <span aria-hidden="true">↗</span></a>)}</div></section>}<section class="article-related"><h2>Continue a leitura</h2><div>{related.map((item) => <a href={articleUrl(item)}>{item.keyword} <span aria-hidden="true">↗</span></a>)}</div></section></main><a class="back-to-top" href="#top" aria-label="Voltar ao topo">↑</a><footer><div class="footer-brand">CONFRONTO<br>CIBERNÉTICO</div><p>Hiago Kin Levi · Editora Brasport</p><a href="/artigos/">Todos os artigos ↑</a></footer></body></html>

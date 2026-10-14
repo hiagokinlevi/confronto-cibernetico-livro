@@ -1,0 +1,81 @@
+# Firewall
+
+## Definição e função
+
+Firewall, também chamado de parede de fogo, é um controle que permite, bloqueia ou registra tráfego segundo regras de rede definidas. Seu papel é aplicar uma política a comunicações que atravessam um ponto de controle ou que chegam a um recurso protegido. A política expressa quais origens, destinos, serviços, direções e condições são aceitáveis no contexto de uma rede ou sistema. O firewall transforma essa política em decisões observáveis sobre pacotes, conexões ou fluxos; não determina, por si só, se uma atividade permitida é legítima em todos os sentidos.
+
+A regra fundamental é simples: estabelecer um limite de confiança, definir o que deve atravessá-lo e aplicar a decisão de maneira consistente. Esse limite pode existir entre a internet e uma rede corporativa, entre segmentos internos, diante de um servidor, em um equipamento de usuário ou no caminho entre ambientes de nuvem. Um firewall também pode observar e registrar comunicações sem bloqueá-las, se operar em modo de monitoramento. A proteção resultante depende da política, da cobertura e da capacidade de manter e verificar o controle.
+
+## Como funciona
+
+Um filtro simples pode avaliar campos de cabeçalho de pacotes, como endereços e portas. Um firewall com acompanhamento de estado mantém informação sobre conexões observadas e usa esse contexto para distinguir pacotes associados a uma sessão existente de tentativas novas. Isso pode reduzir a necessidade de regras explícitas para cada sentido de uma comunicação, mas não torna a sessão confiável em termos de conteúdo ou identidade. Uma conexão validamente estabelecida pode transportar uma ação indesejada; o estado é contexto de rede, não atestado de intenção.
+
+Os registros dependem de configuração. Uma regra pode permitir sem registrar, negar e registrar, ou gerar eventos apenas em certas condições. Os registros podem conter horário, interfaces, endereços, portas, protocolo, ação, identificador de regra e dados sobre a conexão. Nem todos os produtos registram os mesmos campos, e limites de volume podem descartar ou resumir eventos. Por isso, “não encontrei bloqueio no log” não prova que o firewall permitiu o tráfego: talvez não houvesse registro, o evento tenha sido enviado a outro sistema, retido por pouco tempo ou perdido por saturação.
+
+## Formas e pontos de aplicação
+
+A posição muda o que o controle consegue ver e bloquear. Um firewall central pode observar tráfego que atravessa um enlace específico, mas não verá comunicações que permaneçam dentro de um mesmo segmento, caminho local ou serviço de nuvem fora de sua cobertura. Um firewall de host pode decidir com base no processo que abriu uma conexão, mas sua eficácia depende da integridade do sistema onde está instalado. Há também controles distribuídos: políticas podem ser definidas centralmente e aplicadas em vários pontos. Isso amplia a cobertura, mas exige consistência entre política desejada, política publicada e estado efetivo de cada agente.
+
+## Política: o que a regra realmente diz
+
+Uma regra ganha significado quando são conhecidos seu escopo e sua ordem. É importante saber se ela vale para entrada ou saída, qual interface ou zona abrange, a quais redes e serviços se aplica, se considera estado e se há exceções anteriores. Em políticas baseadas em zonas, os nomes das zonas descrevem grupos definidos pela organização; “confiável” não significa que todo dispositivo ali esteja íntegro. Uma exceção ampla pode sobrepor uma regra restritiva e permitir mais comunicações do que o leitor imagina.
+
+Uma regra permissiva não é necessariamente um incidente. Pode ser requisito legítimo, configuração herdada ou erro de desenho. A interpretação exige relacioná-la à arquitetura, ao proprietário do serviço, ao uso observado e ao risco do ativo. Da mesma forma, uma regra de bloqueio não demonstra que um caminho está fechado por completo: pode existir outro caminho, outro endereço, uma interface distinta, uma conexão já estabelecida ou um controle paralelo que não foi incluído na análise.
+
+## Quando é útil
+
+Na prevenção, o firewall atua sobre caminhos. Se uma conexão não deve existir, uma regra aplicada no ponto adequado pode negar ou registrar a tentativa. Na detecção, eventos de permissão e bloqueio ajudam a observar padrões, como tentativas repetidas, mudanças de origem ou contato inesperado com um serviço. Na contenção, uma alteração cuidadosamente delimitada pode interromper determinada comunicação enquanto a equipe preserva o sistema para análise. Em cada caso, a utilidade é específica: o firewall restringe ou registra tráfego, mas não corrige automaticamente a causa de uma atividade maliciosa.
+
+## Evidências na investigação
+
+Em uma investigação, o firewall pode aparecer como configuração, evento ou elemento de topologia. A equipe pode examinar políticas exportadas, histórico de alterações, objetos de endereços, regras efetivamente carregadas, registros locais, console de gerenciamento, telemetria encaminhada a uma plataforma de eventos e documentação da rede. Os nomes e formatos dependem do produto. Uma exportação de configuração mostra o que estava declarado em certo momento; não prova necessariamente que essa versão estava ativa nem que o equipamento processava o tráfego suspeito.
+
+A linha do tempo requer atenção. Os relógios podem divergir; a retenção pode ser curta; eventos podem ser agregados; e uma mudança de política pode ter ocorrido entre o incidente e a coleta. Preserve a configuração e os logs com contexto de aquisição, horário, origem e período coberto. Se houver exportação ou captura de evidência, registre quem a obteve e como foi armazenada segundo os procedimentos da organização. O objetivo é permitir que outra pessoa reconstrua o que foi observado sem confundir configuração atual com configuração histórica.
+
+Uma ausência de eventos só é informativa se a equipe souber que o dispositivo cobria aquele caminho, que a categoria de log estava habilitada, que o período foi preservado e que o mecanismo de coleta estava funcionando. Confirme também se a regra aplicável registrava tráfego e se houve perda, limitação ou falha de encaminhamento. Quando essas condições não podem ser demonstradas, descreva a lacuna como falta de evidência, não como evidência de ausência.
+
+## Exemplos hipotéticos
+
+**Exemplo hipotético de firewall de host:** um servidor aceita conexões de entrada apenas para os serviços necessários e registra tentativas negadas. Uma investigação encontra uma conexão de saída permitida por uma regra genérica. Isso não revela, sozinho, se a conexão foi iniciada por um processo legítimo, por uma ferramenta administrativa ou por um programa indesejado. A equipe correlaciona o evento com o processo, a conta, a telemetria do endpoint e o destino. A regra de rede explica a possibilidade técnica da comunicação, não a identidade de quem a iniciou.
+
+## Distinções importantes
+
+Firewall não é sinônimo de roteador. Um roteador encaminha tráfego entre redes; alguns roteadores incluem funções de firewall, mas encaminhar e filtrar são funções distintas. Um proxy recebe uma solicitação e faz outra comunicação em nome do cliente, podendo compreender aspectos da aplicação. Um firewall pode filtrar uma conexão sem atuar como intermediário da aplicação; certos produtos combinam os papéis, por isso é necessário identificar o caminho efetivo.
+
+VPN e firewall resolvem problemas diferentes. Uma VPN cria um túnel protegido entre participantes ou redes; um firewall pode permitir, restringir ou registrar o tráfego que entra ou sai desse túnel. A cifragem do túnel protege o transporte em certas condições, mas não substitui a política sobre quais recursos o participante alcança. Do mesmo modo, criptografia de aplicação pode limitar o que um firewall intermediário consegue inspecionar, enquanto ainda permite decisões baseadas em metadados disponíveis.
+
+## Limitações e erros de interpretação
+
+Um firewall só controla o tráfego que atravessa o ponto onde está aplicado e que sua política consegue classificar. Comunicações locais, caminhos alternativos, redes não inventariadas, túneis autorizados e serviços expostos por outras interfaces podem ficar fora do alcance previsto. Em ambientes distribuídos, uma regra configurada em um painel pode não ter sido aplicada a todas as instâncias ou pode divergir da política ativa. A equipe deve validar cobertura com topologia e observação, sem presumir que um único equipamento seja a fronteira de toda a organização.
+
+Uma regra de negação tem alcance limitado ao critério descrito. Bloquear um endereço não remove uma conta comprometida, um programa persistente, uma tarefa agendada ou um mecanismo de acesso remoto já instalado. Também não prova que os dados não foram acessados antes do bloqueio. Esta é a razão prática para tratar o firewall como parte de uma resposta mais ampla: uma regra de bloqueio reduz caminhos conhecidos, mas não substitui investigação de persistência e identidade.
+
+Há ainda o risco de alterar regras sem considerar dependências. Um bloqueio amplo pode interromper autenticação, monitoramento, cópias de segurança ou atendimento ao cliente. Uma exceção criada para restaurar o serviço pode abrir um caminho excessivo se não tiver escopo, proprietário e revisão. A investigação deve registrar quem solicitou e aprovou a mudança, qual hipótese ela atende, quando foi aplicada e como será revertida ou incorporada à política permanente.
+
+## Resposta a incidentes
+
+Na contenção, escolha uma mudança estreita o bastante para interromper a atividade observada sem comprometer serviços essenciais. Isso pode significar limitar um par específico de origem e destino, restringir um serviço a uma rede de gestão, desabilitar temporariamente uma regra ou isolar um segmento, dependendo da arquitetura e da autoridade operacional. Registre a justificativa e o impacto esperado, acompanhe os efeitos e preserve a configuração anterior. Se a mudança não produzir o resultado previsto, reavalie o caminho de rede em vez de ampliá-la às cegas.
+
+Após a contenção, verifique se a tentativa cessou em todos os pontos relevantes e se não há novas rotas ou destinos. Faça revisão da política para remover exceções temporárias vencidas e corrigir autorizações desnecessárias. Documente a regra aplicada, a evidência que a motivou, o horário, o responsável e os resultados observados. Essa trilha distingue uma ação deliberada de uma mudança casual e permite revisar a eficácia depois que a pressão imediata do incidente diminuir.
+
+## Perguntas frequentes
+
+### Firewall bloqueado significa ataque impedido?
+
+### Uma conexão permitida é prova de comprometimento?
+
+Não. A permissão demonstra que a política autorizou a comunicação observada ou que o controle não a bloqueou. O serviço pode ser legítimo e a ação pode ou não ter sido maliciosa. Correlacione a conexão com processo, conta, aplicação, destino e atividade no sistema que iniciou ou recebeu o tráfego.
+
+### Firewall de host e firewall de rede se substituem?
+
+### Por que não bloquear todo o tráfego desconhecido imediatamente?
+
+Uma política restritiva pode reduzir exposição, mas precisa ser implantada com conhecimento das dependências e plano de recuperação. Bloqueios sem escopo podem interromper funções essenciais ou gerar exceções improvisadas. A organização pode observar primeiro, validar os fluxos necessários e aplicar mudanças graduais com monitoramento, conforme a urgência e o risco.
+
+### O firewall impede movimento lateral?
+
+### O que deve ser preservado após uma alteração emergencial?
+
+Preserve a versão anterior e a versão aplicada da política, o horário e o responsável pela mudança, a justificativa, os eventos associados e os resultados observados. Considere também as limitações da coleta, o período de retenção e a sincronização dos relógios. Isso permite reconstruir o estado do controle e avaliar se a contenção funcionou.
+
+## Relação com o capítulo

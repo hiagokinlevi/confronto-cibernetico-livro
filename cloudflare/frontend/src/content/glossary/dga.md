@@ -1,0 +1,83 @@
+# DGA
+
+## Conceito
+
+DGA é a sigla de *Domain Generation Algorithm*, ou algoritmo de geração de domínios. É um mecanismo que produz diversos nomes de domínio candidatos que um programa pode tentar consultar para alcançar uma infraestrutura controlada pelo adversário. Em uma operação maliciosa, o programa e o operador compartilham alguma forma de determinar quais nomes poderão ser usados. A intenção é dificultar que a comunicação dependa de um único endereço previamente conhecido e tornar mais custoso bloquear ou desativar todos os pontos de contato.
+
+A definição não implica que todo nome gerado esteja registrado, resolva para um endereço ou chegue a um servidor ativo. Uma lista pode conter muitos candidatos sem uso efetivo. Em geral, o programa testa nomes segundo uma lógica própria e prossegue quando encontra uma resposta que considera válida. Para quem investiga, a atividade de geração e tentativa pode ser visível mesmo quando a comunicação não se completa.
+
+## Por que é usado
+
+Um programa que conhece apenas um domínio fixo pode perder contato com seu controlador se esse domínio for bloqueado, removido ou alterado. Com um DGA, o software pode testar nomes diferentes ao longo do tempo ou a cada execução. Se o operador mantiver compatibilidade com o mesmo método e preparar alguns dos nomes possíveis, uma tentativa futura poderá encontrar um ponto de comunicação ainda acessível.
+
+Essa abordagem transfere parte da dificuldade para os defensores: em vez de observar somente uma conexão estável, pode ser necessário reconhecer o processo que emite uma sequência de consultas, identificar a regra que orienta essa sequência e agir sobre os elementos relacionados. A quantidade de nomes candidatos pode ser grande, mas não deve ser confundida com a quantidade de domínios efetivamente registrados ou de servidores disponíveis. A geração é uma estratégia de encontro entre cliente e infraestrutura, não uma garantia de disponibilidade.
+
+## Como interpretar a atividade
+
+Para a equipe defensiva, a observação costuma começar nos efeitos: um dispositivo consulta muitos nomes que não aparecem com frequência no ambiente, recebe respostas negativas ou alterna tentativas até obter uma resolução que antecede comunicação de rede. O algoritmo em si pode permanecer dentro do processo e não estar exposto nos registros DNS. Por isso, os eventos devem ser ligados ao processo, ao usuário, ao dispositivo e ao intervalo em que ocorreram.
+
+Uma resolução bem-sucedida é apenas uma etapa. O nome pode apontar para um endereço compartilhado, para uma página sem relação com a ameaça, para um serviço intermediário ou para uma infraestrutura que já mudou. Em sentido inverso, uma consulta sem resposta pode ser relevante mesmo sem tráfego posterior. O investigador precisa distinguir a tentativa de localizar um destino da comunicação efetivamente realizada e da execução de uma ação no destino.
+
+## Evidências e investigação
+
+A investigação deve combinar fontes que expliquem tanto o que foi consultado quanto quem iniciou a consulta. Dependendo da retenção e da instrumentação do ambiente, são úteis registros do resolvedor, telemetria de endpoint, captura ou metadados de rede, histórico de execução, conexões observadas e informações de proxy ou firewall. O valor de cada fonte depende de sua cobertura, da precisão dos horários e do modo como os dados foram normalizados.
+
+Nos registros DNS, procure concentração de consultas por dispositivo ou cliente, diversidade de nomes, proporção de respostas negativas e proximidade temporal entre tentativas. Também importa verificar se os nomes compartilham características observáveis, se voltam a aparecer em ciclos e se algum deles resolve antes de uma conexão subsequente. Não existe um limiar universal de volume, taxa de falha ou duração que separe DGA de comportamento benigno; limites locais podem ajudar a priorizar, mas precisam ser interpretados diante da linha de base da rede.
+
+A telemetria do endpoint pode fornecer a ligação decisiva. Identificar o processo responsável, seu caminho, assinatura, origem, árvore de processos e atividade no mesmo período ajuda a separar uma rotina legítima de uma execução suspeita. Uma aplicação pode consultar por meio de uma biblioteca, serviço do sistema ou resolvedor local; portanto, a atribuição baseada somente no nome do processo que aparece no log pode ser incompleta. Correlação de eventos e contexto de execução são essenciais.
+
+Também se deve preservar a sequência temporal: quando o processo iniciou, quais consultas emitiu, que respostas recebeu, se houve tentativa de conexão e quais outras atividades ocorreram antes ou depois. Dados de memória, configuração ou arquivo podem revelar a lógica interna, quando coletados e examinados por procedimentos autorizados. A análise estática pode sugerir geração de nomes; a análise comportamental pode mostrar que o programa realmente os consulta. Uma indicação em código não prova que a função foi executada no incidente.
+
+## Padrões que podem chamar atenção
+
+Algumas características podem orientar a triagem: volume de nomes distintos em uma janela curta, cadeias com estrutura pouco familiar, alta proporção de respostas como nome inexistente, repetição com intervalos regulares, consultas de um único host para sequências semelhantes e resolução seguida de conexão. A combinação é mais útil que qualquer característica sozinha. Um equipamento novo ou mal configurado pode produzir muitas falhas; uma aplicação distribuída pode gerar nomes diferentes por razões funcionais.
+
+A distribuição das consultas importa. Um domínio legítimo tende a aparecer associado a usos e clientes coerentes com a função da aplicação, mas essa expectativa não é regra rígida. Uma sequência aparentemente incomum pode ser explicada por atualização, descoberta de serviços, balanceamento, proteção contra abuso, teste de conectividade ou telemetria. A pergunta prática não é apenas “os nomes parecem estranhos?”, mas “qual componente os solicitou, por que o fez, e o que aconteceu em seguida?”.
+
+## DGA e termos próximos
+
+Um DGA não é sinônimo de *fast flux*. Fast flux refere-se a mudanças frequentes nos endereços associados a nomes de domínio, enquanto DGA trata da geração de nomes candidatos que o cliente pode consultar. As técnicas podem coexistir: um domínio encontrado por meio da geração ainda pode usar endereços que mudam. Observar uma coisa não demonstra a outra.
+
+Também não é igual a DNS tunneling. No tunneling, dados podem ser codificados em consultas ou respostas DNS para transportar informação. Um DGA pode utilizar DNS como etapa de descoberta de destino sem codificar carga útil nas consultas. Uma sequência longa ou incomum merece investigação, mas não permite concluir que exista túnel; é necessário examinar o conteúdo, o padrão de comunicação e o comportamento do processo.
+
+## Limitações e falsos positivos
+
+A visibilidade pode ser parcial. Clientes podem usar resolvedores externos, cache local, DNS sobre HTTPS ou outros caminhos que não aparecem nos registros corporativos esperados. O cache reduz o número de consultas repetidas; o uso de um proxy ou de uma camada de resolução intermediária pode mudar qual equipamento aparece como origem. A ausência de consultas em uma fonte, portanto, não demonstra ausência de geração ou tentativa.
+
+Os dados também podem perder precisão por retenção curta, amostragem, relógios desalinhados, NAT, compartilhamento de endereço ou falta de telemetria de processo. Uma análise que agrupa apenas pelo endereço IP pode misturar atividade de vários usuários. Uma investigação que agrupa apenas pelo nome pode misturar momentos e máquinas diferentes. Sempre que possível, associe identificadores de endpoint e horários normalizados, registrando incertezas quando a ligação não for possível.
+
+Há falsos positivos e falsos negativos. Software legítimo pode gerar nomes em massa; um DGA pode produzir cadeias com aparência legível; e infraestrutura maliciosa pode usar poucos nomes fixos, sem qualquer DGA. Um adversário pode ainda alterar o comportamento ou limitar consultas. Assim, listas de características e detectores estatísticos ajudam a selecionar eventos para exame, mas não substituem a verificação do processo nem a análise do fluxo de rede.
+
+## Resposta a incidentes
+
+Ao identificar uma atividade plausível, a equipe deve determinar escopo e risco antes de bloquear indiscriminadamente. Confirme quais dispositivos e processos participaram, se algum nome resolveu, se houve conexão e se há sinais de execução adicional. Preserve logs e artefatos relevantes conforme os procedimentos da organização. Se houver indícios de comprometimento ativo, contenção do endpoint ou restrição controlada de comunicação pode reduzir exposição enquanto a análise prossegue.
+
+Bloquear todos os nomes observados pode ser insuficiente quando o conjunto muda, e bloquear padrões amplos pode afetar serviços legítimos. Uma medida mais durável pode exigir conter ou remover o processo, identificar mecanismo de persistência, corrigir o vetor de entrada e atualizar detecções para a sequência comportamental. A escolha depende da gravidade, da criticidade do equipamento e da confiança na atribuição. Registre a justificativa, o alcance e os possíveis efeitos colaterais das medidas.
+
+A investigação deve examinar tanto os nomes consultados quanto o tráfego posterior. Se houver conexão, procure o destino de rede, o volume, a duração, a direção dos dados e outras ações no host, mantendo os limites de interpretação: conexão não prova comando recebido ou execução remota. Se não houver resolução, a tentativa ainda pode indicar uma amostra ativa, mas não estabelece que o adversário tenha obtido contato.
+
+## Exemplo hipotético
+
+Considere um computador em que um processo recém-executado consulta dezenas de nomes distintos em poucos minutos. A maioria recebe resposta de nome inexistente. Depois de uma pausa, outra consulta recebe endereço e o mesmo processo tenta uma conexão de saída. Esse encadeamento justifica triagem prioritária: há um processo associado, uma sequência de consultas, respostas variadas e uma tentativa subsequente de comunicação.
+
+O exemplo não prova, sozinho, que existe um DGA. Uma ferramenta legítima de diagnóstico poderia estar testando configurações, ou um software poderia estar procurando serviços alternativos. A equipe compararia o binário com a origem esperada, examinaria a linha de comando e a árvore de processos, verificaria a finalidade dos nomes e correlacionaria os horários com telemetria de rede. Se a lógica de geração e a intenção maliciosa não forem demonstradas, a conclusão deve permanecer como hipótese, e não como atribuição definitiva.
+
+## Perguntas frequentes
+
+### Um DGA sempre gera milhares de domínios?
+
+Não é possível concluir isso pelo termo. Um DGA pode produzir muitos candidatos, como sugere a técnica, mas a escala, a frequência e a forma de uso dependem da implementação. A contagem observada em um resolvedor também pode ser menor ou maior que a atividade real, por causa de cache, filtragem e cobertura dos registros.
+
+### Toda consulta que falha é um sinal de DGA?
+
+Não. Falhas ocorrem em situações benignas e podem decorrer de problemas temporários ou de configuração. Elas ganham valor investigativo quando aparecem em padrão coerente, associadas a processo e dispositivo identificáveis, e quando outros elementos sustentam a hipótese.
+
+### Se um nome resolve, o incidente está confirmado?
+
+Não. A resolução mostra que houve uma resposta para aquela consulta, conforme vista pela fonte de telemetria. Não confirma que o endereço seja controlado por adversário, que o processo tenha estabelecido uma sessão útil ou que tenha ocorrido ação posterior. É necessário correlacionar o destino, o processo e a sequência de eventos.
+
+Uma lista pode apoiar a busca por indicadores conhecidos, mas não revela necessariamente o mecanismo que os produziu e pode ficar desatualizada. Para reconhecer o comportamento em novos nomes, é importante combinar análise de sequência e contexto de endpoint, além de avaliar a resolução e o tráfego subsequente.
+
+## Relação com o capítulo
+
+No capítulo 1 da versão original do manuscrito, DGA se relaciona à compreensão de como uma comunicação maliciosa pode localizar pontos de contato variáveis. Para a leitura defensiva, o aspecto central é conectar as consultas a quem as gerou e ao que aconteceu depois, sem tomar nomes incomuns ou falhas DNS como confirmação automática de ataque.

@@ -1,0 +1,79 @@
+# Sysmon
+
+## Conceito e papel na detecção
+
+Sysmon, abreviação de System Monitor, é uma ferramenta de telemetria de eventos do Windows usada para ampliar a visibilidade sobre processos e outras atividades do sistema. Em vez de apresentar, por si só, um veredito de que um computador foi comprometido, registra acontecimentos selecionados para que ferramentas de coleta, regras analíticas e profissionais de defesa possam reconstruir o que ocorreu. Seu valor está na possibilidade de observar relações e sequências que podem não estar disponíveis, ou não estar suficientemente detalhadas, em registros mais gerais do sistema.
+
+“Telemetria” significa aqui observações estruturadas sobre atividades, não uma conclusão sobre intenção. Um evento pode registrar, por exemplo, que um processo foi iniciado, qual imagem executável estava associada a ele, que processo o iniciou ou que conexão de rede foi observada. Esse registro descreve o que a configuração e a versão instalada permitem observar. Não afirma automaticamente que a atividade era maliciosa, que foi bem-sucedida ou que todo o contexto relevante foi capturado.
+
+## Como funciona em termos defensivos
+
+Sysmon é instalado no endpoint Windows e produz eventos por meio de seu componente de serviço e driver. A configuração define quais categorias de atividade serão registradas e quais condições serão incluídas ou excluídas. Os eventos são gravados no canal operacional do Sysmon no Visualizador de Eventos do Windows; em ambientes administrados, agentes de coleta podem encaminhá-los para armazenamento e análise centralizados. O fluxo exato depende da versão, da política implantada e da infraestrutura de ingestão.
+
+O registro costuma incluir horário e campos que permitem relacionar um acontecimento a um processo, arquivo, usuário ou conexão, conforme o tipo de evento. Identificadores de processo, caminhos, linhas de comando, hashes quando disponíveis e referências a processos relacionados podem ajudar a formar uma sequência. Os nomes e a disponibilidade de campos variam conforme o evento e a versão. Por isso, analistas devem interpretar o esquema efetivamente recebido, em vez de presumir que todos os registros carregam os mesmos detalhes.
+
+## O que pode revelar numa investigação
+
+A utilidade mais evidente é reconstruir contexto. Um alerta isolado sobre um executável suspeito costuma deixar perguntas: de onde veio o processo, com que argumentos foi iniciado, que processo o criou, quais outros processos apareceram depois e se houve atividade de rede associada? Eventos correlacionáveis de Sysmon podem ajudar a responder parte dessas perguntas. O resultado é uma linha do tempo mais rica, desde que os registros tenham sido coletados e preservados.
+
+Em resposta a incidentes, a fonte pode ajudar a identificar execução de programas incomuns, uso atípico de ferramentas administrativas, relações inesperadas entre processos, alterações observáveis em arquivos ou carregamentos relevantes, e conexões associadas a uma atividade suspeita. A pertinência de cada categoria depende da hipótese investigada. Um evento de criação de processo pode esclarecer a cadeia de execução; dados de conexão podem contextualizar um contato externo; registros sobre arquivos ou processos podem apoiar a comparação entre estações. Nenhum desses sinais, isoladamente, prova comprometimento.
+
+## Evidências para reconhecer e validar os dados
+
+Em uma estação, a evidência mais direta é a presença do canal de eventos operacional do Sysmon no Visualizador de Eventos. A consulta deve observar período, origem, identificadores de evento, conteúdo e continuidade dos registros. A existência do canal indica que há ou houve uma instalação capaz de registrar dados, mas não comprova que todos os tipos desejados estavam habilitados no momento relevante. É necessário examinar a configuração aplicada e, quando possível, seu histórico de alterações.
+
+Em coleta centralizada, os eventos podem aparecer em índices ou painéis com campos normalizados pelo agente e pela plataforma. Nomes de campos, formato de horário e tratamento de valores vazios podem ser transformados durante a ingestão. O analista deve confirmar se a origem foi preservada, se o horário está na zona esperada, se há atrasos e se os identificadores de processo são interpretados junto do host e do intervalo temporal corretos. Um identificador de processo isolado pode ser reutilizado; não deve ser tratado como identificador global e permanente.
+
+## Configuração: cobertura, ruído e custo
+
+A configuração de coleta determina o valor investigativo e o volume de dados gerado. Não há uma seleção universal que seja adequada a todas as organizações: uma estação de trabalho, um servidor de aplicação e um controlador de domínio têm funções e padrões normais diferentes. A política deve partir das perguntas que a equipe precisa responder, das obrigações de retenção, dos recursos disponíveis e da capacidade de manter regras e coletores.
+
+Filtros devem evitar os dois extremos. Uma configuração restritiva pode poupar recursos, mas deixar a investigação sem elementos básicos. Uma configuração ampla sem plano de retenção pode produzir tantos registros que a busca fica lenta, cara ou impraticável. Exclusões por caminho ou nome merecem cuidado especial: atacantes e programas legítimos podem usar diretórios ou nomes comuns. Uma exceção simples talvez reduza ruído hoje e crie uma zona cega amanhã. A decisão deve considerar atributos combinados, contexto e a possibilidade de revisar a regra.
+
+## Interpretação e correlação
+
+Um evento é uma observação pontual. Uma investigação robusta o trata como parte de uma sequência e pergunta quais hipóteses alternativas explicam o mesmo registro. A criação de um processo com argumento incomum pode resultar de software administrativo legítimo, de uma tarefa automatizada ou de uma atividade indevida. O nome do arquivo, a assinatura, o local, o usuário, o processo pai, o horário, o histórico daquele host e eventos próximos ajudam a avaliar essas possibilidades.
+
+## Limitações e erros de interpretação
+
+Sysmon não observa tudo o que acontece no sistema. Só pode registrar o que sua instrumentação, versão, configuração, estado do endpoint e fluxo de coleta tornam visível. Eventos não habilitados não aparecem retrospectivamente; registros perdidos ou sobrescritos não podem ser reconstruídos pela simples instalação posterior. Uma lacuna no log não prova que a atividade não ocorreu.
+
+Outro erro é tratar um evento como diagnóstico. Um registro de conexão não significa que houve exfiltração; uma criação de processo não demonstra execução maliciosa; um caminho suspeito não identifica sozinho o responsável. Eventos documentam sinais, não a narrativa completa. Também é possível que software legítimo gere atividade incomum, ou que comportamento malicioso use ferramentas e locais esperados. O julgamento deve se apoiar em contexto e evidência convergente.
+
+Há ainda dependências técnicas e operacionais. A disponibilidade dos eventos e campos pode mudar com versões, configurações e mecanismos de ingestão; políticas de segurança podem limitar retenção ou acesso; falhas locais podem reduzir a coleta. Atividade no endpoint também pode tentar interferir em ferramentas defensivas. Por isso, não se deve confiar exclusivamente no log local como prova resistente a adulteração. Encaminhamento rápido, controle de acesso e comparação com fontes externas ajudam a preservar contexto, sem garantir por si sós integridade absoluta.
+
+## Uso na resposta a incidentes
+
+Quando surge uma suspeita, preserve a janela relevante e evite mudanças que apaguem evidência antes de compreender o estado da máquina. Confirme o host, a hora, a configuração e o canal de origem; exporte os registros necessários conforme o procedimento da organização; documente quem coletou os dados e como. Se a plataforma central já recebeu os eventos, preserve também a consulta e os metadados que mostram a origem e o período.
+
+As decisões de contenção e recuperação não devem depender de um único evento. Use a evidência para orientar coleta adicional, escopo, priorização e validação de regras, seguindo o plano de resposta da organização. Após o incidente, identifique quais perguntas ficaram sem resposta por falta de eventos ou campos e ajuste a configuração e a retenção de modo proporcional. Registrar essas lacunas transforma a investigação em melhoria concreta da capacidade de detecção.
+
+## Distinções com termos próximos
+
+**Sysmon e logs de auditoria do Windows:** os registros nativos de auditoria documentam atividades conforme as políticas e categorias de auditoria habilitadas. Sysmon é uma fonte adicional, com eventos voltados à observação de atividade do sistema e dos processos. Há sobreposição possível, mas escopo, campos e condições de coleta diferem. Uma fonte pode complementar a outra; não se deve presumir equivalência nem substituir uma pela outra sem mapear as perguntas investigativas.
+
+**Sysmon e EDR:** uma plataforma de detecção e resposta em endpoint pode oferecer coleta, correlação, alertas, consultas e ações de resposta. Sysmon fornece telemetria que pode alimentar uma análise, mas não é, por si só, uma plataforma completa de EDR. Recursos de contenção, gestão central e detecção dependem de outras ferramentas e processos.
+
+**Evento e alerta:** evento é um registro de uma ocorrência observada. Alerta é uma sinalização produzida por uma regra, mecanismo ou analista ao interpretar um ou mais dados como merecedores de atenção. Muitos eventos podem não gerar alertas; um alerta pode combinar eventos e outras fontes. Confundir os conceitos faz parecer que todo registro é incidente confirmado ou que ausência de alerta equivale a ausência de atividade.
+
+## Perguntas frequentes
+
+### Sysmon detecta malware automaticamente?
+
+Não no sentido de classificar toda atividade como maliciosa. Ele registra telemetria configurada. Regras analíticas, produtos complementares e profissionais usam os eventos para encontrar padrões suspeitos e decidir o que investigar. A qualidade da detecção depende tanto da cobertura e do contexto como da análise aplicada.
+
+### Se não encontrei um evento, posso concluir que a atividade não aconteceu?
+
+Não sem verificar se o host estava coberto, se aquele tipo de evento era coletado, se o filtro o permitia, se os registros foram encaminhados e se a retenção inclui a janela pesquisada. A ausência pode indicar que não houve a atividade, mas também pode ser consequência de uma lacuna de observabilidade.
+
+A escolha deve ser orientada por objetivos, capacidade de armazenamento, retenção, privacidade e operação. Uma coleta ampla pode ser adequada quando existe capacidade de processar e proteger os dados; em outros ambientes, uma política seletiva e revisada fornece melhor relação entre custo e utilidade. A decisão precisa ser explícita, documentada e acompanhada.
+
+### Um evento de processo ou rede confirma comprometimento?
+
+Não. Ele confirma que uma atividade foi registrada com determinados atributos, sujeito à qualidade da fonte. É necessário validar contexto, identidade do executável, relações temporais e evidências independentes. A conclusão pode ser “suspeito”, “explicado por atividade legítima” ou “inconclusivo”, conforme o conjunto disponível.
+
+O ambiente muda: programas, funções de servidores, padrões administrativos e objetivos de detecção evoluem. Uma política que antes era equilibrada pode se tornar ruidosa ou insuficiente. Revisões periódicas e após incidentes ajudam a manter a coleta alinhada às perguntas que a equipe precisa responder e a identificar exclusões perigosas ou volume inesperado.
+
+## Relação com o capítulo 6
+
+No capítulo 6 da versão original do manuscrito, Sysmon se relaciona à discussão de detecção como uma fonte de evidência para observar atividade em endpoints Windows. A ideia central para o leitor é compreender que telemetria amplia o que pode ser investigado, mas seu significado depende da configuração, da preservação e da correlação. Saber quais eventos foram coletados — e quais não foram — é parte essencial de uma conclusão defensiva responsável.

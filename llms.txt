@@ -1,20 +1,14 @@
 # Confronto Cibernético
 
-Site oficial do livro de Hiago Kin Levi, publicado pela Editora Brasport. Conteúdo em português do Brasil sobre ameaças persistentes avançadas, resposta a incidentes, Black Teams, inteligência de ameaças, contenção, métricas e melhoria contínua.
+Site do livro Confronto Cibernético, de Hiago Kin Levi, publicado pela Editora Brasport. Conteúdo em português do Brasil sobre resposta a incidentes, APTs, inteligência de ameaças, investigação e defesa.
 
-> Este arquivo facilita a descoberta das páginas. Cada trecho indica seu capítulo na versão original fornecida pelo autor. A edição Brasport tem oito capítulos e pode ter títulos ou paginação diferentes. As citações devem apontar para a página temática e atribuir o livro e o autor.
+## Páginas principais
 
-- [Livro e edições](https://confrontocibernetico.com.br/)
-- [Trechos organizados por capítulo](https://confrontocibernetico.com.br/capitulos/)
-- [O que é uma APT](https://confrontocibernetico.com.br/capitulos/o-que-e-uma-apt/)
-- [Fases da resposta a incidentes](https://confrontocibernetico.com.br/capitulos/fases-resposta-incidentes-nist/)
-- [Confronto cibernético](https://confrontocibernetico.com.br/capitulos/confronto-cibernetico-resposta-proativa/)
-- [Limitações da resposta tradicional](https://confrontocibernetico.com.br/capitulos/limitacoes-resposta-tradicional-apts/)
-- [Black Team: Red, Blue e inteligência](https://confrontocibernetico.com.br/capitulos/black-team-red-blue-inteligencia/)
-- [Sinais de atividade APT](https://confrontocibernetico.com.br/capitulos/identificacao-sinais-apt-incidente/)
-- [Estrutura de um Black Team](https://confrontocibernetico.com.br/capitulos/estrutura-equipe-black-team/)
-- [Contenção, erradicação e recuperação](https://confrontocibernetico.com.br/capitulos/contencao-erradicacao-recuperacao/)
-- [MTTD, MTTR e métricas](https://confrontocibernetico.com.br/capitulos/metricas-mttd-mttr-resposta-apts/)
-- [Análise pós-incidente](https://confrontocibernetico.com.br/capitulos/analise-pos-incidente-melhoria-continua/)
-- [Referências para estudo](https://confrontocibernetico.com.br/capitulos/referencias-nist-mitre-apt/)
-- [Imprensa e contato](https://confrontocibernetico.com.br/imprensa/)
+- Site e informações sobre o livro: https://confrontocibernetico.com.br/
+- Trechos por capítulo da versão original: https://confrontocibernetico.com.br/capitulos/
+- Artigos temáticos: https://confrontocibernetico.com.br/artigos/
+- Glossário pesquisável: https://confrontocibernetico.com.br/glossario/
+- Catálogo legível por máquina dos verbetes: https://confrontocibernetico.com.br/glossario/catalogo.json
+- Sitemap XML com todas as páginas HTML: https://confrontocibernetico.com.br/sitemap.xml
+
+As páginas individuais têm URLs permanentes, metadados canônicos, Open Graph e dados estruturados em JSON-LD. A navegação e o conteúdo estão disponíveis no HTML sem exigir JavaScript.

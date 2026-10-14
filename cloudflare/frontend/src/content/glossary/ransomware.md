@@ -1,0 +1,75 @@
+# Ransomware
+
+## Definição e alcance
+
+Ransomware, também chamado de sequestro digital, é um malware ou uma operação criminosa que restringe o acesso a dados ou sistemas e exige pagamento para supostamente restabelecê-lo, evitar a divulgação de informações ou encerrar outra forma de pressão. A restrição pode resultar de criptografia, bloqueio de contas, interrupção de serviços, alteração de configurações ou combinação desses meios. Em muitos incidentes, a ameaça não se limita aos arquivos que deixaram de abrir: os operadores podem também copiar dados e ameaçar publicá-los, contatar clientes, interromper processos críticos ou prolongar a indisponibilidade.
+
+A cobrança costuma vir acompanhada de instruções em uma nota, tela, mensagem ou canal indicado pelos criminosos. Essa mensagem é uma alegação do adversário: não prova que os dados foram criptografados de modo irrecuperável, que houve exfiltração, que a chave oferecida funcionará, nem que o pagamento produzirá o resultado prometido. A equipe deve tratar cada afirmação como hipótese a verificar, preservando a mensagem como evidência.
+
+## Como o impacto se forma
+
+A criptografia maliciosa transforma arquivos em conteúdo que os aplicativos e usuários não conseguem interpretar sem uma chave adequada. O processo pode atingir uma seleção de extensões ou diretórios, compartilhamentos de rede, máquinas virtuais e sistemas de armazenamento acessíveis à conta comprometida. Alguns programas também alteram nomes ou extensões, deixam notas e tentam remover cópias de recuperação. Há variantes que apenas bloqueiam a interface ou o acesso, sem criptografar todos os dados. A aparência de um arquivo danificado não basta para determinar a técnica usada nem a possibilidade de recuperação.
+
+O alcance depende das permissões e da conectividade que o operador conseguiu obter. Uma estação de trabalho pode servir de ponto de partida para alcançar pastas compartilhadas; uma conta administrativa pode ampliar o impacto; e sistemas de gestão, virtualização, identidade ou backup podem concentrar efeitos desproporcionais. A propagação pode ocorrer por ações do invasor, por mecanismos do próprio malware, por ferramentas administrativas utilizadas de forma abusiva ou pela execução de um arquivo em diversos computadores. Não se deve presumir que o código se espalhou sozinho.
+
+Em operações contemporâneas, a intrusão pode anteceder a criptografia por horas ou dias. O agente pode descobrir a rede, elevar privilégios, capturar credenciais, manter acesso e localizar informações valiosas antes de iniciar a fase visível. A exfiltração, quando ocorre, pode ser uma etapa separada: os dados são copiados para fora e só depois surge a ameaça de divulgação. Portanto, restaurar arquivos não elimina necessariamente a presença do invasor, a exposição de dados nem o meio usado para voltar à rede.
+
+## O termo na investigação
+
+Ransomware é útil como rótulo quando já há sinais de extorsão vinculada à restrição de acesso. Ele ajuda a mobilizar resposta técnica e executiva, mas deve ser acompanhado de qualificadores: quais ativos estão afetados, que tipo de bloqueio foi observado, se existe nota de resgate, se a cópia de dados foi confirmada ou apenas alegada e qual é o grau de confiança em cada conclusão. Em relatórios, distinguir fato observado, relato de usuário e inferência analítica torna o diagnóstico mais confiável.
+
+A investigação costuma reconstruir a sequência anterior ao impacto: primeiro acesso conhecido, contas usadas, sistemas alcançados, mudanças de privilégios, ferramentas executadas, conexões externas, preparação de dados, início da criptografia e ações de contenção. Essa linha do tempo pode mostrar se o evento foi localizado ou coordenado, se há outros pontos de entrada e se a interrupção foi deliberada. O horário em que a nota apareceu é apenas um marco; não necessariamente corresponde ao início da intrusão.
+
+## Evidências que ajudam a reconhecer e delimitar
+
+Para identificar a atividade e sua extensão, preservam-se, quando disponíveis, registros de eventos, telemetria de endpoint, alertas do antivírus ou EDR, histórico de autenticação, logs de VPN e acesso remoto, auditoria de arquivos, inventários, dados de firewall e proxy, registros de DNS, trilhas de administração em nuvem e evidências de backup. Nomes de arquivos, notas, amostras suspeitas e horários também podem ser úteis. O valor de cada fonte depende de sua cobertura, retenção, sincronização de relógio e resistência a alterações pelo invasor.
+
+A análise de credenciais é central. A equipe deve verificar quais contas autenticaram nos ativos afetados, de onde vieram as sessões, que privilégios tinham e se houve uso anômalo de contas de serviço, administradores ou fornecedores. Uma senha redefinida pode não encerrar sessões já abertas, tokens roubados ou outros meios de autenticação. Por isso, a resposta precisa considerar sessões, chaves, tokens, segredos de automação e relações de confiança, não apenas a troca de senhas dos usuários diretamente atingidos.
+
+A hipótese de exfiltração exige evidências próprias. Volume e destino de tráfego, acessos incomuns a repositórios, compactação ou preparação de arquivos, registros de serviços externos e relatos posteriores de publicação podem contribuir para a avaliação. Porém, tráfego elevado pode ter explicações legítimas, e a falta de registros não demonstra que nada foi copiado. A conclusão pode permanecer indeterminada, especialmente quando a retenção é curta, os dados não são inspecionados ou o invasor usou canais criptografados comuns.
+
+## Resposta e recuperação segura
+
+A resposta começa por conter o risco de expansão e proteger pessoas e serviços essenciais. Conforme o cenário, isso pode exigir desconectar ativos da rede, restringir acessos remotos, bloquear indicadores, suspender contas suspeitas e limitar conexões entre segmentos. As medidas devem ser coordenadas: uma contenção precipitada pode interromper serviços críticos ou alertar o invasor, enquanto uma demora pode permitir mais criptografia ou extração. A equipe deve manter um registro das decisões, dos ativos afetados e das exceções operacionais.
+
+A restauração segura depende de cópias cuja integridade e isolamento foram avaliados. Antes de reconectar um backup, confirme que ele não foi alterado, que a origem não está contaminada e que as credenciais utilizadas para acessá-lo são confiáveis. Escolha uma ordem de restauração baseada nas dependências dos serviços e valide os sistemas em ambiente controlado. Restaurar todos os equipamentos em sequência sem investigar a entrada inicial pode devolver à rede a mesma vulnerabilidade ou persistência que permitiu o ataque.
+
+A remoção do malware aparente não basta para declarar o ambiente limpo. A recuperação deve incluir correção do acesso inicial, revisão de privilégios, redefinição planejada de credenciais e revogação de sessões ou tokens suspeitos, reconfiguração de sistemas afetados, atualização de controles e monitoramento reforçado. O momento das trocas importa: credenciais novas inseridas em um dispositivo ainda comprometido podem ser capturadas novamente. Alterações de identidade e acesso precisam ser feitas em uma ordem que evite ampliar a interrupção e permita validar os resultados.
+
+O retorno à produção deve ser gradual e observável. Testes funcionais confirmam que aplicações e dados são utilizáveis; monitoramento de autenticação, processos e conexões ajuda a detectar atividade residual. A validação precisa envolver responsáveis pelos serviços, segurança, infraestrutura e áreas operacionais, pois uma aplicação tecnicamente disponível pode ainda produzir resultados incorretos ou depender de componentes não restaurados. Mantenha critérios claros para avançar, pausar ou reverter cada etapa.
+
+## Pagamento, negociação e limites da promessa
+
+Pagar não garante uma chave funcional, a recuperação integral, a eliminação de cópias, o silêncio dos criminosos nem o fim do acesso. A promessa é feita por uma parte interessada em receber dinheiro e não constitui garantia verificável. Mesmo quando uma ferramenta de descriptografia é entregue, arquivos podem estar corrompidos, ausentes ou depender de componentes que não foram recuperados. A decisão sobre pagamento envolve aspectos técnicos, legais, financeiros, de continuidade e de política organizacional; não pode ser deduzida somente da existência de uma nota.
+
+## Distinções e erros de interpretação
+
+Ransomware não é sinônimo de qualquer malware. Um programa malicioso pode roubar informações, espionar ou abrir acesso sem exigir resgate nem restringir dados. Inversamente, uma operação de extorsão pode usar ferramentas legítimas e ações humanas, sem que um único executável seja responsável por todo o evento. Chamar o incidente de ransomware descreve a finalidade ou o efeito de extorsão, não necessariamente a arquitetura do código.
+
+## Exemplos hipotéticos
+
+**Exemplo hipotético 1 — compartilhamento indisponível.** Em uma empresa, vários diretórios de projeto passam a exibir arquivos com nomes alterados e uma nota de cobrança. O servidor de arquivos e algumas estações têm registros de processos suspeitos, enquanto o sistema de backup parece acessível. A equipe isola segmentos afetados, preserva logs e verifica as contas usadas para acessar o compartilhamento. A nota sustenta a hipótese de ransomware, mas a extensão real exige examinar outros sistemas, possíveis sessões administrativas e sinais de cópia de dados. A presença de um backup disponível não prova que ele esteja íntegro ou isolado.
+
+## Perguntas frequentes
+
+### Se os arquivos não foram criptografados, ainda pode ser ransomware?
+
+Pode haver uma operação de extorsão associada ao roubo de dados ou à ameaça de interrupção sem criptografia observável. Ainda assim, é mais preciso descrever o que foi constatado: ameaça de divulgação, acesso suspeito, indisponibilidade ou criptografia. Se não há evidência de acesso ou de restrição, registre a mensagem como alegação e investigue antes de classificar o evento como comprometimento confirmado.
+
+### Uma nota de resgate prova que houve roubo de dados?
+
+Não. A nota prova que uma mensagem foi encontrada, e pode indicar a alegação dos autores, mas não confirma cópia nem conteúdo. Correlacione-a com registros de acesso a repositórios, tráfego de saída, atividade de preparação de arquivos, fontes de telemetria e eventuais publicações. Quando a cobertura for insuficiente, declare a incerteza em vez de concluir que houve ou não houve exfiltração.
+
+### É seguro restaurar assim que os arquivos estiverem disponíveis?
+
+### Trocar as senhas resolve o problema de credenciais?
+
+É uma medida possível, não uma solução completa por si só. É preciso considerar contas privilegiadas e de serviço, tokens, chaves, sessões ativas, autenticação remota, segredos armazenados e delegações entre sistemas. Também é necessário garantir que as credenciais novas sejam definidas em dispositivos confiáveis. Uma troca isolada não remove persistência nem corrige permissões excessivas.
+
+### Desligar o computador afetado é sempre a melhor contenção?
+
+Não há resposta universal. Desconectar da rede pode impedir novas ações e preservar o equipamento ligado para coleta; desligá-lo pode reduzir atividade, mas também destruir evidência volátil e dificultar a análise. A decisão depende do risco de propagação, da criticidade do serviço, das ferramentas disponíveis e da orientação da equipe de resposta. Registre a decisão e evite que usuários tentem limpar ou reinstalar sistemas sem coordenação.
+
+## Relação com o capítulo original
+
+No capítulo 8 da versão original do manuscrito, o verbete pode ser usado como ponto de ligação entre a manifestação visível do ataque e as decisões de investigação e recuperação. O enquadramento mais útil mantém juntos bloqueio de dados, possível exfiltração, abuso de credenciais, propagação e validação dos backups. Essa leitura evita tratar ransomware como um problema isolado de descriptografia e ajuda a organizar perguntas sobre o que foi afetado, o que pode persistir e quais evidências ainda faltam.

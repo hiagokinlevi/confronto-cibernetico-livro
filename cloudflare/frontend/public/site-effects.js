@@ -2,6 +2,11 @@
   const progress = document.querySelector('.scroll-progress span');
   const backToTop = document.querySelector('.back-to-top');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('.mobile-menu nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      link.closest('details').open = false;
+    });
+  });
 
   let scheduled = false;
   const updateScroll = () => {

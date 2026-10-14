@@ -1,0 +1,99 @@
+# UEBA
+
+## Definição
+
+UEBA é a análise do comportamento de usuários e entidades para encontrar desvios de padrões esperados. A sigla vem de *User and Entity Behavior Analytics*. “Entidade” pode designar, conforme o ambiente e a plataforma, um dispositivo, uma conta de serviço, uma aplicação, um servidor, um endereço ou outro objeto observável na telemetria. O ponto central não é simplesmente acumular registros: é relacionar atividades a um sujeito ou objeto, estabelecer uma referência contextual do que costuma ocorrer e avaliar diferenças que possam merecer investigação.
+
+Um desvio não equivale a um incidente. A análise identifica afastamento de uma expectativa; a equipe apura se a mudança é legítima, equivocada ou maliciosa. UEBA apoia detecção e priorização, mas não determina intenção ou culpa.
+
+A expectativa pode vir do histórico da entidade, de grupos comparáveis, de regras organizacionais ou da combinação desses elementos. O que é “normal” depende de função, horário, ativos, processos, calendário, arquitetura e qualidade dos registros. A mesma atividade pode ser rotineira para uma equipe e excepcional para outra.
+
+## Como a análise funciona
+
+
+
+Em seguida, a solução estabelece referências e procura combinações relevantes. Pode comparar uma conta com seu próprio histórico, com pares de função semelhante, com regras explícitas ou com modelos estatísticos. “Comportamento” aqui é uma representação operacional baseada nos dados coletados, não uma leitura direta da intenção humana. Entre os sinais observáveis podem estar frequência e sequência de autenticações, horários, tipos de recurso acessados, volume relativo de operações, origem de uma sessão e relações entre contas, dispositivos e serviços.
+
+A relevância de uma diferença depende de raridade, sensibilidade e contexto. A ferramenta pode combinar sinais, pontuar risco ou apresentar uma sequência para revisão. Produtos variam: alguns explicam os fatores do alerta; outros exibem apenas um indicador agregado. A equipe deve conhecer essa diferença antes de interpretar a pontuação.
+
+O ciclo é iterativo: analistas examinam alertas, corrigem associações e ajustam referências. Mudanças de função, sistemas, sazonalidade e arquitetura podem tornar a linha de base antiga inadequada. Mudanças normais de rotina geram alertas; revisar a referência significa incorporar alterações confirmadas sem apagar sinais ainda relevantes.
+
+## Quando é útil
+
+UEBA pode ajudar quando a atividade suspeita não corresponde a uma regra simples e isolada, mas aparece como alteração de contexto ou como uma combinação de eventos. Uma autenticação válida, por si só, costuma ser ambígua. Se uma conta passa a acessar recursos que raramente utiliza, em um período incomum, e em seguida realiza operações fora de sua rotina, a visão comportamental pode ajudar a ordenar a investigação. Cada observação ainda requer validação independente.
+
+Também é útil em ambientes com muitas identidades e fontes de telemetria, nos quais uma equipe não consegue correlacionar manualmente todo o histórico. Uma análise centrada em conta, dispositivo ou serviço pode destacar relações que se perdem em alertas separados. Isso não substitui uma busca direcionada quando há uma hipótese específica: complementa a detecção baseada em indicadores, regras e contexto conhecido.
+
+O valor depende da pergunta: uso anômalo de credenciais, acesso incomum a dados, atividade de conta privilegiada ou relações novas entre usuários e ativos. UEBA perde utilidade quando faltam eventos essenciais, a identidade é incerta ou a rotina muda mais depressa que a referência.
+
+## Evidências e investigação
+
+Um alerta comportamental é uma pista que precisa ser reconstruída em uma linha do tempo. O analista procura a atividade que acionou a detecção, o período de comparação, a entidade avaliada, os atributos considerados e a explicação fornecida pela ferramenta. É importante distinguir o fato observado da interpretação do sistema: “a conta acessou um recurso fora do padrão” é uma observação; “a conta foi comprometida” é uma hipótese.
+
+A investigação pode comparar autenticações, eventos do diretório, concessões e alterações de privilégio, registros da aplicação, acessos a arquivos, ações administrativas e telemetria do dispositivo associado. A sequência temporal ajuda a avaliar se houve mudança de sessão, acesso a recurso sensível, criação de persistência ou outra ação relevante. Para cada fonte, devem-se confirmar horário, fuso, retenção, integridade e identificadores usados na correlação. Relógios desalinhados ou registros incompletos podem produzir uma narrativa falsa.
+
+
+
+No caso, preserve a evidência original e registre identificadores, janela temporal, eventos, fontes, contexto confirmado e incertezas. O escore pode priorizar, mas não substitui registros nem evidência independente. A confiança deve refletir a explicabilidade disponível.
+
+## Exemplos hipotéticos
+
+**Exemplo hipotético — mudança legítima de função.** Uma profissional passa a integrar uma equipe que administra outra aplicação. Nos primeiros dias, acessa recursos, horários e sistemas incomuns em comparação com seu histórico. UEBA pode destacar a mudança. A investigação verifica a alteração de função, a autorização, a data de início e os recursos previstos. Com a mudança confirmada, a referência individual e talvez o grupo de comparação precisam ser revistos. O alerta foi útil para revelar uma transição, mas não demonstrou comprometimento.
+
+**Exemplo hipotético — conta de serviço.** Uma conta usada habitualmente por uma integração começa a autenticar em um host diferente e a executar operações em horários novos. A análise comportamental pode juntar os sinais e direcionar a triagem. A equipe confere mudanças de configuração, janelas de manutenção, identidade do processo, proprietário do serviço e eventos correlatos. Uma atualização autorizada é uma explicação possível; uma alteração sem responsável ou justificativa aumenta a preocupação. O padrão incomum inicia a análise, não encerra a atribuição.
+
+## Diferenças em relação a conceitos próximos
+
+UEBA se sobrepõe a análises de segurança e a regras de detecção, mas enfatiza referências comportamentais ligadas a usuários e entidades.
+
+SIEM é uma plataforma ou função de gestão de eventos e informações de segurança, que coleta, relaciona e pesquisa registros e pode hospedar ou integrar análises comportamentais. UEBA é uma abordagem analítica, não sinônimo de SIEM. Um SIEM pode operar sem capacidades UEBA sofisticadas, e capacidades UEBA podem estar integradas a outras plataformas. A equipe deve verificar quais dados e funções estão realmente habilitados no ambiente, em vez de inferir recursos pelo nome comercial.
+
+Detecção de anomalias é uma categoria mais ampla: procura observações incomuns em dados ou sistemas. UEBA aplica esse tipo de raciocínio a usuários e entidades, com atenção a identidade, relações e contexto de atividade. Nem toda detecção de anomalias é UEBA, e uma implementação UEBA pode incluir regras e conhecimento do domínio além de métodos estatísticos. “Anômalo” também não significa necessariamente “ameaçador”.
+
+Análise de comportamento de usuários aparece às vezes como UBA, centrada em usuários. UEBA explicita entidades além das pessoas, como dispositivos ou contas técnicas, embora o escopo varie conforme o fornecedor. O termo não garante que todo tipo de entidade seja coberto, nem que a organização consiga distinguir uma pessoa de uma conta compartilhada. Pergunte quais objetos são modelados e como são vinculados às fontes.
+
+## Limitações e erros de interpretação
+
+A primeira limitação é a dependência de dados. Uma linha de base baseada em telemetria parcial pode refletir lacunas de coleta em vez de hábitos reais. Retenção curta, campos ausentes, duplicação, atraso de ingestão e identificadores inconsistentes reduzem a confiabilidade. Se uma aplicação crítica não envia eventos, a ausência de alerta sobre ela não é evidência de ausência de atividade.
+
+Falsos positivos são esperados, sobretudo durante mudanças normais de função ou rotina, viagens, plantões, projetos temporários, manutenção, fusões de ambientes ou adoção de novos serviços. Falsos negativos também ocorrem: uma atividade maliciosa pode imitar a rotina, usar caminhos pouco observáveis ou ocorrer em um contexto sem histórico suficiente. Um comportamento frequente pode ainda ser indevido; a repetição não transforma uma ação não autorizada em legítima.
+
+Um erro comum é converter raridade em intenção. Outro é interpretar um escore como probabilidade calibrada de comprometimento sem conhecer sua definição. Alguns indicadores refletem desvio estatístico, outros agregam fatores proprietários, e a escala pode não ser comparável entre produtos. É preciso entender o significado documentado e validar o alerta com evidências do caso.
+
+
+
+
+
+## Uso na resposta a incidentes
+
+Durante a triagem, UEBA pode ajudar a priorizar entidades com mudanças de comportamento e a conectar eventos dispersos. O analista deve preservar os dados que sustentam o alerta, identificar sua janela temporal e buscar atividade anterior e posterior. A pergunta não é apenas “o que saiu do padrão?”, mas também “que hipótese isso sustenta, que evidência a contradiz e que fonte independente pode confirmá-la?”.
+
+Se houver indícios consistentes de comprometimento, a equipe segue o processo de resposta aplicável: valida o escopo, avalia impacto, protege evidências e considera contenção proporcional. A decisão de revogar sessões, suspender conta, isolar dispositivo ou alterar permissões deve levar em conta risco operacional e autoridade responsável. UEBA pode contribuir com contexto e priorização; não determina sozinho a medida correta.
+
+Depois do incidente ou do falso positivo, a revisão deve identificar se a regra, a associação de identidade, o grupo de pares ou a linha de base precisa de ajuste. Não se deve simplesmente “ensinar” o modelo a aceitar toda atividade observada durante um incidente: isso pode normalizar comportamento adverso. Registre a razão da alteração, seu alcance, a aprovação e como será reavaliada. Uma revisão controlada preserva utilidade sem converter cada exceção em novo padrão.
+
+## Perguntas frequentes
+
+### UEBA identifica quem está atacando?
+
+Não por si só. Pode apontar uma conta ou entidade cuja atividade merece exame. Uma conta associada a um evento não prova que seu titular executou a ação: credenciais podem ser compartilhadas, automatizadas, roubadas ou mal atribuídas. A atribuição requer evidências adicionais e linguagem cuidadosa.
+
+### Um alerta UEBA é um incidente confirmado?
+
+Não. É um sinal de triagem. A equipe precisa validar a qualidade dos dados, confirmar o contexto e correlacionar fontes. O resultado pode ser incidente, atividade legítima, erro de configuração ou uma observação inconclusiva.
+
+### Uma linha de base deve permanecer fixa?
+
+Não. Deve acompanhar mudanças legítimas do ambiente e da função das entidades, com revisão registrada. Alterá-la sem análise pode esconder desvios relevantes; mantê-la congelada pode multiplicar alertas sem valor. O equilíbrio depende da cadência de mudança, da criticidade e da cobertura de dados.
+
+### UEBA substitui regras e investigação humana?
+
+Não. Regras conhecidas detectam condições explícitas, enquanto a análise comportamental acrescenta contexto relativo. A investigação humana avalia autorização, impacto e explicações que os dados não carregam. Os métodos são complementares.
+
+### Como avaliar uma implantação?
+
+Verifique quais entidades e fontes estão cobertas, como identidades são resolvidas, como o produto explica os sinais, quem revisa as referências e como falsos positivos e falsos negativos são acompanhados. Avalie também acesso aos dados, retenção, impacto operacional e processo para contestar ou corrigir classificações. O resultado útil é uma pista acionável, sustentada por evidência e interpretada no contexto do ambiente.
+
+## Relação com o capítulo
+
+Na versão original do manuscrito, o capítulo 6 oferece o contexto para situar UEBA entre as capacidades de detecção. O verbete detalha o princípio comportamental: observar desvios com referência contextual, investigar as evidências que os sustentam e revisar a linha de base quando a rotina legítima muda. Essa leitura evita tratar o alerta como conclusão e mantém o foco no trabalho defensivo de validação.

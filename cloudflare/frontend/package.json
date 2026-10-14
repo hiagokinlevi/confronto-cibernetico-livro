@@ -9,6 +9,12 @@
     "preview": "astro preview",
     "deploy": "astro build && wrangler deploy"
   },
-  "dependencies": {"astro": "^7.3.8"},
-  "devDependencies": {"wrangler": "^4.149.0"}
+  "dependencies": {
+    "astro": "^7.3.8",
+    "markdown-it": "^15.0.2"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.2.0",
+    "wrangler": "^4.149.0"
+  }
 }

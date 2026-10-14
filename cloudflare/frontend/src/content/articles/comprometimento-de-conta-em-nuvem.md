@@ -1,0 +1,143 @@
+# Comprometimento de conta em nuvem
+
+## A pergunta que orienta a resposta
+
+Quando surge uma indicação de uso indevido de uma identidade em nuvem, a pergunta decisiva não é apenas “qual senha devo trocar?”. É: quais sessões, credenciais, permissões e recursos ainda permitem que alguém aja, quais dados ou serviços podem ter sido alcançados e como interromper o acesso sem perder a capacidade de reconstruir o que ocorreu? Essa formulação impede que a resposta se reduza a uma ação visível, mas incompleta.
+
+Uma conta comprometida pode abrir caminhos que não passam por um computador corporativo reconhecido. Uma sessão web roubada, uma chave de API exposta, uma credencial de automação esquecida ou uma função assumida de forma indevida podem ser usadas diretamente contra interfaces administrativas do provedor. O agente pode criar uma máquina virtual, alterar uma política, gerar outra credencial ou consultar dados sem instalar malware em uma estação de trabalho. Por isso, a investigação precisa abranger identidades e plano de controle, além dos endpoints.
+
+O objetivo operacional é equilibrar quatro necessidades: reduzir a capacidade de ação do invasor, preservar registros úteis, proteger dados e serviços, e devolver o ambiente a um estado confiável. Em determinados casos, a contenção imediata tem prioridade, como diante de exclusão ativa ou exposição de dados em andamento. Em outros, uma revogação precipitada pode encerrar a única sessão administrativa legítima ou apagar contexto volátil. A equipe deve explicitar o risco, escolher uma sequência e registrar as decisões.
+
+Este artigo oferece um roteiro defensivo para equipes autorizadas. Ele não pressupõe que qualquer alerta prove uma intrusão, nem que a ausência de alertas prove segurança. Os exemplos de incidentes são hipotéticos e servem para organizar raciocínio, não para atribuir fatos a um caso real. A documentação do provedor, os contratos aplicáveis, os procedimentos internos e a arquitetura efetivamente implantada são as referências para cada decisão específica.
+
+## O que significa uma conta comprometida
+
+Comprometimento de conta em nuvem é o uso não autorizado, ou com autorização obtida por meio indevido, de uma identidade capaz de interagir com serviços de nuvem. A identidade pode pertencer a uma pessoa, aplicação, serviço, equipe ou processo automatizado. O acesso pode resultar de senha roubada, sessão sequestrada, chave vazada, segredo copiado, consentimento malicioso, abuso de federação ou concessão excessiva que foi explorada. A definição descreve o uso e o controle de identidade; não implica automaticamente que houve leitura de dados, dano ou exfiltração.
+
+## Contexto: por que a nuvem muda a investigação
+
+O acesso também é distribuído. Uma pessoa pode autenticar-se por um provedor de identidade corporativo, assumir uma função em uma conta de nuvem e, em seguida, alcançar um serviço de dados. A cadeia envolve registros e responsáveis distintos. Uma equipe pode possuir os logs do provedor de identidade, outra administrar a plataforma e outra ser dona do dado. A resposta só fica completa quando essas visões são correlacionadas com identificadores, horários e contexto comum.
+
+## Decisão inicial: confirmar, conter ou preservar
+
+A primeira decisão deve ser baseada em risco e reversibilidade. A equipe pode começar delimitando a identidade suspeita, o provedor, as contas ou projetos envolvidos, o intervalo temporal e a indicação que motivou o chamado. Registre a fonte do alerta, o horário de recebimento, o fuso e o identificador original do evento. Não transforme uma localização anômala ou um nome estranho em certeza; trate-os como pistas até obter contexto independente.
+
+Em paralelo, determine se há dano em curso. Sinais como recursos sendo criados sem autorização, políticas ficando mais permissivas, remoção de logs, operações destrutivas ou transferência ativa de dados justificam contenção rápida. A ação pode envolver bloquear uma credencial específica, revogar sessões, suspender uma identidade ou restringir uma função. A medida deve atingir o caminho suspeito com o menor impacto operacional possível, sempre que o risco permitir.
+
+Se a evidência aponta para uma sessão comprometida, mas ainda não identifica a origem, pode ser prudente preservar registros disponíveis e obter a visão de sessões e fatores de autenticação antes de alterações que mudem o estado. Isso não significa deixar um acesso perigoso ativo por conveniência. Significa coordenar a coleta que pode ser feita rapidamente com a interrupção, e documentar o motivo quando a proteção exigir agir antes de uma captura completa.
+
+## Fontes de evidência e limites
+
+As trilhas de auditoria do provedor são uma fonte central para reconstruir operações administrativas: autenticações, chamadas de API, alterações de políticas, criação ou remoção de recursos e tentativas de acesso. O conteúdo disponível depende do serviço, da configuração, da região, da retenção e do plano contratado. Confirme se a trilha estava habilitada no período, quais categorias cobria, se foi centralizada e quem pode modificá-la. Uma busca sem resultados em uma trilha incompleta não demonstra ausência de atividade.
+
+Registros do provedor de identidade ajudam a entender autenticações, fatores, federação, consentimentos, revogação de sessões e riscos detectados. Compare o identificador da sessão ou do principal, método de autenticação, dispositivo informado, endereço de origem e sequência temporal. Endereço geográfico aproximado, agente de usuário ou impressão de dispositivo podem ser imprecisos ou compartilhados. São atributos de contexto, não prova isolada de autoria.
+
+## Como avaliar alertas sem confundi-los com provas
+
+Um alerta de viagem impossível, autenticação fora do padrão ou sessão de novo dispositivo pode refletir roubo de credencial, uso de VPN corporativa, mobilidade legítima ou erro de classificação. Trate o sinal como motivo para verificar identidade, sessão, fator e atividade subsequente. A confirmação com o titular por canal confiável, combinada à validação de agenda ou atividade autorizada, pode reduzir a incerteza; uma resposta isolada não apaga evidência técnica em sentido contrário.
+
+A criação de um usuário ou uma política permissiva é um alerta de alto valor quando não há justificativa conhecida. Para atribuir a ação, examine o principal que a executou, a origem da sessão, a sequência de eventos e a existência de aprovação. Para avaliar o efeito, determine se a identidade criada autenticou-se, quais permissões recebeu e se foi removida ou alterada depois. A mudança pode ser maliciosa, um erro administrativo ou parte de uma implantação; a classificação emerge da cadeia de evidências.
+
+## Papéis e coordenação
+
+O responsável pela resposta a incidentes coordena escopo, prioridades, registro das decisões e passagem entre equipes. Ele deve manter uma linha do tempo comum e declarar o grau de confiança das conclusões. A função não exige que uma pessoa execute toda a análise; exige que a equipe saiba quem decide contenção, quem valida impacto e quem comunica mudanças relevantes.
+
+O proprietário do serviço ou dos dados estima impacto de negócio e identifica dependências. Ele pode confirmar se uma implantação era esperada, qual conta técnica a executa e quais aplicações dependem de uma função. Essa validação não deve se converter em autorização informal para deixar um caminho suspeito ativo. O responsável por segurança decide sobre risco técnico conforme o processo interno; jurídico, privacidade e comunicação avaliam deveres e mensagens, especialmente se houver possível acesso a dados regulados.
+
+## Revogação e contenção em camadas
+
+A troca de senha trata uma credencial específica. Ela pode ser necessária, mas não garante que sessões emitidas anteriormente deixem de funcionar, que tokens de atualização sejam invalidados, que chaves de API sejam revogadas ou que uma função associada perca acesso. O comportamento depende do provedor e do mecanismo de autenticação. Confirme na documentação atual e teste de forma controlada o efeito da revogação para o tipo de identidade envolvido.
+
+Comece por identificar todos os meios de autenticação atribuídos à identidade suspeita: senha, chaves, certificados, fatores, tokens, sessões federadas, segredos de aplicação e mecanismos de elevação. Determine quais estão expostos ou podem ter sido usados. Revogue ou rotacione os elementos afetados segundo o procedimento do provedor, e confirme que o acesso deixou de ser aceito. A confirmação precisa usar a visão autorizada de identidade e logs, sem realizar testes contra ambientes fora do escopo.
+
+Avalie credenciais temporárias e identidades assumidas. A revogação do principal de origem pode não encerrar imediatamente credenciais já emitidas para uma função. Políticas de sessão, duração e mecanismos de revogação variam. Se uma função foi assumida por identidade legítima ou suspeita, avalie o vínculo entre origem, sessão e permissões. A contenção deve cobrir a cadeia que mantém capacidade, não apenas o primeiro login observado.
+
+Revise funções, grupos, políticas e relações de confiança alteradas no período. Uma concessão criada pode persistir após a troca da senha. Remova ou suspenda mudanças não autorizadas com aprovação operacional e registro do estado anterior. Examine também elevação indireta: grupo que concede função, aplicação com consentimento amplo, relação entre contas, política herdada ou credencial de automação com permissão equivalente. O mapa precisa refletir a autorização efetiva, não apenas a lista visível de permissões diretas.
+
+Se houver recurso criado ou modificado, primeiro avalie se sua remoção imediata interrompe dano ou destrói evidência. Registre identificador, configuração relevante, região, proprietário, permissões e atividade disponível. Depois, isole, pare ou remova conforme a criticidade e o plano de resposta. Recursos podem ter dependências legítimas ou conter dados que precisam ser preservados. A equipe deve evitar tanto a permanência automática quanto a exclusão sem entendimento.
+
+## Investigar alterações e identidades associadas
+
+Construa uma sequência a partir do primeiro sinal confiável e amplie o intervalo para antes e depois. O ponto inicial pode ser uma autenticação, mas o primeiro evento visível não necessariamente é o primeiro acesso indevido. Inclua alterações de credenciais, consentimentos, grupos, funções, políticas de acesso, registros de auditoria e configurações de exportação. O objetivo é explicar como a capacidade foi obtida, o que ela permitiu e como poderia persistir.
+
+Procure identidades criadas, reativadas, renomeadas ou modificadas durante o intervalo. Relacione-as ao principal que fez a mudança e às permissões que receberam. Inclua contas técnicas e aplicações: um invasor pode preferir um principal de serviço porque sua atividade se parece com automação e pode sobreviver à redefinição de senha de um usuário. Verifique dono, finalidade declarada, segredo associado, último uso e vínculo com pipeline ou workload.
+
+Revise recursos novos e mudanças em recursos existentes, incluindo computação, armazenamento, rede, bancos, funções sem servidor e serviços de integração. O escopo depende do ambiente. Verifique se houve exposição pública, criação de cópias, alteração de retenção, exportação, configuração de acesso ou mudança de destino de logs. Exposição configurada indica risco e possibilidade; para afirmar leitura ou cópia, procure evidência de acesso, transferência ou outra fonte corroboradora.
+
+Considere tentativas de reduzir visibilidade: desativar auditoria, alterar retenção, excluir um destino, modificar alertas, criar exceções ou trocar políticas de monitoramento. Uma mudança em logs pode ser uma ação administrativa legítima ou uma tentativa de ocultação. Correlacione a identidade que alterou a configuração, autorização aprovada, estado anterior e eventos próximos. Preserve cópias fora do domínio administrativo potencialmente comprometido quando isso já estiver previsto na arquitetura.
+
+## Cenários hipotéticos e contrastantes
+
+No cenário hipotético A, uma pessoa relata uma notificação de login inesperada. O registro de identidade mostra uma sessão que o titular não reconhece, mas não há, até aquele momento, alteração de recursos. A resposta adequada é tratar o relato como sinal relevante, validar a sessão e os fatores, registrar a janela e examinar atividade associada. A inexistência de mudança no plano de controle reduz uma hipótese de impacto administrativo, mas não exclui acesso a dados nem uma sessão que ainda não agiu. A contenção da identidade e das sessões deve ser coordenada com a preservação dos eventos.
+
+No cenário hipotético B, uma função de nuvem altera uma política de armazenamento fora de uma janela de mudança. O log atribui a chamada a uma identidade técnica usada por uma automação conhecida. Isso cria duas hipóteses concorrentes: execução legítima mal documentada ou uso indevido da credencial da automação. A equipe compara pipeline, revisão de código, horário, origem, parâmetros da chamada e proprietário. Mesmo se a mudança for revertida, verifica se a política esteve aberta e se houve acesso durante o intervalo. A reversão restaura configuração; não responde à pergunta sobre exposição passada.
+
+No cenário hipotético C, surge um principal de serviço recém-criado com permissão ampla em um projeto pouco monitorado. O evento de criação é confirmado, mas o motivo ainda é desconhecido. A equipe preserva os detalhes da identidade, identifica quem a criou, revisa a política e procura autenticações e ações subsequentes. Se não houver justificativa e o risco for alto, suspende a identidade ou revoga suas credenciais, mantendo o registro da decisão. O alerta inicial não permite afirmar que dados foram copiados; o escopo depende dos eventos e da cobertura de logs.
+
+No cenário hipotético D, uma conta administrativa legítima realiza ações destrutivas durante uma falha operacional. Uma sequência incomum pode parecer comprometimento, mas uma mudança aprovada e uma automação defeituosa podem explicar os eventos. A equipe não deve ignorar risco só porque o principal é conhecido. Confirma o responsável por canal confiável, compara o artefato implantado e interrompe o processo que continua causando dano. A investigação separa abuso de identidade, erro de configuração e falha de automação, pois cada causa exige recuperação diferente.
+
+## Erros comuns que deixam acesso residual
+
+O erro mais frequente é trocar a senha e encerrar a resposta. Tokens e sessões podem permanecer válidos conforme a implementação; chaves e segredos de aplicação podem continuar ativos; uma função concedida ou uma identidade criada pode conservar acesso independente. A equipe deve inventariar e revogar os mecanismos relevantes, confirmar o efeito e procurar novas autenticações depois da contenção.
+
+Outro erro é remover rapidamente todos os recursos considerados estranhos. A exclusão pode interromper abuso, mas também elimina configuração e evidência volátil, ou pode afetar produção. Preserve primeiro o que for viável e seguro, registre os identificadores e tome a decisão de isolamento ou remoção com base no impacto. Se dano está em curso, contenha sem esperar por uma coleta perfeita, anotando o que não pôde ser preservado.
+
+Confiar apenas no painel visual do console pode ocultar mudanças fora da conta observada, categorias de log não habilitadas ou identidades indiretas. A equipe precisa checar escopo, filtros, regiões e contas, além de comparar fontes. Também é arriscado assumir que um log ausente significa que uma operação não ocorreu. Registre a limitação como lacuna, não como evidência negativa conclusiva.
+
+Por fim, encerrar quando o acesso inicial foi revogado deixa de fora persistência e recuperação. O invasor pode ter alterado uma política, criado uma credencial secundária, modificado uma integração ou preparado um recurso para uso posterior. Uma resposta precisa demonstrar por que os caminhos de acesso conhecidos foram removidos, quais áreas foram avaliadas e quais lacunas permanecem. “Não encontramos” só é útil quando acompanhado do escopo e da cobertura da busca.
+
+## Critérios para avaliar a resposta
+
+A contenção deve ter uma justificativa rastreável: qual caminho de acesso foi bloqueado, quais credenciais ou sessões foram revogadas, quem executou a mudança e como se confirmou o efeito? Verifique também se houve impacto colateral em aplicações legítimas e se uma identidade de recuperação confiável continua disponível. A contenção é efetiva quando reduz a capacidade suspeita sem introduzir um risco operacional maior que não foi reconhecido.
+
+A investigação deve explicar o alcance com limites explícitos. Quais alterações de plano de controle foram identificadas? Há evidência de acesso a dados? Quais logs estavam ausentes ou incompletos? Foram examinadas identidades associadas, funções assumidas, recursos temporários e mudanças de monitoramento? Se uma pergunta não puder ser respondida, indique o motivo e a evidência adicional que seria necessária. Não substitua a resposta por uma afirmação absoluta de que “nada foi acessado”.
+
+## Exercício de mesa autorizado
+
+Um exercício de mesa pode testar decisões sem tocar em contas produtivas. O facilitador apresenta, em etapas, um cenário hipotético: primeiro uma autenticação inesperada; depois uma alteração de política por identidade técnica; por fim, uma segunda credencial desconhecida. Os participantes usam somente diagramas, registros sintéticos ou um ambiente expressamente autorizado. Não são necessários comandos de exploração nem ações reais contra terceiros.
+
+Na primeira etapa, peça que a equipe classifique o evento como alerta ou evidência, determine quem valida a identidade e identifique quais registros devem ser preservados. Pergunte qual canal confiável usaria para confirmar a atividade e como verificaria se a sessão continua ativa. O propósito é testar a coordenação entre identidade, segurança e nuvem, não premiar uma resposta instantânea sem contexto.
+
+Na segunda etapa, apresente a chamada de alteração e uma justificativa incompleta de automação. O grupo deve definir quais fontes correlacionaria, quem pode confirmar a janela de mudança e como distinguir capacidade de uso efetivo. Peça que os participantes descrevam uma contenção proporcional e o impacto potencial em produção. Um resultado útil é revelar que ninguém sabe quem é dono do principal de serviço ou onde sua credencial está configurada.
+
+## Roteiro de implementação defensiva
+
+Antes de um incidente, mantenha inventário de identidades humanas e não humanas, finalidade, proprietário, permissões, método de autenticação e dependências. Para cada identidade técnica, registre onde o segredo ou mecanismo de federação é usado e como rotacioná-lo sem indisponibilidade. Remova contas sem responsável e privilégios não necessários por meio de mudança controlada. O inventário precisa de um processo de atualização; uma planilha que envelhece rapidamente pode dar falsa segurança.
+
+Configure as trilhas de auditoria relevantes para identidade, plano de controle e serviços de dados prioritários. Centralize cópias em um domínio administrativo separado quando a arquitetura e o provedor permitirem, e restrinja quem pode alterar retenção ou destino. Documente categorias, regiões, contas, período de retenção e limitações conhecidas. Teste periodicamente a consulta e a recuperação de registros, sem presumir que a configuração está correta só porque foi habilitada uma vez.
+
+Estabeleça um procedimento de incidente com contatos, autoridade para revogar acessos, caminhos de recuperação, critérios de escalonamento e registro de decisões. Inclua como preservar evidências, tratar dados pessoais e comunicar os donos de serviço. Prepare contas de emergência sob controles fortes e monitoração, evitando que a única rota de recuperação dependa da identidade em investigação. O procedimento deve indicar onde consultar as instruções atuais do provedor, pois detalhes de revogação mudam.
+
+Na recuperação, restaure políticas e recursos a partir de configuração conhecida, rotacione credenciais relacionadas e valide serviços com seus responsáveis. Reavalie se aplicações ou automações foram alteradas e se novos acessos apareceram após a contenção. Mantenha monitoramento reforçado por período definido internamente com base no risco e nos registros disponíveis. Finalize com um relatório que diferencie impacto confirmado, exposição possível, limites da evidência e ações pendentes.
+
+## Perguntas frequentes
+
+### Trocar a senha resolve o comprometimento?
+
+Não necessariamente. A troca pode interromper o uso daquela senha, mas sessões existentes, tokens, chaves de API, certificados, segredos de aplicações, funções e permissões podem continuar válidos. O efeito depende do provedor e do tipo de identidade. Revise os mecanismos associados, aplique revogações específicas e confirme nos registros que o acesso suspeito foi interrompido.
+
+### Uma permissão ampla prova que os dados foram lidos?
+
+Não. Ela mostra que determinada identidade poderia realizar ações, conforme o contexto efetivo da política. Para afirmar leitura, procure logs de plano de dados, registros da aplicação, evidência de transferência ou outra fonte pertinente. Se a cobertura não existia, informe que a leitura não pôde ser confirmada nem descartada; não converta capacidade em prova de uso.
+
+### Devo apagar imediatamente um recurso desconhecido?
+
+Depende do risco de dano e do valor da evidência. Se o recurso está causando impacto ativo, isolá-lo ou removê-lo pode ser necessário. Quando for seguro, capture identificadores, configuração e registros disponíveis antes. Considere dependências de produção, dados armazenados e orientação de resposta. Documente a decisão e o que a ação alterou.
+
+### Como saber se uma função assumida permanece acessível?
+
+Identifique a sessão e o principal que a assumiu, a duração e as regras de revogação aplicáveis. Consulte a documentação atual do provedor e os registros de autenticação e chamadas. Desabilitar a identidade de origem pode não invalidar imediatamente todas as credenciais temporárias já emitidas. A equipe deve tratar origem e sessão como objetos relacionados, mas distintos.
+
+### E se não houver logs de acesso aos dados?
+
+Registre a lacuna: serviço, intervalo, categoria ausente, retenção e cobertura. Use fontes alternativas disponíveis, como logs da aplicação, rede, inventário, trilhas administrativas e telemetria de armazenamento. Essas fontes podem aumentar ou reduzir a confiança, mas não necessariamente respondem à mesma pergunta. Seja preciso ao comunicar o que é conhecido e o que continua indeterminado.
+
+### Quando envolver jurídico e privacidade?
+
+Acione as funções previstas no procedimento quando houver possibilidade de dados pessoais, informação regulada, impacto contratual ou obrigação de comunicação. O momento e o conteúdo dependem da jurisdição, do tipo de dado e dos fatos confirmados. A equipe técnica deve preservar fatos e limites sem emitir conclusões legais por conta própria.
+
+## Relação com o capítulo 8
+
+No capítulo 8 de seu manuscrito original, dedicado a operações de resposta, contenção e recuperação, Hiago Kin Levi aborda o tipo de disciplina operacional necessário para transformar sinais em decisões coordenadas. Essa relação é útil aqui porque o comprometimento de identidade em nuvem raramente se resolve com uma ação isolada: exige ordenar preservação, contenção, investigação e retorno a um estado confiável, levando em conta dependências e evidências incompletas.
+
+O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura complementar dentro desse tema. Ele não substitui documentação técnica atualizada do provedor, treinamento prático, procedimentos aprovados nem o julgamento da equipe responsável. A aplicação concreta depende dos serviços utilizados, das evidências disponíveis e do contexto de cada organização.

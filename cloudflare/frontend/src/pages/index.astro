@@ -1,6 +1,9 @@
 ---
 import { chapters, chapterUrl } from '../data/chapters';
+import { articles, articleUrl } from '../data/articles';
 import ContactForm from '../components/ContactForm.astro';
+import BrandMeta from '../components/BrandMeta.astro';
+import MobileNav from '../components/MobileNav.astro';
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -8,15 +11,14 @@ import ContactForm from '../components/ContactForm.astro';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Confronto Cibernético | Livro sobre resposta a incidentes e APTs</title>
-  <meta name="description" content="Livro técnico de Hiago Kin Levi sobre resposta a incidentes cibernéticos, APTs, análise forense e inteligência tática. Veja sinopse, conteúdo e edições.">
+  <meta name="description" content="Confronto Cibernético, livro de Hiago Kin Levi sobre resposta a incidentes, APTs e inteligência tática. Conheça a obra, leia trechos e veja onde comprar.">
   <link rel="canonical" href="https://confrontocibernetico.com.br/">
   <meta property="og:type" content="book">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Confronto Cibernético — Hiago Kin Levi">
   <meta property="og:description" content="Um livro sobre operações de enfrentamento e resposta a ameaças persistentes avançadas, publicado pela Brasport.">
   <meta property="og:url" content="https://confrontocibernetico.com.br/">
-  <meta property="og:image" content="https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg">
-  <meta name="twitter:card" content="summary_large_image">
+  <BrandMeta />
   <link rel="stylesheet" href="/styles.css">
   <script src="/site-effects.js" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -24,14 +26,18 @@ import ContactForm from '../components/ContactForm.astro';
   <script type="application/ld+json" is:inline>
   {
     "@context": "https://schema.org",
+    "@graph": [
+    {"@type":"WebSite","@id":"https://confrontocibernetico.com.br/#website","url":"https://confrontocibernetico.com.br/","name":"Confronto Cibernético","inLanguage":"pt-BR"},
+    {
     "@type": "Book",
+    "@id": "https://confrontocibernetico.com.br/#livro",
     "name": "Confronto Cibernético: Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs)",
     "inLanguage": "pt-BR",
     "author": {"@type":"Person","name":"Hiago Kin Levi","sameAs":"https://www.linkedin.com/in/hiagokinlevi"},
     "publisher": {"@type":"Organization","name":"Editora Brasport","url":"https://www.editorabrasport.com.br/"},
     "description": "Obra sobre resposta a incidentes e enfrentamento de ameaças persistentes avançadas, com foco em black teams, inteligência tática, contenção e melhoria contínua.",
     "keywords": "resposta a incidentes cibernéticos, segurança cibernética, cibersegurança, cybersecurity, APTs, análise forense, inteligência tática",
-    "image": "https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg",
+    "image": {"@type":"ImageObject","url":"https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg","width":1100,"height":1600},
     "url": "https://confrontocibernetico.com.br/",
     "sameAs": [
       "https://www.goodreads.com/book/show/260581164",
@@ -41,6 +47,7 @@ import ContactForm from '../components/ContactForm.astro';
     "workExample": [
       {"@type":"Book","bookFormat":"https://schema.org/Paperback","isbn":"9786560961135","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758","offers":{"@type":"Offer","availability":"https://schema.org/PreOrder","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758"}},
       {"@type":"Book","bookFormat":"https://schema.org/EBook","isbn":"9786560961128","url":"https://play.google.com/store/books/details?id=jSwXEgAAQBAJ"}
+    ]}
     ]
   }
   </script>
@@ -53,9 +60,12 @@ import ContactForm from '../components/ContactForm.astro';
     <nav aria-label="Navegação principal">
       <a href="#livro">O livro</a>
       <a href="/capitulos/">Ler trechos</a>
+      <a class="nav-articles" href="/artigos/">Artigos</a>
+      <a href="/glossario/">Glossário</a>
       <a href="#autor">Autor</a>
       <a class="nav-cta" href="#comprar">Onde comprar <span aria-hidden="true">↗</span></a>
     </nav>
+    <MobileNav />
   </header>
 
   <main id="inicio">
@@ -66,7 +76,7 @@ import ContactForm from '../components/ContactForm.astro';
           <p class="eyebrow"><span class="status-dot"></span> PRÉ-VENDA ABERTA • EDITORA BRASPORT</p>
           <h1 id="titulo">Confronto<br><em>Cibernético.</em></h1>
           <p class="subtitle">Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs).</p>
-          <p class="hero-intro">Uma visão operacional sobre defesa, inteligência e resposta a incidentes, construída a partir da experiência de Hiago Kin Levi na linha de frente da segurança cibernética.</p>
+          <p class="hero-intro">Uma visão operacional sobre defesa, inteligência e resposta a incidentes, construída a partir da linha de frente de combate em segurança cibernética</p>
           <div class="hero-actions">
             <a class="button primary" href="https://www.editorabrasport.com.br/index.php?route=product/product&amp;product_id=1758" target="_blank" rel="noopener sponsored">Comprar na pré-venda <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="/capitulos/">Leia trechos por capítulo <span aria-hidden="true">↗</span></a>
@@ -125,6 +135,14 @@ import ContactForm from '../components/ContactForm.astro';
       </div>
     </section>
 
+    <section class="section home-articles" id="artigos">
+      <div class="section-label"><span class="line"></span> GUIAS TEMÁTICOS</div>
+      <div class="home-articles-heading"><div><h2>Encontre o assunto<br>que você procura.</h2><p>100 artigos sobre resposta a incidentes, APTs, investigação, contenção e inteligência. Cada tema aponta para um capítulo do livro e para uma referência técnica.</p></div><a class="text-link" href="/artigos/">Explorar todos os artigos <span aria-hidden="true">↗</span></a></div>
+      <div class="home-articles-grid">
+        {articles.filter((article) => ['Livro de resposta a incidentes cibernéticos', 'Ciclo de ataque de uma APT', 'Como usar MITRE ATT&CK na defesa', 'Resposta a ransomware em empresas'].includes(article.keyword)).map((article) => <a href={articleUrl(article)}><span>{article.category.toUpperCase()}</span><strong>{article.keyword}</strong><span>Ler artigo ↗</span></a>)}
+      </div>
+    </section>
+
     <section class="section author" id="autor">
       <div class="section-label"><span class="line"></span> 03 / O AUTOR</div>
       <div class="author-grid">
@@ -141,7 +159,7 @@ import ContactForm from '../components/ContactForm.astro';
         <article class="edition"><p class="edition-type">E-BOOK</p><h3>Google Play Livros</h3><p>Edição digital<br>ISBN 9786560961128</p><a class="button outline" href="https://play.google.com/store/books/details?id=jSwXEgAAQBAJ" target="_blank" rel="noopener sponsored">Ver no Google Play <span aria-hidden="true">↗</span></a></article>
         <article class="edition"><p class="edition-type">E-BOOK</p><h3>Amazon Kindle</h3><p>Edição digital<br>ASIN B0HM9QCGHB</p><a class="button outline" href="https://www.amazon.com.br/dp/B0HM9QCGHB" target="_blank" rel="noopener sponsored">Ver na Amazon <span aria-hidden="true">↗</span></a></article>
       </div>
-      <p class="source-note">O e-book também está na <a href="https://www.kobo.com/br/pt/ebook/confronto-cibernetico" target="_blank" rel="noopener sponsored">Kobo Brasil</a>. Para organizar suas leituras, consulte o <a href="https://www.goodreads.com/book/show/260581164" target="_blank" rel="noopener">Goodreads</a> ou o StoryGraph: <a href="https://app.thestorygraph.com/books/00ba3b9b-7c31-48cd-8570-3255dd9a93b6" target="_blank" rel="noopener">edição impressa</a> e <a href="https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e" target="_blank" rel="noopener">e-book</a>.</p>
+      <p class="source-note">O e-book também está na <a href="https://www.kobo.com/br/pt/ebook/confronto-cibernetico" target="_blank" rel="noopener sponsored">Kobo Brasil</a> e na <a href="https://latam.casadellibro.com/ebook-confronto-cibernetico-ebook/9786560961128/18910261" target="_blank" rel="noopener sponsored">Casa del Libro</a> (loja internacional). Para organizar suas leituras, consulte o <a href="https://www.goodreads.com/book/show/260581164" target="_blank" rel="noopener">Goodreads</a> ou o StoryGraph: <a href="https://app.thestorygraph.com/books/00ba3b9b-7c31-48cd-8570-3255dd9a93b6" target="_blank" rel="noopener">edição impressa</a> e <a href="https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e" target="_blank" rel="noopener">e-book</a>.</p>
     </section>
 
     <section class="press press-contact" id="imprensa"><div><p class="kicker">IMPRENSA & CONVERSAS</p><h2>Uma pauta sobre quem responde quando o incidente não termina.</h2><p>Para entrevistas, debates e convites, use o formulário. Capa, foto e informações editoriais estão disponíveis no <a href="/imprensa/">kit de imprensa</a>.</p></div><ContactForm context="Página do livro" /></section>
