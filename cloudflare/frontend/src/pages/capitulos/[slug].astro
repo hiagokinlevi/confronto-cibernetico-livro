@@ -2,6 +2,7 @@
 import { chapters, chapterUrl, type Chapter } from '../../data/chapters';
 import BrandMeta from '../../components/BrandMeta.astro';
 import MobileNav from '../../components/MobileNav.astro';
+import { chapterPageTitle } from '../../data/pageTitles';
 
 export function getStaticPaths() {
   return chapters.map((chapter) => ({ params: { slug: chapter.slug }, props: { chapter } }));
@@ -9,6 +10,7 @@ export function getStaticPaths() {
 
 const { chapter } = Astro.props as { chapter: Chapter };
 const canonical = `https://confrontocibernetico.com.br${chapterUrl(chapter)}`;
+const pageTitle = chapterPageTitle(chapter.slug, chapter.searchTitle);
 const prev = chapters[chapter.number - 2];
 const next = chapters[chapter.number];
 const bookId = 'https://confrontocibernetico.com.br/#livro';
@@ -29,9 +31,9 @@ const ld = {
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{chapter.searchTitle} | Confronto Cibernético</title>
+  <title>{pageTitle}</title>
   <meta name="description" content={chapter.description}><link rel="canonical" href={canonical}>
-  <meta property="og:type" content="article"><meta property="og:locale" content="pt_BR"><meta property="og:title" content={`${chapter.searchTitle} | Confronto Cibernético`}><meta property="og:description" content={chapter.description}><meta property="og:url" content={canonical}><BrandMeta />
+  <meta property="og:type" content="article"><meta property="og:locale" content="pt_BR"><meta property="og:title" content={pageTitle}><meta property="og:description" content={chapter.description}><meta property="og:url" content={canonical}><BrandMeta />
   <script type="application/ld+json" set:html={JSON.stringify(ld)} />
   <link rel="stylesheet" href="/styles.css">
   <script src="/site-effects.js" defer></script>

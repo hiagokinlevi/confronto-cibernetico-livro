@@ -20,6 +20,9 @@ class PageParser(HTMLParser):
         super().__init__()
         self.canonical = []
         self.og_images = []
+        self.og_titles = []
+        self.titles = []
+        self._title = False
         self.json_scripts = []
         self._json = False
 
@@ -29,16 +32,24 @@ class PageParser(HTMLParser):
             self.canonical.append(attributes.get("href"))
         if tag == "meta" and attributes.get("property") == "og:image":
             self.og_images.append(attributes.get("content"))
+        if tag == "meta" and attributes.get("property") == "og:title":
+            self.og_titles.append(attributes.get("content"))
+        if tag == "title":
+            self._title = True
         if tag == "script" and attributes.get("type") == "application/ld+json":
             self._json = True
 
     def handle_data(self, data):
+        if self._title:
+            self.titles.append(data)
         if self._json:
             self.json_scripts.append(data)
 
     def handle_endtag(self, tag):
         if tag == "script":
             self._json = False
+        if tag == "title":
+            self._title = False
 
 
 def check(condition, message):
@@ -109,6 +120,7 @@ def main():
     sitemap = ET.parse(ROOT / "sitemap.xml")
     urls = [item.text for item in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
     check(len(urls) == 236 and len(set(urls)) == 236, f"Sitemap incorreto: {len(urls)} URLs")
+    titles = {}
     for path in article_dirs:
         check(f"{DOMAIN}/artigos/{path.parent.name}/" in urls, f"Artigo ausente no sitemap: {path}")
     for path in term_dirs:
@@ -121,6 +133,13 @@ def main():
         page = target.read_text()
         check(f'<link rel="canonical" href="{url}"' in page, f"Canonical ausente: {url}")
         check('name="robots" content="noindex"' not in page, f"Página com noindex: {url}")
+        parsed = PageParser()
+        parsed.feed(page)
+        title = ''.join(parsed.titles).strip()
+        check(title and len(title) <= 55, f"Title longo ou ausente ({len(title)}): {url}: {title}")
+        check(len(parsed.og_titles) == 1 and len(parsed.og_titles[0]) <= 60, f"Open Graph title longo ou ausente: {url}")
+        check(title not in titles, f"Title duplicado: {title} em {titles.get(title)} e {url}")
+        titles[title] = url
     print("OK: home, capa, favicon, 100 artigos, 120 verbetes, catálogo JSON, llms.txt, metadados e 236 URLs estáticas no sitemap.")
 
 
