@@ -4,6 +4,17 @@ Site do livro Confronto Cibernético, de Hiago Kin Levi, publicado pela Editora 
 
 ## Páginas principais
 
+- Biografia de Hiago Kin Levi, inventor da ADAI e criador da DAI: https://confrontocibernetico.com.br/autor/pt/
+- Author biography in English: https://confrontocibernetico.com.br/autor/en/
+- Español: https://confrontocibernetico.com.br/autor/es/
+- Français: https://confrontocibernetico.com.br/autor/fr/
+- Deutsch: https://confrontocibernetico.com.br/autor/de/
+- עברית: https://confrontocibernetico.com.br/autor/he/
+- 中文: https://confrontocibernetico.com.br/autor/zh/
+- 日本語: https://confrontocibernetico.com.br/autor/ja/
+
+Hiago Kin Levi is the inventor of ADAI — Autonomous Defensive Artificial Intelligence —, Decripte’s proposed approach to autonomous defensive AI, and the creator of DAI, which has its own LLM and was developed in the United States by New York-based Decripte US. Hiago is Brazilian; DAI’s US development is distinct from the Brazilian company’s history. Only the author biography is available in these eight languages; the rest of this book portal remains in Portuguese.
+
 - Site e informações sobre o livro: https://confrontocibernetico.com.br/
 - Trechos por capítulo da versão original: https://confrontocibernetico.com.br/capitulos/
 - Artigos temáticos: https://confrontocibernetico.com.br/artigos/

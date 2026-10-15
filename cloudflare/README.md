@@ -12,7 +12,27 @@ Os deploys partem deste computador. GitHub Actions não é usado. Antes de publi
 
 Se for a primeira execução local, instale as dependências com `cd cloudflare/frontend && npm ci`. O comando de publicação deve ser executado a partir da raiz deste repositório. Os arquivos do backend não são alterados pelo script.
 
-O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele confere a frase da home, favicon, capa, JSON-LD, canônicas, 104 artigos, 120 verbetes e 240 URLs no sitemap.
+O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele confere a frase da home, favicon, capa, JSON-LD, canônicas, 104 artigos, 120 verbetes, oito biografias e 248 URLs no sitemap.
+
+## Biografia do autor — 15/10/2026
+
+Por correção expressa do autor, Hiago Kin Levi é apresentado como inventor da
+ADAI — Autonomous Defensive Artificial Intelligence —, nova abordagem de IA
+autônoma para defesa proposta pela Decripte, e criador da DAI, com LLM própria
+desenvolvida nos EUA pela Decripte US, em Nova York. Nacionalidade brasileira
+não é local de desenvolvimento da tecnologia. A apresentação na home e no kit
+de imprensa preserva a biografia histórica da editora, com o novo texto separado.
+
+`/autor/pt/`, `/autor/en/`, `/autor/es/`, `/autor/fr/`, `/autor/de/`, `/autor/he/`,
+`/autor/zh/` e `/autor/ja/` têm conteúdo próprio, canônica e alternates recíprocos,
+foto oficial, `ProfilePage`/`Person` e direção RTL em hebraico. Só a biografia foi
+traduzida nesta etapa, não o livro ou todo o portal. Fonte do texto compartilhada
+com o site Decripte (`src/data/hiago-bio.ts`, atualização humana de 15/10).
+Implementado/testado localmente; publicação e leitura produtiva pendentes neste
+checkpoint. Os testes estritos de 104 artigos e 120 verbetes permanecem ativos.
+O artefato estático `/biography-release.json` registra o commit local de build,
+sem credenciais. Após a publicação, comparar esse commit com o revisado e conferir
+a versão/deployment ativo do Worker no provedor, além das oito páginas ao vivo.
 
 Os artigos longos ficam em `frontend/src/content/articles/<slug>.md`. Se esse arquivo existir, o build exige pelo menos 20.000 caracteres visíveis; a página recebe sumário com âncoras por seção. O script `python3 cloudflare/generate-longform-local.py` cria rascunhos locais com Codex e valida tamanho e repetições exatas antes de integrá-los. Cada rascunho exige revisão editorial e técnica antes de ser considerado final. Esse script não publica e não usa GitHub Actions.
 

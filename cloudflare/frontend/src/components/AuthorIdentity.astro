@@ -1,0 +1,9 @@
+---
+import { BIO_LOCALES, BIO_LANGUAGES, HIAGO_BIO } from '../data/hiago-bio';
+const c = HIAGO_BIO.pt;
+---
+<div class="author-identity" data-hiago-inventor>
+  <p class="kicker">{c.role}</p><p>{c.paragraph}</p>
+  <nav aria-label="Biografia em outros idiomas">{BIO_LOCALES.map(lang=><a href={`/autor/${lang}/`} lang={lang==='pt'?'pt-BR':lang}>{BIO_LANGUAGES[lang]}</a>)}</nav>
+</div>
+<style>.author-identity{margin-block:24px}.author-identity nav{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:20px;font-size:14px}.author-identity a{color:var(--cream);text-underline-offset:4px}.author-identity a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}</style>
