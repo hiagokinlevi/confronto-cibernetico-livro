@@ -3,6 +3,7 @@
 import argparse
 import json
 from pathlib import Path
+import subprocess
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -25,9 +26,27 @@ def read_url(url):
         return response.status, response.read()
 
 
+def changed_paths_from_git(reference):
+    repo = ROOT.parent.parent
+    result = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=AM", reference, "HEAD", "--", "*.html"],
+        cwd=repo, text=True, capture_output=True, check=True,
+    )
+    paths = set()
+    for filename in result.stdout.splitlines():
+        path = Path(filename)
+        if path == Path("index.html"):
+            paths.add("/")
+        elif path.name == "index.html" and path.parts[0] in ("artigos", "glossario"):
+            paths.add("/" + "/".join(path.parts[:-1]) + "/")
+    assert paths, "Nenhuma página alterada encontrada no commit"
+    return tuple(sorted(paths))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--submit", action="store_true", help="enviar as URLs alteradas; sem este parâmetro apenas valida localmente")
+    parser.add_argument("--changed-ref", help="obter páginas HTML alteradas no Git desde esta referência até HEAD")
     args = parser.parse_args()
 
     files = list((ROOT / "public").glob("indexnow-*.txt"))
@@ -38,7 +57,8 @@ def main():
 
     sitemap = ET.parse(ROOT / "dist" / "sitemap.xml")
     indexed_urls = {item.text for item in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")}
-    urls = [BASE + path for path in CHANGED_PATHS]
+    changed_paths = changed_paths_from_git(args.changed_ref) if args.changed_ref else CHANGED_PATHS
+    urls = [BASE + path for path in changed_paths]
     assert all(url in indexed_urls for url in urls), "URL alterada ausente do sitemap"
     print(f"Verificação local: {len(urls)} URLs alteradas no sitemap; destino api.indexnow.org.")
     if not args.submit:
