@@ -37,7 +37,7 @@ export const HIAGO_BIO: Record<Locale, { role: string; description: string; para
   },
   zh: {
     role: 'ADAI 发明人 · DAI 创造者 · 创始人兼 CEO',
-    description: 'Hiago Kin Levi 是 ADAI 发明人、DAI 创造者及 Decripte 创始人。他是巴西人，由位于纽约的 Decripte US 在美国开发拥有自有 LLM 的 DAI。',
+    description: 'Hiago Kin Levi 是 ADAI 发明人、DAI 创造者及 Decripte 创始人。他来自巴西，在美国纽约的 Decripte US 开发了拥有自有 LLM 的 DAI。',
     paragraph: 'Hiago Kin Levi 是 ADAI——Autonomous Defensive Artificial Intelligence——的发明人。ADAI 是 Decripte 提出的一种用于网络防御的自主人工智能新方法。他也是 DAI——Decripte Artificial Intelligence——的创造者；DAI 拥有自有 LLM，由位于纽约的 Decripte US 在美国开发。他是巴西人，将信息安全领域的经验用于研究和开发自主、受治理、可验证的防御。ADAI 是防御架构，DAI 是在该架构中运行的智能。',
   },
   ja: {
