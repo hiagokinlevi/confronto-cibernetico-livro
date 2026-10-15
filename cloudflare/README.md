@@ -16,6 +16,13 @@ O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele co
 
 ## Biografia do autor — 15/10/2026
 
+**Revisão final verificada às 14h43 NY:** PR #3, fonte
+`ebdf48ab960d9fcc49e9e373b2d6ff3cffd79777`, versão Worker
+`d0cde1be-e0cc-40b1-acf0-4003a90178d5`, deployment
+`a7505412-3008-455a-bec9-515cf1a50a30`. A frase curta em chinês foi clarificada,
+sem alterar o significado, e as oito páginas/recibo produtivo foram reconferidos
+pelo publicador local. Os identificadores abaixo registram a primeira implantação.
+
 Por correção expressa do autor, Hiago Kin Levi é apresentado como inventor da
 ADAI — Autonomous Defensive Artificial Intelligence —, nova abordagem de IA
 autônoma para defesa proposta pela Decripte, e criador da DAI, com LLM própria
