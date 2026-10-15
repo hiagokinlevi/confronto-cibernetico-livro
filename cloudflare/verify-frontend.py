@@ -119,7 +119,16 @@ def main():
 
     sitemap = ET.parse(ROOT / "sitemap.xml")
     urls = [item.text for item in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-    check(len(urls) == 240 and len(set(urls)) == 240, f"Sitemap incorreto: {len(urls)} URLs")
+    check(len(urls) == 248 and len(set(urls)) == 248, f"Sitemap incorreto: {len(urls)} URLs")
+    languages = ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']
+    for language in languages:
+        page, schemas = parse_page(ROOT / 'autor' / language / 'index.html', f'{DOMAIN}/autor/{language}/')
+        check('data-hiago-inventor' in page and 'ADAI' in page and 'Decripte US' in page and 'LLM' in page, f'Biografia incompleta: {language}')
+        check(f'lang="{"pt-BR" if language == "pt" else language}"' in page, f'Idioma incorreto: {language}')
+        check(f'dir="{"rtl" if language == "he" else "ltr"}"' in page, f'Direção incorreta: {language}')
+        for alternate in languages:
+            check(f'href="{DOMAIN}/autor/{alternate}/"' in page, f'Alternativa ausente: {language}/{alternate}')
+        check(any(any(item.get('@type') == 'ProfilePage' for item in block.get('@graph', [])) for block in schemas), f'ProfilePage ausente: {language}')
     titles = {}
     for path in article_dirs:
         check(f"{DOMAIN}/artigos/{path.parent.name}/" in urls, f"Artigo ausente no sitemap: {path}")
@@ -140,7 +149,7 @@ def main():
         check(len(parsed.og_titles) == 1 and len(parsed.og_titles[0]) <= 60, f"Open Graph title longo ou ausente: {url}")
         check(title not in titles, f"Title duplicado: {title} em {titles.get(title)} e {url}")
         titles[title] = url
-    print("OK: home, capa, favicon, 104 artigos, 120 verbetes, catálogo JSON, llms.txt, metadados e 240 URLs estáticas no sitemap.")
+    print("OK: home, capa, favicon, 104 artigos, 120 verbetes, oito biografias, catálogo JSON, llms.txt, metadados e 248 URLs estáticas no sitemap.")
 
 
 if __name__ == "__main__":

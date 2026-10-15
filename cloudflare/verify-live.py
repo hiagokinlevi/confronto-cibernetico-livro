@@ -19,6 +19,8 @@ checks = {
     "/sitemap.xml": "/artigos/resposta-a-ransomware-em-empresas/",
     "/favicon.png": None,
 }
+for language in ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']:
+    checks[f'/autor/{language}/'] = 'data-hiago-inventor'
 for path, expected in checks.items():
     for attempt in range(5):
         try:

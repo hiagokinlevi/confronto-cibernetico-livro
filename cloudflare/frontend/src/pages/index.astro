@@ -4,6 +4,9 @@ import { articles, articleUrl } from '../data/articles';
 import ContactForm from '../components/ContactForm.astro';
 import BrandMeta from '../components/BrandMeta.astro';
 import MobileNav from '../components/MobileNav.astro';
+import AuthorIdentity from '../components/AuthorIdentity.astro';
+import { HIAGO_BIO } from '../data/hiago-bio';
+const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'https://confrontocibernetico.com.br/#author',name:'Hiago Kin Levi',description:HIAGO_BIO.pt.description,jobTitle:HIAGO_BIO.pt.role,url:'https://confrontocibernetico.com.br/autor/pt/',nationality:{'@type':'Country',name:'Brazil'},knowsAbout:['ADAI — Autonomous Defensive Artificial Intelligence','DAI — Decripte Artificial Intelligence','Cybersecurity']};
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -33,7 +36,7 @@ import MobileNav from '../components/MobileNav.astro';
     "@id": "https://confrontocibernetico.com.br/#livro",
     "name": "Confronto Cibernético: Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs)",
     "inLanguage": "pt-BR",
-    "author": {"@type":"Person","name":"Hiago Kin Levi","sameAs":"https://www.linkedin.com/in/hiagokinlevi"},
+    "author": {"@type":"Person","@id":"https://confrontocibernetico.com.br/#author","name":"Hiago Kin Levi","sameAs":"https://www.linkedin.com/in/hiagokinlevi"},
     "publisher": {"@type":"Organization","name":"Editora Brasport","url":"https://www.editorabrasport.com.br/"},
     "description": "Obra sobre resposta a incidentes e enfrentamento de ameaças persistentes avançadas, com foco em black teams, inteligência tática, contenção e melhoria contínua.",
     "keywords": "resposta a incidentes cibernéticos, segurança cibernética, cibersegurança, cybersecurity, APTs, análise forense, inteligência tática",
@@ -51,6 +54,7 @@ import MobileNav from '../components/MobileNav.astro';
     ]
   }
   </script>
+  <script type="application/ld+json" set:html={JSON.stringify(authorSchema)} />
 </head>
 <body id="top">
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
@@ -147,7 +151,7 @@ import MobileNav from '../components/MobileNav.astro';
       <div class="section-label"><span class="line"></span> 03 / O AUTOR</div>
       <div class="author-grid">
         <img src="/assets/hiago-kin-levi.jpeg" alt="Retrato de Hiago Kin Levi" width="1086" height="1448" loading="lazy">
-        <div><p class="kicker">HIAGO KIN LEVI</p><h2>Experiência de campo transformada em livro.</h2><p>Especialista em resposta a incidentes e defesa cibernética desde 2007, Hiago Kin Levi atua na investigação e coordenação de incidentes em organizações públicas e privadas. É presidente fundador da ABRASECI e presidente do IBRINC, conforme biografia publicada pela editora.</p><p>Em sua apresentação pública da obra, o autor também compartilhou a dimensão humana do trabalho de proteção e seu compromisso de destinar a renda das vendas à Ten Yad.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7515399598220304384/" target="_blank" rel="noopener">Leia o relato do autor <span aria-hidden="true">↗</span></a></div>
+        <div><p class="kicker">HIAGO KIN LEVI</p><h2>Experiência de campo transformada em livro.</h2><AuthorIdentity /><p>Especialista em resposta a incidentes e defesa cibernética desde 2007, Hiago Kin Levi atua na investigação e coordenação de incidentes em organizações públicas e privadas. É presidente fundador da ABRASECI e presidente do IBRINC, conforme biografia publicada pela editora.</p><p>Em sua apresentação pública da obra, o autor também compartilhou a dimensão humana do trabalho de proteção e seu compromisso de destinar a renda das vendas à Ten Yad.</p><a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7515399598220304384/" target="_blank" rel="noopener">Leia o relato do autor <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
