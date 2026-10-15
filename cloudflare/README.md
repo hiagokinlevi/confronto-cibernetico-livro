@@ -28,8 +28,15 @@ de imprensa preserva a biografia histórica da editora, com o novo texto separad
 foto oficial, `ProfilePage`/`Person` e direção RTL em hebraico. Só a biografia foi
 traduzida nesta etapa, não o livro ou todo o portal. Fonte do texto compartilhada
 com o site Decripte (`src/data/hiago-bio.ts`, atualização humana de 15/10).
-Implementado/testado localmente; publicação e leitura produtiva pendentes neste
-checkpoint. Os testes estritos de 104 artigos e 120 verbetes permanecem ativos.
+Implementado/testado/implantado/verificado em operação em 15/10/2026. PR #1,
+fonte `f76fe63654d72332cba0ab9f57daf3a540b3df69`, Worker versão
+`fdc9b836-58da-429e-a13c-71f5624d2759`, deployment
+`533021a8-4c73-4534-adc8-a84a94870260`. Marcador de build confirmado no domínio
+principal e www, oito páginas de autor verificadas por HTTP e navegação no
+navegador interno, fotos carregadas, RTL e ausência de overflow. Home, imprensa,
+glossário, artigos e sitemap responderam corretamente. Os testes estritos de
+104 artigos e 120 verbetes permanecem ativos. Atualização do índice Google ainda
+não comprovada; este seguimento documental não modifica o artefato publicado.
 O artefato estático `/biography-release.json` registra o commit local de build,
 sem credenciais. Após a publicação, comparar esse commit com o revisado e conferir
 a versão/deployment ativo do Worker no provedor, além das oito páginas ao vivo.
