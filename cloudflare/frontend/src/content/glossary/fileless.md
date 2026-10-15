@@ -74,4 +74,4 @@ Separar observações de interpretação. Informe se foi visto conteúdo em mem�
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o termo pode ser situado entre as técnicas de ataque que desafiam a leitura baseada apenas em artefatos persistentes. A conexão prática é direta: entender a execução fileless amplia o foco da investigação para processos, memória e contexto operacional, sem tratar a ausência de um arquivo como prova de ausência de intrusão.
+No capítulo 1 da versão original, o termo pode ser situado entre as técnicas de ataque que desafiam a leitura baseada apenas em artefatos persistentes. A conexão prática é direta: entender a execução fileless amplia o foco da investigação para processos, memória e contexto operacional, sem tratar a ausência de um arquivo como prova de ausência de intrusão.

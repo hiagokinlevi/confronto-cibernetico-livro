@@ -101,4 +101,4 @@ Ela pode ser parte da atividade investigada, mas deve ser descrita como tentativ
 
 ## Referência editorial
 
-Na versão original do manuscrito, o capítulo relacionado é o 1. O verbete destaca comportamentos e ativos atingidos.
+Na versão original, o capítulo relacionado é o 1. O verbete destaca comportamentos e ativos atingidos.

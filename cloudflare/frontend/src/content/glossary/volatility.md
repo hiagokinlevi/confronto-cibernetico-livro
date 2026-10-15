@@ -80,4 +80,4 @@ Não. Cada fonte responde a perguntas diferentes e tem lacunas próprias. Memór
 
 ## Relação com o capítulo 8
 
-Na versão original do manuscrito, o capítulo 8 é a referência para este verbete. O tema deve ser entendido como parte da investigação forense: analisar uma imagem de memória com atenção à qualidade da aquisição e à compatibilidade, interpretar os resultados como evidências contextualizadas e correlacioná-los antes de convertê-los em conclusões sobre o incidente.
+Na versão original, o capítulo 8 é a referência para este verbete. O tema deve ser entendido como parte da investigação forense: analisar uma imagem de memória com atenção à qualidade da aquisição e à compatibilidade, interpretar os resultados como evidências contextualizadas e correlacioná-los antes de convertê-los em conclusões sobre o incidente.

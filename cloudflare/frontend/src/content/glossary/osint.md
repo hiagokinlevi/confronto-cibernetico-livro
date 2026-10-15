@@ -70,4 +70,4 @@ Atribua cada afirmação à sua base: descreva o que a fonte mostra, depois apre
 
 ## Relação com o capítulo
 
-No capítulo 7 da versão original do manuscrito, OSINT se relaciona à disciplina de obter contexto a partir de material acessível publicamente. O verbete complementa essa abordagem ao enfatizar a pergunta de inteligência, a avaliação da proveniência e a distinção entre observação e inferência. Em operações defensivas, esse cuidado permite usar fontes abertas para orientar investigação e resposta sem atribuir a elas mais certeza ou autorização do que realmente oferecem.
+No capítulo 7 da versão original, OSINT se relaciona à disciplina de obter contexto a partir de material acessível publicamente. O verbete complementa essa abordagem ao enfatizar a pergunta de inteligência, a avaliação da proveniência e a distinção entre observação e inferência. Em operações defensivas, esse cuidado permite usar fontes abertas para orientar investigação e resposta sem atribuir a elas mais certeza ou autorização do que realmente oferecem.

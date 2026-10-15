@@ -76,4 +76,4 @@ Porque uma condição que permitiu a entrada pode existir em outros recursos ou 
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, este verbete se relaciona ao capítulo 1 por apresentar a ideia de entrada no ambiente como referência para entender as fases seguintes. A leitura do termo ajuda a manter clara a diferença entre descobrir um caminho possível, confirmar uma entrada e reconstruir o que aconteceu após ela.
+Na organização da versão original, este verbete se relaciona ao capítulo 1 por apresentar a ideia de entrada no ambiente como referência para entender as fases seguintes. A leitura do termo ajuda a manter clara a diferença entre descobrir um caminho possível, confirmar uma entrada e reconstruir o que aconteceu após ela.

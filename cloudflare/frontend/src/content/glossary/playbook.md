@@ -102,4 +102,4 @@ O roteiro orienta, mas fatos novos podem exigir desvio. Registre a razão, avali
 
 ## Relação com o capítulo 2
 
-No contexto do capítulo 2 da versão original, o conceito pode ser lido como a ponte entre uma estratégia geral de resposta e as decisões concretas diante de um evento. O roteiro dá forma documentada a responsabilidades, critérios e ações; seu valor, porém, depende de ser exercitado, mantido e aplicado com atenção às evidências do caso. Esta seção apresenta o conceito de modo independente e não reproduz o texto do manuscrito.
+No contexto do capítulo 2 da versão original, o conceito pode ser lido como a ponte entre uma estratégia geral de resposta e as decisões concretas diante de um evento. O roteiro dá forma documentada a responsabilidades, critérios e ações; seu valor, porém, depende de ser exercitado, mantido e aplicado com atenção às evidências do caso. Esta seção apresenta o conceito de modo independente e não reproduz o texto da versão original.

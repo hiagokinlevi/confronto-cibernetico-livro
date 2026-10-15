@@ -167,6 +167,6 @@ Uma lista de decisões e lacunas verificáveis: que dado faltou, quem não tinha
 
 Após mudanças importantes de arquitetura, identidade, fornecedores, criticidade ou retenção; depois de incidentes e exercícios; e em revisões periódicas compatíveis com o risco. Reavalie também quando uma fonte de telemetria deixa de operar ou uma exceção se prolonga. A frequência deve refletir a velocidade de mudança e a consequência de uma falha, e não um calendário copiado sem contexto.
 
-## Leitura relacionada ao capítulo do manuscrito
+## Leitura relacionada ao capítulo da versão original
 
-O capítulo 4 do manuscrito original trata das limitações da resposta tradicional diante de APTs. Essa discussão ajuda a compreender por que uma reação baseada em um alerta isolado ou em um controle único pode não acompanhar uma operação que muda de contexto e se prolonga no tempo. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura relacionada para refletir sobre essas limitações e sobre a necessidade de articular prevenção, visibilidade e resposta.
+O capítulo 4 da versão original trata das limitações da resposta tradicional diante de APTs. Essa discussão ajuda a compreender por que uma reação baseada em um alerta isolado ou em um controle único pode não acompanhar uma operação que muda de contexto e se prolonga no tempo. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura relacionada para refletir sobre essas limitações e sobre a necessidade de articular prevenção, visibilidade e resposta.

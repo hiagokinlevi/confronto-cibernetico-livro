@@ -84,4 +84,4 @@ Verifique se a fonte estava ativa, cobria aquele canal e preservou o período re
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o termo pode ser lido como uma peça de vocabulário para descrever o percurso de um estímulo até o alvo. Seu valor está em distinguir esse contato de interação, execução e impacto, dando à investigação uma linguagem precisa para dizer o que ocorreu e o que ainda precisa ser verificado.
+No capítulo 1 da versão original, o termo pode ser lido como uma peça de vocabulário para descrever o percurso de um estímulo até o alvo. Seu valor está em distinguir esse contato de interação, execução e impacto, dando à investigação uma linguagem precisa para dizer o que ocorreu e o que ainda precisa ser verificado.

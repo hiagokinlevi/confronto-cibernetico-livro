@@ -247,7 +247,7 @@ A falha pode mostrar que a regra bloqueou uma dependência, mas não decide sozi
 Não. O laboratório ajuda a compreender comportamento e testar procedimentos em condições controladas. Pode não refletir rotas, versões, carga, dependências ou políticas de produção. Uma mudança real requer validação apropriada no contexto da organização, autorização e monitoramento. O resultado do exercício deve explicitar suas limitações e orientar verificações adicionais.
 ## Leitura relacionada ao capítulo 8
 
-O capítulo 8 do manuscrito original trata de operações de resposta, contenção e recuperação. A segmentação durante um incidente se encaixa nesse ciclo porque traduz uma decisão de contenção em mudança observável, coordenada e reversível, conectada à continuidade dos serviços e à investigação. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer contexto editorial para essa discussão. Ele não substitui documentação técnica atualizada, treinamento, procedimentos específicos da organização nem o julgamento da equipe diante das condições concretas do incidente.
+O capítulo 8 da versão original trata de operações de resposta, contenção e recuperação. A segmentação durante um incidente se encaixa nesse ciclo porque traduz uma decisão de contenção em mudança observável, coordenada e reversível, conectada à continuidade dos serviços e à investigação. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer contexto editorial para essa discussão. Ele não substitui documentação técnica atualizada, treinamento, procedimentos específicos da organização nem o julgamento da equipe diante das condições concretas do incidente.
 
 
 ## O desenho da regra precisa caber na arquitetura

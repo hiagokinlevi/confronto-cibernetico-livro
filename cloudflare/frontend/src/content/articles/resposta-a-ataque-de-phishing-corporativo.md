@@ -170,4 +170,4 @@ Não. A resposta deve acompanhar o risco. Uma tentativa sem interação pode ped
 
 ## Leitura relacionada ao capítulo 8
 
-O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser apresentado como leitura relacionada ao capítulo 8 do manuscrito original, dedicado às operações de resposta, contenção e recuperação. Essa relação oferece um ponto de continuidade para quem estuda como transformar sinais de incidente em decisões operacionais. A leitura não substitui documentação técnica atualizada, treinamento, procedimentos da organização nem julgamento da equipe diante das evidências concretas.
+O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser apresentado como leitura relacionada ao capítulo 8 da versão original, dedicado às operações de resposta, contenção e recuperação. Essa relação oferece um ponto de continuidade para quem estuda como transformar sinais de incidente em decisões operacionais. A leitura não substitui documentação técnica atualizada, treinamento, procedimentos da organização nem julgamento da equipe diante das evidências concretas.

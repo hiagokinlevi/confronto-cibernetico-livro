@@ -100,4 +100,4 @@ Em geral, não pela condição de ausência de correção disponível. O ambient
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 4 é o ponto de referência para este verbete. O conceito ajuda a interpretar ataques em que a defesa precisa agir antes de contar com uma correção, mantendo separadas a falha técnica, a exploração observada e a condição temporal que caracteriza o zero-day.
+Na versão original, o capítulo 4 é o ponto de referência para este verbete. O conceito ajuda a interpretar ataques em que a defesa precisa agir antes de contar com uma correção, mantendo separadas a falha técnica, a exploração observada e a condição temporal que caracteriza o zero-day.

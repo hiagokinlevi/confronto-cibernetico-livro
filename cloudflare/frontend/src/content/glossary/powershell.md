@@ -64,4 +64,4 @@ Depois de conter a atividade conforme necessário, remova persistência ou acess
 
 ## Relação com o capítulo
 
-No capítulo 6 da versão original do manuscrito, PowerShell se relaciona ao conjunto de ferramentas que podem apoiar administração ou aparecer em uma intrusão. A leitura defensiva exige avaliar argumentos, origem e identidade de execução em conjunto. O nome, sozinho, não determina intenção.
+No capítulo 6 da versão original, PowerShell se relaciona ao conjunto de ferramentas que podem apoiar administração ou aparecer em uma intrusão. A leitura defensiva exige avaliar argumentos, origem e identidade de execução em conjunto. O nome, sozinho, não determina intenção.

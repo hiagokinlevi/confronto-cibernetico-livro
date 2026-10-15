@@ -92,4 +92,4 @@ Porque permite relacionar ativos a funções, locais, responsáveis e dependênc
 
 ## Relação com o capítulo original
 
-Na versão original do manuscrito, o capítulo 8 oferece o contexto de leitura para este termo. Neste glossário, OT serve como referência para interpretar tecnologias relacionadas à operação física e para lembrar que investigação e contenção precisam considerar o processo, seus responsáveis e suas condições de mudança.
+Na versão original, o capítulo 8 oferece o contexto de leitura para este termo. Neste glossário, OT serve como referência para interpretar tecnologias relacionadas à operação física e para lembrar que investigação e contenção precisam considerar o processo, seus responsáveis e suas condições de mudança.

@@ -107,4 +107,4 @@ Verifique se separa fatos de inferências, informa origem e datas, explica conte
 
 ## Relação com o capítulo 5
 
-Na versão original do manuscrito, o capítulo 5 oferece o contexto relacionado a este verbete. A leitura conjunta conecta a transformação de informação em decisão defensiva à aplicação do conceito no confronto cibernético. Este texto complementa esse contexto com critérios de uso; não substitui evidências que a equipe precisa reunir no caso concreto.
+Na versão original, o capítulo 5 oferece o contexto relacionado a este verbete. A leitura conjunta conecta a transformação de informação em decisão defensiva à aplicação do conceito no confronto cibernético. Este texto complementa esse contexto com critérios de uso; não substitui evidências que a equipe precisa reunir no caso concreto.

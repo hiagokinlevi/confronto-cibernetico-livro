@@ -80,4 +80,4 @@ Uma lista pode apoiar a busca por indicadores conhecidos, mas não revela necess
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, DGA se relaciona à compreensão de como uma comunicação maliciosa pode localizar pontos de contato variáveis. Para a leitura defensiva, o aspecto central é conectar as consultas a quem as gerou e ao que aconteceu depois, sem tomar nomes incomuns ou falhas DNS como confirmação automática de ataque.
+No capítulo 1 da versão original, DGA se relaciona à compreensão de como uma comunicação maliciosa pode localizar pontos de contato variáveis. Para a leitura defensiva, o aspecto central é conectar as consultas a quem as gerou e ao que aconteceu depois, sem tomar nomes incomuns ou falhas DNS como confirmação automática de ataque.

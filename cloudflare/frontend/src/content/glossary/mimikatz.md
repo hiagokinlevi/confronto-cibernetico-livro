@@ -76,4 +76,4 @@ Pode ocorrer em testes autorizados, laboratórios ou atividades de análise. Con
 
 ## Relação com o capítulo
 
-No capítulo 7 da versão original do manuscrito, o verbete se conecta ao estudo de ferramentas associadas ao acesso a credenciais. Seu valor para a leitura é lembrar que identificar um utilitário é apenas o início: a análise defensiva precisa acompanhar a conta, a sessão, os sistemas acessados e as evidências que sustentam cada conclusão.
+No capítulo 7 da versão original, o verbete se conecta ao estudo de ferramentas associadas ao acesso a credenciais. Seu valor para a leitura é lembrar que identificar um utilitário é apenas o início: a análise defensiva precisa acompanhar a conta, a sessão, os sistemas acessados e as evidências que sustentam cada conclusão.

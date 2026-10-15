@@ -87,4 +87,4 @@ A função típica de IDS é detectar e alertar. Bloqueio é associado a preven�
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto editorial relacionado a este verbete. A leitura técnica do IDS, porém, deve permanecer ancorada no funcionamento observado: fontes de dados, regras, cobertura, contexto e processo de triagem. Essa combinação permite interpretar alertas como evidências a investigar, e não como veredictos automáticos.
+Na versão original, o capítulo 6 oferece o contexto editorial relacionado a este verbete. A leitura técnica do IDS, porém, deve permanecer ancorada no funcionamento observado: fontes de dados, regras, cobertura, contexto e processo de triagem. Essa combinação permite interpretar alertas como evidências a investigar, e não como veredictos automáticos.

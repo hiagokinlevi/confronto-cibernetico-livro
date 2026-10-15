@@ -89,4 +89,4 @@ Não de forma confiável por si só. Ele pode revelar comportamentos, artefatos 
 
 ## Relação com o capítulo
 
-No capítulo 6 da versão original do manuscrito, o termo pode ser entendido como parte do vocabulário de análise forense: um recurso para observar arquivos e códigos suspeitos em condições controladas. A leitura mais rigorosa conserva duas ideias juntas: o isolamento reduz riscos durante a observação, e o resultado continua condicionado ao ambiente e às evidências efetivamente coletadas.
+No capítulo 6 da versão original, o termo pode ser entendido como parte do vocabulário de análise forense: um recurso para observar arquivos e códigos suspeitos em condições controladas. A leitura mais rigorosa conserva duas ideias juntas: o isolamento reduz riscos durante a observação, e o resultado continua condicionado ao ambiente e às evidências efetivamente coletadas.

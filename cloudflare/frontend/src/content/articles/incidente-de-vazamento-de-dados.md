@@ -110,9 +110,9 @@ A qualidade do exercício pode ser avaliada pela clareza das decisões, preserva
 
 Encerrar a resposta operacional não significa que todas as perguntas históricas tenham resposta. Um critério de encerramento pode exigir que a exposição identificada esteja contida, credenciais relacionadas tenham sido tratadas, registros relevantes estejam preservados, o impacto tenha sido avaliado até onde os dados permitem e as responsabilidades posteriores estejam atribuídas. Se ainda existe risco ativo ou uma dependência sem controle, a equipe deve manter o incidente aberto ou registrar formalmente a transferência para uma fase de acompanhamento.
 
-## Relação com o capítulo 8 do manuscrito
+## Relação com o capítulo 8 da versão original
 
-O capítulo 8 do manuscrito original de Hiago Kin Levi trata de operações de resposta, contenção e recuperação. Esse enquadramento se relaciona diretamente com a disciplina de preservar registros, delimitar contas e ativos envolvidos e coordenar análise técnica com privacidade e jurídico. A contribuição mais útil para este tema é pensar a resposta como uma sequência de decisões operacionais revisáveis: proteger o ambiente, entender o alcance, recuperar serviços com controles adequados e registrar o que a equipe não pôde determinar.
+O capítulo 8 da versão original de Confronto Cibernético, de Hiago Kin Levi trata de operações de resposta, contenção e recuperação. Esse enquadramento se relaciona diretamente com a disciplina de preservar registros, delimitar contas e ativos envolvidos e coordenar análise técnica com privacidade e jurídico. A contribuição mais útil para este tema é pensar a resposta como uma sequência de decisões operacionais revisáveis: proteger o ambiente, entender o alcance, recuperar serviços com controles adequados e registrar o que a equipe não pôde determinar.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura de apoio para refletir sobre essas operações e sua integração. Uma obra não substitui documentação técnica atualizada dos serviços usados, treino com os processos da própria organização nem o julgamento da equipe diante de evidências incompletas. A aplicação prática deve sempre considerar arquitetura, contratos, políticas e requisitos vigentes.
 

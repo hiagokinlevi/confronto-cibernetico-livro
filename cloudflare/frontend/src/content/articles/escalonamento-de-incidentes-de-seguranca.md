@@ -130,4 +130,4 @@ Não. A equipe de origem preserva contexto, fornece registros e acompanha até q
 
 ## A relação com o capítulo sobre o Black Team
 
-O capítulo 7 do manuscrito original aborda estrutura, papéis e coordenação do Black Team, temas diretamente ligados à definição de autoridade, responsabilidade e comunicação que sustentam um escalonamento consistente. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer um ponto de partida para refletir sobre essa estrutura. A leitura não substitui documentação técnica atualizada, treino, procedimentos adequados ao ambiente nem julgamento da equipe diante dos fatos disponíveis.
+O capítulo 7 da versão original aborda estrutura, papéis e coordenação do Black Team, temas diretamente ligados à definição de autoridade, responsabilidade e comunicação que sustentam um escalonamento consistente. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer um ponto de partida para refletir sobre essa estrutura. A leitura não substitui documentação técnica atualizada, treino, procedimentos adequados ao ambiente nem julgamento da equipe diante dos fatos disponíveis.

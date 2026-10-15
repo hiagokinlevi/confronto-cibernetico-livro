@@ -78,4 +78,4 @@ Preserve cada versão com sua data e contexto, identifique exatamente quais deta
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o capítulo 3 é a referência relacionada a este verbete. HUMINT ajuda a manter visível uma dimensão essencial da análise: sistemas registram ações e estados, enquanto pessoas podem explicar contexto, processo e percepção. Integrar as duas perspectivas exige atribuir cada informação à sua origem, verificar relatos de forma independente, proteger as fontes e respeitar os limites legais.
+Na organização da versão original, o capítulo 3 é a referência relacionada a este verbete. HUMINT ajuda a manter visível uma dimensão essencial da análise: sistemas registram ações e estados, enquanto pessoas podem explicar contexto, processo e percepção. Integrar as duas perspectivas exige atribuir cada informação à sua origem, verificar relatos de forma independente, proteger as fontes e respeitar os limites legais.

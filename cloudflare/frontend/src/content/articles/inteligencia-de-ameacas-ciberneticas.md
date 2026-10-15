@@ -86,9 +86,9 @@ O segundo passo é mapear ativos e adversários relevantes sem presumir que todo
 
 O sétimo passo é revisar fontes, requisitos e retenção. Remova duplicatas, fontes sem uso ou produtos cujo custo supera a contribuição, desde que nenhum requisito essencial dependa deles. Atualize datas e condições de validade. Reavalie quando a arquitetura, o negócio ou o cenário mudar. A manutenção é contínua: um processo que funcionava para um conjunto de serviços pode deixar de funcionar depois de uma aquisição, migração ou troca de fornecedor.
 
-## Relacionamento com o manuscrito
+## Relacionamento com a versão original
 
-No capítulo 7 de seu manuscrito, Hiago Kin Levi trata da estrutura, dos papéis e da coordenação do Black Team. A inteligência se conecta a esse tema ao organizar como perguntas sobre ameaças circulam entre análise, operação, resposta e decisão. Um desenho de equipe só se torna útil quando a informação chega ao papel correto com origem, limites e encaminhamento claros. Essa relação ajuda a pensar responsabilidades e interfaces; não substitui documentação técnica atualizada, treinamento prático nem o julgamento da equipe diante de evidências concretas.
+No capítulo 7 da versão original do livro, Hiago Kin Levi trata da estrutura, dos papéis e da coordenação do Black Team. A inteligência se conecta a esse tema ao organizar como perguntas sobre ameaças circulam entre análise, operação, resposta e decisão. Um desenho de equipe só se torna útil quando a informação chega ao papel correto com origem, limites e encaminhamento claros. Essa relação ajuda a pensar responsabilidades e interfaces; não substitui documentação técnica atualizada, treinamento prático nem o julgamento da equipe diante de evidências concretas.
 
 ## Perguntas frequentes
 

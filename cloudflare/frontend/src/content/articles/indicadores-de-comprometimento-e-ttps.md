@@ -328,6 +328,6 @@ Quando houver propósito defensivo legítimo, base de compartilhamento adequada 
 
 ## Leitura relacionada ao capítulo 7
 
-A discussão de indicadores e TTPs se conecta ao capítulo 7 do manuscrito original, dedicado à estrutura, aos papéis e à coordenação do Black Team.
+A discussão de indicadores e TTPs se conecta ao capítulo 7 da versão original, dedicado à estrutura, aos papéis e à coordenação do Black Team.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, oferece ao leitor o contexto mais amplo dessa estrutura e coordenação. Esta leitura relacionada não substitui documentação técnica atualizada, treinamento, políticas locais ou julgamento da equipe.

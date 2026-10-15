@@ -104,4 +104,4 @@ Não necessariamente. Confirmar que uma atividade era legítima pode proteger a 
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o capítulo 5 se relaciona a este verbete por situar o Blue Team entre as funções que compõem a defesa cibernética. A leitura do conceito deve manter em foco a dependência entre telemetria, processos de decisão e retorno das investigações: esses elementos fazem a equipe transformar sinais em ações justificáveis e mudanças concretas nos controles.
+Na organização da versão original, o capítulo 5 se relaciona a este verbete por situar o Blue Team entre as funções que compõem a defesa cibernética. A leitura do conceito deve manter em foco a dependência entre telemetria, processos de decisão e retorno das investigações: esses elementos fazem a equipe transformar sinais em ações justificáveis e mudanças concretas nos controles.

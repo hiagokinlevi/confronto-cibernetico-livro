@@ -95,4 +95,4 @@ Quando as operações críticas foram verificadas segundo critérios acordados, 
 
 ## Relação com o capítulo 1
 
-Na organização da versão original do manuscrito, o capítulo 1 é o capítulo relacionado a este verbete. A conexão temática está na compreensão da sabotagem como possível objetivo de uma ação cibernética e na importância de distinguir impacto observado, intenção inferida e evidência. O capítulo serve como ponto de entrada para pensar as fases do ataque; a análise de um incidente concreto, porém, deve apoiar-se nos registros e no contexto daquele ambiente, sem presumir que todos os casos sigam a mesma sequência.
+Na organização da versão original, o capítulo 1 é o capítulo relacionado a este verbete. A conexão temática está na compreensão da sabotagem como possível objetivo de uma ação cibernética e na importância de distinguir impacto observado, intenção inferida e evidência. O capítulo serve como ponto de entrada para pensar as fases do ataque; a análise de um incidente concreto, porém, deve apoiar-se nos registros e no contexto daquele ambiente, sem presumir que todos os casos sigam a mesma sequência.

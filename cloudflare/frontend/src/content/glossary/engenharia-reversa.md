@@ -96,4 +96,4 @@ Não por si só. Características técnicas podem sustentar comparações entre 
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o tema se relaciona ao capítulo 8. O verbete desenvolve a definição revisada ao explicar como a engenharia reversa apoia a investigação forense, que evidências podem sustentar suas conclusões e por que hipóteses e limitações devem permanecer explícitas.
+Na versão original, o tema se relaciona ao capítulo 8. O verbete desenvolve a definição revisada ao explicar como a engenharia reversa apoia a investigação forense, que evidências podem sustentar suas conclusões e por que hipóteses e limitações devem permanecer explícitas.

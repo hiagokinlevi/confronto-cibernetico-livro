@@ -84,4 +84,4 @@ Conexões podem atravessar o canal protegido, alterando o que alguns controles d
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, SSH se relaciona ao capítulo 8. No glossário, o termo ajuda a enquadrar uma tecnologia cotidiana de infraestrutura que pode sustentar administração legítima e, sob determinadas condições, acesso indevido. A leitura defensiva depende de ligar protocolo, identidade, ativo e evidência, sem atribuir intenção apenas à presença do serviço.
+Na organização da versão original, SSH se relaciona ao capítulo 8. No glossário, o termo ajuda a enquadrar uma tecnologia cotidiana de infraestrutura que pode sustentar administração legítima e, sob determinadas condições, acesso indevido. A leitura defensiva depende de ligar protocolo, identidade, ativo e evidência, sem atribuir intenção apenas à presença do serviço.

@@ -23,7 +23,7 @@ export const articles: Article[] = rawArticles.trim().split(/\r?\n/).filter((lin
   return { keyword, category, chapterNumber, answer, practice, caution, slug: slugify(keyword) };
 });
 
-if (articles.length !== 100) throw new Error(`Esperados 100 artigos, encontrados ${articles.length}`);
+if (articles.length !== 104) throw new Error(`Esperados 104 artigos, encontrados ${articles.length}`);
 if (new Set(articles.map((article) => article.slug)).size !== articles.length) throw new Error('Há slugs duplicados nos artigos');
 if (new Set(articles.map((article) => article.keyword.toLocaleLowerCase('pt-BR'))).size !== articles.length) throw new Error('Há palavras-chave duplicadas');
 

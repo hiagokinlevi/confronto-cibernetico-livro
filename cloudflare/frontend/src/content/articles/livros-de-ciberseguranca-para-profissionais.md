@@ -228,7 +228,7 @@ Examine as entregas. Se a mesma dificuldade reaparece, reduza o escopo ou procur
 
 ## Onde Confronto Cibernético pode entrar nessa trilha
 
-Confronto Cibernético, de Hiago Kin Levi, publicado pela Editora Brasport, aborda ameaças persistentes, investigação e resposta. O manuscrito original inclui capítulos sobre APTs, ciclo NIST, confronto cibernético, limitações da resposta tradicional, Black Team, operações de resposta, métricas e melhoria contínua.
+Confronto Cibernético, de Hiago Kin Levi, publicado pela Editora Brasport, aborda ameaças persistentes, investigação e resposta. O versão original inclui capítulos sobre APTs, ciclo NIST, confronto cibernético, limitações da resposta tradicional, Black Team, operações de resposta, métricas e melhoria contínua.
 
 Esses temas permitem considerar o livro como parte de uma trilha voltada a investigar situações e discutir decisões de resposta. Para avaliar sua adequação, relacione os capítulos ao problema que você definiu: quais perguntas deseja trabalhar, quais fundamentos já possui e que entrega pretende produzir depois da leitura. Use os critérios de sumário e amostra apresentados neste artigo para aprofundar essa avaliação.
 

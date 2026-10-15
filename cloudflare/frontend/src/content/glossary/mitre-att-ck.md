@@ -94,4 +94,4 @@ Descreva a observação, indique a técnica ou alternativas consideradas, expliq
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o termo pode servir de referência para apresentar uma linguagem estruturada de análise de comportamentos adversários. Seu uso mais rigoroso começa por distinguir objetivo, comportamento observado e interpretação, e termina por relacionar a classificação à evidência e às decisões defensivas. A estrutura ajuda a fazer perguntas melhores; a qualidade das respostas continua dependendo da investigação.
+No capítulo 1 da versão original, o termo pode servir de referência para apresentar uma linguagem estruturada de análise de comportamentos adversários. Seu uso mais rigoroso começa por distinguir objetivo, comportamento observado e interpretação, e termina por relacionar a classificação à evidência e às decisões defensivas. A estrutura ajuda a fazer perguntas melhores; a qualidade das respostas continua dependendo da investigação.

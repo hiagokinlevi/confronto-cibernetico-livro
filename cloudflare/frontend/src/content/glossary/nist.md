@@ -80,4 +80,4 @@ Cite a publicação que realmente fundamenta a prática discutida e confira sua 
 
 ## Relação com o capítulo
 
-No capítulo 2 da versão original do manuscrito, o termo se relaciona ao ciclo de resposta associado ao NIST e aos limites de empregá-lo isoladamente diante de campanhas persistentes. Essa relação resume o ponto prático: referências ajudam a organizar a defesa, mas precisam ser combinadas com contexto, investigação contínua e julgamento responsável.
+No capítulo 2 da versão original, o termo se relaciona ao ciclo de resposta associado ao NIST e aos limites de empregá-lo isoladamente diante de campanhas persistentes. Essa relação resume o ponto prático: referências ajudam a organizar a defesa, mas precisam ser combinadas com contexto, investigação contínua e julgamento responsável.

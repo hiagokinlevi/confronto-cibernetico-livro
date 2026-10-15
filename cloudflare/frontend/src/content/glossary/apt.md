@@ -134,4 +134,4 @@ Não por si só. A troca pode ser compatível com adaptação, mas também com m
 
 ## Relação com o capítulo da versão original
 
-No capítulo 1 da versão original do manuscrito, APT funciona como conceito de base para interpretar intrusões como campanhas que podem atravessar diferentes sistemas e momentos. A utilidade do termo está em orientar perguntas sobre continuidade, adaptação e objetivo, sem substituir a análise técnica nem antecipar uma atribuição.
+No capítulo 1 da versão original, APT funciona como conceito de base para interpretar intrusões como campanhas que podem atravessar diferentes sistemas e momentos. A utilidade do termo está em orientar perguntas sobre continuidade, adaptação e objetivo, sem substituir a análise técnica nem antecipar uma atribuição.

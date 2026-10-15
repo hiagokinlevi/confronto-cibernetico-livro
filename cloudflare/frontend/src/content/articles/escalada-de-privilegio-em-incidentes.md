@@ -138,7 +138,7 @@ Confirme o estado das alterações, a invalidação de sessões e credenciais re
 
 Não. Direitos podem aumentar por mudança administrativa ou automação defeituosa sem invasão demonstrada; também é possível haver comprometimento sem uma nova elevação. Descreva a sequência observada sem impor fases que os fatos não sustentam.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
 No capítulo 1, “APTs, persistência e ciclo de ataque”, do livro de Hiago Kin Levi, publicado pela Editora Brasport, a escalada pode ser compreendida como parte de uma cadeia mais ampla de acesso e persistência. Essa conexão ajuda a formular perguntas sobre o que o adversário poderia fazer depois de obter direitos maiores e que caminhos poderiam permanecer após uma contenção inicial. O livro oferece contexto conceitual; não substitui documentação técnica atualizada das plataformas, treinamento prático autorizado nem o julgamento da equipe que responde ao incidente.
 

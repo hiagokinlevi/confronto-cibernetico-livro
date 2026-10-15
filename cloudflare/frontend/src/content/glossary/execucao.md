@@ -66,4 +66,4 @@ Somente se a fonte pertinente cobria o evento, estava saudável e tinha a granul
 ### Qual é a primeira pergunta para a equipe de resposta?
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o termo pode servir como ponto de referência para acompanhar a passagem entre uma intenção ou solicitação e a atividade efetivamente processada no alvo. A leitura técnica ganha precisão quando cada ocorrência é ligada às evidências de contexto e quando execução não é confundida com entrega, acesso, sucesso ou impacto. Essa distinção permite discutir a fase do ataque sem transformar uma sequência possível em uma afirmação automática sobre o incidente.
+No capítulo 1 da versão original, o termo pode servir como ponto de referência para acompanhar a passagem entre uma intenção ou solicitação e a atividade efetivamente processada no alvo. A leitura técnica ganha precisão quando cada ocorrência é ligada às evidências de contexto e quando execução não é confundida com entrega, acesso, sucesso ou impacto. Essa distinção permite discutir a fase do ataque sem transformar uma sequência possível em uma afirmação automática sobre o incidente.

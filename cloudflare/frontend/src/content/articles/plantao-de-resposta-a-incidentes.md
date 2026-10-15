@@ -34,7 +34,7 @@ O processo deve prever ausência simultânea, conflito de interesse e indisponib
 
 ## Papéis: quem coordena, quem executa e quem informa
 
-O modelo de Black Team descrito no capítulo relacionado do manuscrito enfatiza estrutura, papéis e coordenação. Para o plantão, a consequência prática é separar funções, mesmo que uma mesma pessoa acumule algumas delas em uma equipe pequena. Nomear papéis reduz a chance de tarefas essenciais ficarem implícitas. Em uma operação maior, as responsabilidades podem ser distribuídas por grupos e turnos; numa equipe enxuta, uma matriz simples ainda deixa claro quem decide e quem deve ser chamado.
+O modelo de Black Team descrito no capítulo relacionado da versão original enfatiza estrutura, papéis e coordenação. Para o plantão, a consequência prática é separar funções, mesmo que uma mesma pessoa acumule algumas delas em uma equipe pequena. Nomear papéis reduz a chance de tarefas essenciais ficarem implícitas. Em uma operação maior, as responsabilidades podem ser distribuídas por grupos e turnos; numa equipe enxuta, uma matriz simples ainda deixa claro quem decide e quem deve ser chamado.
 
 O coordenador do incidente organiza prioridades, define a cadência de atualização, mantém o quadro de situação e acompanha decisões pendentes. A coordenação evita que vários especialistas executem ações incompatíveis ou que a equipe perca de vista o impacto operacional. Em incidentes menores, o atendente pode coordenar. Quando o impacto cresce ou há múltiplos domínios, outra pessoa deve assumir explicitamente essa função para que o primeiro atendente possa continuar a análise.
 
@@ -143,4 +143,4 @@ Alerta é um sinal que merece avaliação; incidente é uma situação classific
 
 ## Referência ao capítulo 7
 
-O capítulo 7 do manuscrito original trata da estrutura, dos papéis e da coordenação do Black Team, temas que ajudam a organizar responsabilidades durante um plantão. O livro de Hiago Kin Levi, publicado pela Editora Brasport, oferece esse contexto. A obra não substitui documentação técnica atualizada, treinamento, ensaios autorizados nem o julgamento da equipe diante de evidências e impactos concretos.
+O capítulo 7 da versão original trata da estrutura, dos papéis e da coordenação do Black Team, temas que ajudam a organizar responsabilidades durante um plantão. O livro de Hiago Kin Levi, publicado pela Editora Brasport, oferece esse contexto. A obra não substitui documentação técnica atualizada, treinamento, ensaios autorizados nem o julgamento da equipe diante de evidências e impactos concretos.

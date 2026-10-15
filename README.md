@@ -6,7 +6,7 @@ O livro discute resposta a incidentes cibernéticos, APTs, análise forense, int
 
 - [Página principal do livro](https://confrontocibernetico.com.br/)
 - [Trechos temáticos da versão original](https://confrontocibernetico.com.br/capitulos/)
-- [100 artigos temáticos](https://confrontocibernetico.com.br/artigos/)
+- [104 artigos temáticos](https://confrontocibernetico.com.br/artigos/)
 - [Glossário técnico com 120 verbetes](https://confrontocibernetico.com.br/glossario/)
 - [Kit de imprensa](https://confrontocibernetico.com.br/imprensa/)
 - [Espelho no GitHub Pages](https://hiagokinlevi.github.io/confronto-cibernetico-livro/)
@@ -18,7 +18,7 @@ Contato para imprensa: formulário em https://confrontocibernetico.com.br/impren
 
 O site principal é gerado com Astro e publicado no Cloudflare Workers. A API de metadados usa Python Workers. O conteúdo deste repositório também é sincronizado para GitHub Pages; as páginas indicam o domínio principal como URL canônica.
 
-O frontend inclui favicon, imagem de capa em Open Graph, dados estruturados `WebSite`, `Book`, `Article`, `DefinedTermSet` e `DefinedTerm`, além de um sitemap com 236 URLs. Cada um dos 100 artigos tem pelo menos 20.000 caracteres visíveis e cada um dos 120 verbetes tem pelo menos 10.000. As páginas têm URLs estáticas, canônicas e links internos; `robots.txt`, `/llms.txt` e `/glossario/catalogo.json` facilitam a descoberta. A seleção de temas foi feita por relevância e intenção de busca; não há medição de volume de palavras-chave. Publicar o sitemap não garante indexação ou posição nas buscas.
+O frontend inclui favicon, imagem de capa em Open Graph, dados estruturados `WebSite`, `Book`, `Article`, `DefinedTermSet` e `DefinedTerm`, além de um sitemap com 240 URLs. Cada um dos 104 artigos tem pelo menos 20.000 caracteres visíveis e cada um dos 120 verbetes tem pelo menos 10.000. As páginas têm URLs estáticas, canônicas e links internos; `robots.txt`, `/llms.txt` e `/glossario/catalogo.json` facilitam a descoberta. A seleção de temas foi feita por relevância e intenção de busca; não há medição de volume de palavras-chave. Publicar o sitemap não garante indexação ou posição nas buscas.
 
 O formulário de contato da página inicial e do kit usa Cloudflare Turnstile e envia mensagens pelo Worker em Python. O Worker valida o token antes de usar o Resend. As configurações privadas `TURNSTILE_SECRET`, `RESEND_API_KEY` e `CONTACT_TO_EMAIL` ficam como secrets no Worker; os valores não pertencem ao código nem ao Git. O site aceita envios nas origens do domínio principal, Workers e GitHub Pages.
 

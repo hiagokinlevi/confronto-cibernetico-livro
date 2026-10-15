@@ -76,4 +76,4 @@ O ambiente muda: programas, funções de servidores, padrões administrativos e 
 
 ## Relação com o capítulo 6
 
-No capítulo 6 da versão original do manuscrito, Sysmon se relaciona à discussão de detecção como uma fonte de evidência para observar atividade em endpoints Windows. A ideia central para o leitor é compreender que telemetria amplia o que pode ser investigado, mas seu significado depende da configuração, da preservação e da correlação. Saber quais eventos foram coletados — e quais não foram — é parte essencial de uma conclusão defensiva responsável.
+No capítulo 6 da versão original, Sysmon se relaciona à discussão de detecção como uma fonte de evidência para observar atividade em endpoints Windows. A ideia central para o leitor é compreender que telemetria amplia o que pode ser investigado, mas seu significado depende da configuração, da preservação e da correlação. Saber quais eventos foram coletados — e quais não foram — é parte essencial de uma conclusão defensiva responsável.

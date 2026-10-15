@@ -198,6 +198,6 @@ Confirme quais eventos o fornecedor oferece, por quanto tempo, em que formato e 
 
 
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
 No capítulo 6, “Black Teams na identificação e resposta a incidentes”, do livro de Hiago Kin Levi, publicado pela Editora Brasport, a relação útil com este tema está na conexão entre identificação e resposta: registros servem para formular e revisar hipóteses, construir uma linha do tempo e apoiar decisões coordenadas. A equipe precisa saber o que observou, o que ainda é hipótese e que informação pode mudar a decisão. A leitura pode oferecer contexto para discutir papéis e dinâmica de resposta, mas uma obra não substitui documentação técnica atualizada dos produtos, treino prático nem julgamento da equipe diante do ambiente concreto.

@@ -104,4 +104,4 @@ A conclusão, as evidências consultadas, a referência de comparação, a expli
 
 ## Relação com o capítulo
 
-No capítulo 6 da versão original do manuscrito, o termo se relaciona à perspectiva de detectar atividade pelo encadeamento e pelos desvios observados. O ponto prático permanece: comparar com a função do ativo e com uma linha de base pertinente, tratando o alerta como hipótese a verificar. Essa abordagem ajuda a organizar a investigação mesmo quando nenhuma assinatura conhecida descreve exatamente a atividade encontrada.
+No capítulo 6 da versão original, o termo se relaciona à perspectiva de detectar atividade pelo encadeamento e pelos desvios observados. O ponto prático permanece: comparar com a função do ativo e com uma linha de base pertinente, tratando o alerta como hipótese a verificar. Essa abordagem ajuda a organizar a investigação mesmo quando nenhuma assinatura conhecida descreve exatamente a atividade encontrada.

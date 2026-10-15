@@ -74,4 +74,4 @@ Separe fatos de hipóteses. Indique quais fontes foram examinadas, o que elas de
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 7 oferece o contexto de leitura para este verbete. Metasploit deve ser compreendido ali como ferramenta de validação cujo significado operacional depende de autorização, alvo e efeitos observados. Essa ligação ajuda a ler referências ao framework com precisão: identificar o nome é o início da análise, não sua conclusão.
+Na versão original, o capítulo 7 oferece o contexto de leitura para este verbete. Metasploit deve ser compreendido ali como ferramenta de validação cujo significado operacional depende de autorização, alvo e efeitos observados. Essa ligação ajuda a ler referências ao framework com precisão: identificar o nome é o início da análise, não sua conclusão.

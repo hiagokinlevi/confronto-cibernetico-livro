@@ -96,4 +96,4 @@ Pode haver nome incompatível, validade expirada, cadeia não confiável, relóg
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, HTTPS pode ser situado como propriedade fundamental da infraestrutura de comunicação web: protege o transporte e oferece sinais para autenticar o servidor. Na análise de confronto cibernético, a distinção decisiva é entre proteger a conexão e confiar no conteúdo ou agente que a utiliza. Ela orienta a interpretação de evidências cifradas e as decisões de defesa e resposta.
+No capítulo 1 da versão original, HTTPS pode ser situado como propriedade fundamental da infraestrutura de comunicação web: protege o transporte e oferece sinais para autenticar o servidor. Na análise de confronto cibernético, a distinção decisiva é entre proteger a conexão e confiar no conteúdo ou agente que a utiliza. Ela orienta a interpretação de evidências cifradas e as decisões de defesa e resposta.

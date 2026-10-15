@@ -334,7 +334,7 @@ Podem ser consultados automaticamente quando a fonte, o propósito e as limitaç
 
 ## Coordenação do Black Team e o capítulo relacionado
 
-No contexto do capítulo 7 do manuscrito de Hiago Kin Levi, dedicado à estrutura, aos papéis e à coordenação do Black Team, o enriquecimento pode ser entendido como uma capacidade transversal.
+No contexto do capítulo 7 da versão original de Confronto Cibernético, de Hiago Kin Levi, dedicado à estrutura, aos papéis e à coordenação do Black Team, o enriquecimento pode ser entendido como uma capacidade transversal.
 
 Em um exercício de coordenação, o Black Team pode avaliar se as equipes recebem o contexto necessário, se as responsabilidades estão compreendidas e se a passagem entre triagem e resposta preserva evidências e incertezas. Um fluxo bem coordenado reduz ambiguidades de responsabilidade, mas não substitui competência técnica de cada domínio nem a autoridade formal para decisões de impacto.
 

@@ -194,7 +194,7 @@ A reconstrução é indicada quando a integridade não pode ser estabelecida ou 
 
 Descreva fontes, escopo, ações, verificações e limitações. Informe quais hipóteses foram descartadas ou permanecem abertas, sem prometer que nenhum mecanismo desconhecido exista.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
 No capítulo 4, dedicado às limitações da resposta tradicional diante de APTs, a persistência ajuda a mostrar por que interromper o primeiro artefato não equivale a encerrar a intrusão. Uma resposta eficaz precisa conectar evidências de endpoint a identidades, sistemas de gestão, dependências e planos de controle, coordenando contenção, revogação e validação ao longo do tempo. O tratamento do tema deve preservar a diferença entre sinal, hipótese e prova e reconhecer limites de visibilidade sem transformar incerteza em certeza.
 

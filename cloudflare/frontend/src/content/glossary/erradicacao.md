@@ -82,4 +82,4 @@ Pode haver sobreposição, especialmente quando uma mudança remove uma via de a
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o tema se relaciona ao capítulo 8. A erradicação liga as conclusões da investigação a ações verificáveis: define o que precisa deixar de sustentar o comprometimento, como validar a remoção e quais limites ainda devem ser comunicados antes da recuperação e do encerramento do incidente.
+Na organização da versão original, o tema se relaciona ao capítulo 8. A erradicação liga as conclusões da investigação a ações verificáveis: define o que precisa deixar de sustentar o comprometimento, como validar a remoção e quais limites ainda devem ser comunicados antes da recuperação e do encerramento do incidente.

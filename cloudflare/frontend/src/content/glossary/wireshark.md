@@ -82,4 +82,4 @@ Não. Pode significar que não houve comunicação naquele ponto e intervalo, ma
 
 ## Relação com o capítulo da versão original
 
-No capítulo 8 da versão original do manuscrito, o Wireshark pode ser situado como recurso de exame de tráfego dentro do trabalho forense. Seu uso ganha rigor quando cada interpretação permanece ligada à captura, às condições de coleta e às fontes complementares. Essa relação resume o papel do termo: apoiar a leitura técnica de evidência de rede sem substituir a investigação sobre sua origem, cobertura e significado.
+No capítulo 8 da versão original, o Wireshark pode ser situado como recurso de exame de tráfego dentro do trabalho forense. Seu uso ganha rigor quando cada interpretação permanece ligada à captura, às condições de coleta e às fontes complementares. Essa relação resume o papel do termo: apoiar a leitura técnica de evidência de rede sem substituir a investigação sobre sua origem, cobertura e significado.

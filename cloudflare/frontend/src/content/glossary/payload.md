@@ -84,4 +84,4 @@ Porque nomes e extensões são metadados facilmente alteráveis e não demonstra
 
 ## Relação com o capítulo 1
 
-No capítulo 1 da versão original do manuscrito, o verbete se conecta à compreensão das etapas de uma operação de ataque. A distinção entre o meio de exploração e a função do conteúdo entregue ajuda a reconstruir o encadeamento sem confundir tentativa com resultado. Para a investigação, a regra prática é preservar a amostra e observar o comportamento: um mesmo vetor pode transportar payloads diferentes, e um mesmo rótulo não substitui evidência sobre o que foi executado e quais efeitos ocorreram.
+No capítulo 1 da versão original, o verbete se conecta à compreensão das etapas de uma operação de ataque. A distinção entre o meio de exploração e a função do conteúdo entregue ajuda a reconstruir o encadeamento sem confundir tentativa com resultado. Para a investigação, a regra prática é preservar a amostra e observar o comportamento: um mesmo vetor pode transportar payloads diferentes, e um mesmo rótulo não substitui evidência sobre o que foi executado e quais efeitos ocorreram.

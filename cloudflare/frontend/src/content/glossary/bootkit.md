@@ -81,4 +81,4 @@ Compare o artefato com referências adequadas ao modelo e à versão, verifique 
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o verbete ajuda a situar o bootkit entre as ameaças que se apoiam em etapas iniciais de execução. A leitura defensiva deve manter em primeiro plano a identificação da camada afetada, a qualidade das evidências e a integridade do processo de recuperação.
+No capítulo 1 da versão original, o verbete ajuda a situar o bootkit entre as ameaças que se apoiam em etapas iniciais de execução. A leitura defensiva deve manter em primeiro plano a identificação da camada afetada, a qualidade das evidências e a integridade do processo de recuperação.

@@ -188,4 +188,4 @@ Registre quais dados não foram coletados, por que a prioridade foi outra, quem 
 
 ## Leitura relacionada ao capítulo 8
 
-O capítulo 8 do manuscrito original, dedicado a operações de resposta, contenção e recuperação, oferece o contexto editorial para compreender por que isolar um host é uma etapa de uma operação maior. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode acompanhar essa reflexão sobre decisões de resposta e continuidade. A leitura de uma obra não substitui documentação técnica atualizada, treinamento prático, procedimentos aprovados nem o julgamento da equipe que conhece o ambiente.
+O capítulo 8 da versão original, dedicado a operações de resposta, contenção e recuperação, oferece o contexto editorial para compreender por que isolar um host é uma etapa de uma operação maior. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode acompanhar essa reflexão sobre decisões de resposta e continuidade. A leitura de uma obra não substitui documentação técnica atualizada, treinamento prático, procedimentos aprovados nem o julgamento da equipe que conhece o ambiente.

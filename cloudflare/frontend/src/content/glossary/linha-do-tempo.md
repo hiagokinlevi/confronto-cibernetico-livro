@@ -79,4 +79,4 @@ Uma referência comum costuma facilitar a comparação entre sistemas, mas a con
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o capítulo 8 é o contexto relacionado a este verbete. A linha do tempo funciona como recurso de análise forense para ordenar evidências de fontes distintas e explicitar os limites dessa reconstrução. Seu uso disciplinado ajuda a comunicar o que se sabe, o que se estima e o que permanece sem confirmação durante a investigação.
+Na organização da versão original, o capítulo 8 é o contexto relacionado a este verbete. A linha do tempo funciona como recurso de análise forense para ordenar evidências de fontes distintas e explicitar os limites dessa reconstrução. Seu uso disciplinado ajuda a comunicar o que se sabe, o que se estima e o que permanece sem confirmação durante a investigação.

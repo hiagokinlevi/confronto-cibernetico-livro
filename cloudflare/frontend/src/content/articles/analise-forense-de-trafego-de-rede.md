@@ -258,7 +258,7 @@ Não isoladamente. Ele indica transferência observada segundo a semântica do s
 
 Quando o risco de manter a comunicação supera o impacto esperado da interrupção, e a decisão segue a autoridade operacional e o procedimento do ambiente. A equipe pode adotar uma restrição temporária e delimitada diante de evidência parcial, desde que registre fundamento, escopo, efeitos e revisão.
 
-## Relação com o capítulo 8 do manuscrito
+## Relação com o capítulo 8 da versão original
 
 No capítulo 8, dedicado a operações de resposta, contenção e recuperação, a análise de tráfego ocupa o espaço entre detectar uma comunicação preocupante e escolher uma ação proporcional.
 

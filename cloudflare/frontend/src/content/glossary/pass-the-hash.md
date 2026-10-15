@@ -82,4 +82,4 @@ Separe a observação da interpretação. Registre os eventos confirmados, os ho
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o tema se relaciona ao capítulo 1. O verbete amplia a definição revisada ao situar o PtH na autenticação, na investigação de sessões e no movimento entre hosts, mantendo a distinção entre um indício compatível e a confirmação do mecanismo.
+Na organização da versão original, o tema se relaciona ao capítulo 1. O verbete amplia a definição revisada ao situar o PtH na autenticação, na investigação de sessões e no movimento entre hosts, mantendo a distinção entre um indício compatível e a confirmação do mecanismo.

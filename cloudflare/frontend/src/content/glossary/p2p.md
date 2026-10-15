@@ -80,4 +80,4 @@ Em geral, não é uma conclusão segura sem entender a aplicação. Portas podem
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o verbete ajuda a interpretar infraestrutura de comunicação distribuída. Seu valor prático está em nomear o modelo com precisão e manter separadas arquitetura, aplicativo e intenção: essa separação torna a investigação mais clara quando fluxos entre pares aparecem em um incidente.
+No capítulo 1 da versão original, o verbete ajuda a interpretar infraestrutura de comunicação distribuída. Seu valor prático está em nomear o modelo com precisão e manter separadas arquitetura, aplicativo e intenção: essa separação torna a investigação mais clara quando fluxos entre pares aparecem em um incidente.

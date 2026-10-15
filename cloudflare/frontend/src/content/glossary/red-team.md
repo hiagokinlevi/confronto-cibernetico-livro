@@ -94,4 +94,4 @@ Um achado acionável descreve o que foi observado, em que condições, qual hip�
 
 ## Relação com o capítulo
 
-Na organização do manuscrito original de *Confronto Cibernético*, este verbete se relaciona ao capítulo 5. A conexão é a função do Red Team como instrumento de avaliação em contexto: simular comportamentos dentro de autorização, observar a interação entre controles e resposta e devolver os resultados aos defensores para correção.
+Na organização da versão original de *Confronto Cibernético*, este verbete se relaciona ao capítulo 5. A conexão é a função do Red Team como instrumento de avaliação em contexto: simular comportamentos dentro de autorização, observar a interação entre controles e resposta e devolver os resultados aos defensores para correção.

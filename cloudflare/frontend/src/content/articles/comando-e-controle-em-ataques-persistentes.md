@@ -16,7 +16,7 @@ O termo “persistente” não significa que o canal fique conectado o tempo tod
 
 ## Como C2 se encaixa no ciclo de um ataque?
 
-O capítulo relacionado do manuscrito aborda APTs, persistência e ciclo de ataque. Nesse enquadramento, a comunicação não deve ser analisada como evento isolado. Ela pode apoiar reconhecimento, obtenção de acesso adicional, execução, coleta, movimentação entre sistemas ou saída de dados. A sequência não é obrigatória nem linear: adversários podem repetir etapas, interromper operações, usar recursos já disponíveis ou agir de forma diferente conforme as defesas encontradas.
+O capítulo relacionado da versão original aborda APTs, persistência e ciclo de ataque. Nesse enquadramento, a comunicação não deve ser analisada como evento isolado. Ela pode apoiar reconhecimento, obtenção de acesso adicional, execução, coleta, movimentação entre sistemas ou saída de dados. A sequência não é obrigatória nem linear: adversários podem repetir etapas, interromper operações, usar recursos já disponíveis ou agir de forma diferente conforme as defesas encontradas.
 
 Persistência é a capacidade de retomar ou manter acesso após interrupções, reinicializações ou mudanças de contexto. Um canal C2 pode coexistir com vários mecanismos de persistência, mas não demonstra que algum deles exista. Da mesma forma, achar uma tarefa agendada, um serviço ou uma configuração de inicialização desconhecida pede análise de origem e propósito; a existência isolada do artefato não determina que ele pertença a um APT.
 

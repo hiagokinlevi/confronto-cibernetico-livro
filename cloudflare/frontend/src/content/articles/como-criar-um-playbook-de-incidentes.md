@@ -194,4 +194,4 @@ Revise quando uma mudança relevante puder afetar gatilhos, acesso, fontes, auto
 
 ## Leitura relacionada ao capítulo sobre resposta a incidentes
 
-O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser apresentado como leitura relacionada ao capítulo 2 do manuscrito, que trata das fases da resposta a incidentes e do modelo NIST. Essa conexão ajuda a situar o playbook dentro do ciclo mais amplo de preparação, análise, resposta e melhoria.
+O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser apresentado como leitura relacionada ao capítulo 2 da versão original, que trata das fases da resposta a incidentes e do modelo NIST. Essa conexão ajuda a situar o playbook dentro do ciclo mais amplo de preparação, análise, resposta e melhoria.

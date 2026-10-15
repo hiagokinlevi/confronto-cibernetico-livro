@@ -110,4 +110,4 @@ Não. Pode faltar visibilidade, e o retorno pode depender de credenciais válida
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 1 situa a persistência entre as fases do ataque. Este verbete enfatiza a leitura defensiva: diante de uma interrupção aparente, verificar quais condições ainda permitiriam recuperar acesso e documentar o alcance da busca.
+Na versão original, o capítulo 1 situa a persistência entre as fases do ataque. Este verbete enfatiza a leitura defensiva: diante de uma interrupção aparente, verificar quais condições ainda permitiriam recuperar acesso e documentar o alcance da busca.

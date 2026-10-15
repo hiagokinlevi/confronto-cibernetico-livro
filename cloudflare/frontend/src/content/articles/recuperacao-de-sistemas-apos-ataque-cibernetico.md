@@ -152,4 +152,4 @@ A decisão combina conhecimento técnico, entendimento do negócio e autoridade 
 
 ## Leitura relacionada ao capítulo 8
 
-O capítulo 8 do manuscrito de referência trata de operações de resposta, contenção e recuperação, temas que se encontram justamente na passagem entre reduzir o dano e restabelecer capacidade operacional. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer contexto editorial para essa discussão. Ele não substitui documentação técnica atualizada, treino prático, análise das evidências do caso ou julgamento das pessoas responsáveis pela operação.
+O capítulo 8 da versão original de referência trata de operações de resposta, contenção e recuperação, temas que se encontram justamente na passagem entre reduzir o dano e restabelecer capacidade operacional. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer contexto editorial para essa discussão. Ele não substitui documentação técnica atualizada, treino prático, análise das evidências do caso ou julgamento das pessoas responsáveis pela operação.

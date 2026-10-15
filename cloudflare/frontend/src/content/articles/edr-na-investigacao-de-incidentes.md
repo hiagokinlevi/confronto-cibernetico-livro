@@ -182,6 +182,6 @@ A decisão depende de urgência, impacto potencial, criticidade do ativo, confia
 
 Capturas podem registrar uma visualização, mas frequentemente não preservam todos os campos, identificadores, filtros, horários e metadados necessários à revisão. Siga o procedimento institucional para exportar ou preservar dados, mantendo proveniência e controle de acesso. A forma adequada depende da plataforma e dos requisitos aplicáveis.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
-No capítulo 6, “Black Teams na identificação e resposta a incidentes”, o manuscrito de Hiago Kin Levi, publicado pela Editora Brasport, aborda a atuação de equipes na identificação e resposta. O uso de EDR se relaciona a esse tema porque oferece uma fonte para investigar atividades em endpoints e apoiar decisões de resposta. A leitura pode contribuir para o contexto organizacional, mas não substitui documentação técnica atualizada, treinamento prático nem o julgamento da equipe diante das evidências e limitações do ambiente.
+No capítulo 6, “Black Teams na identificação e resposta a incidentes”, o livro Confronto Cibernético, de Hiago Kin Levi, publicado pela Editora Brasport, aborda a atuação de equipes na identificação e resposta. O uso de EDR se relaciona a esse tema porque oferece uma fonte para investigar atividades em endpoints e apoiar decisões de resposta. A leitura pode contribuir para o contexto organizacional, mas não substitui documentação técnica atualizada, treinamento prático nem o julgamento da equipe diante das evidências e limitações do ambiente.

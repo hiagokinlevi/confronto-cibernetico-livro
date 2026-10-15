@@ -78,4 +78,4 @@ Não por completo, mas muda o ponto de observação. Um sensor no caminho pode n
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, DNS se relaciona à infraestrutura que permite localizar serviços e interpretar comunicações de rede. Para o profissional, a ideia central é observar a resolução como uma etapa do fluxo, com evidências próprias e limites próprios. A consulta ajuda a formular perguntas investigativas; o contexto de cache, resolvedores e conexão determina o que se pode afirmar com segurança.
+No capítulo 1 da versão original, DNS se relaciona à infraestrutura que permite localizar serviços e interpretar comunicações de rede. Para o profissional, a ideia central é observar a resolução como uma etapa do fluxo, com evidências próprias e limites próprios. A consulta ajuda a formular perguntas investigativas; o contexto de cache, resolvedores e conexão determina o que se pode afirmar com segurança.

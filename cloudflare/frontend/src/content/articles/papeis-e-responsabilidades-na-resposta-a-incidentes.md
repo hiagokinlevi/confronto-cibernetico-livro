@@ -200,9 +200,9 @@ Realize exercícios que incluam incerteza, indisponibilidade de aprovador e efei
 
 Revise a estrutura quando houver mudanças em serviços, fornecedores, pessoal, obrigações ou arquitetura. Uma lista de contato sem revisão fica obsoleta; uma delegação antiga pode conceder autoridade inadequada. Defina um responsável pela manutenção e um evento que dispare revisão, como alteração de serviço crítico ou mudança de plantão. A revisão deve confirmar tanto a documentação quanto a capacidade de usar os canais e registros.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
-No capítulo 7 do manuscrito original, a estrutura, os papéis e a coordenação do Black Team oferecem um ponto de partida para pensar a resposta como trabalho coletivo com funções complementares. Neste tema, a ênfase recai sobre como tornar essas funções acionáveis: associar recomendação, aprovação e execução a pessoas disponíveis, prever substitutos e registrar decisões de alto impacto. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como referência de contexto para essa discussão. A obra não substitui documentação técnica atualizada, treinamento, procedimentos próprios nem o julgamento da equipe diante das circunstâncias concretas.
+No capítulo 7 da versão original, a estrutura, os papéis e a coordenação do Black Team oferecem um ponto de partida para pensar a resposta como trabalho coletivo com funções complementares. Neste tema, a ênfase recai sobre como tornar essas funções acionáveis: associar recomendação, aprovação e execução a pessoas disponíveis, prever substitutos e registrar decisões de alto impacto. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como referência de contexto para essa discussão. A obra não substitui documentação técnica atualizada, treinamento, procedimentos próprios nem o julgamento da equipe diante das circunstâncias concretas.
 
 ## Perguntas frequentes
 

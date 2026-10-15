@@ -76,4 +76,4 @@ Não. A equipe pode agir sobre comportamento malicioso, exposição e impacto ob
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o tema se relaciona ao capítulo 7. Neste verbete, a ideia central é manter a atribuição como uma inferência graduada: ela pode conectar observações e orientar a defesa, desde que semelhança técnica, hipótese operacional e afirmação pública permaneçam claramente diferenciadas.
+Na versão original, o tema se relaciona ao capítulo 7. Neste verbete, a ideia central é manter a atribuição como uma inferência graduada: ela pode conectar observações e orientar a defesa, desde que semelhança técnica, hipótese operacional e afirmação pública permaneçam claramente diferenciadas.

@@ -138,6 +138,6 @@ Acione as funções previstas no procedimento quando houver possibilidade de dad
 
 ## Relação com o capítulo 8
 
-No capítulo 8 de seu manuscrito original, dedicado a operações de resposta, contenção e recuperação, Hiago Kin Levi aborda o tipo de disciplina operacional necessário para transformar sinais em decisões coordenadas. Essa relação é útil aqui porque o comprometimento de identidade em nuvem raramente se resolve com uma ação isolada: exige ordenar preservação, contenção, investigação e retorno a um estado confiável, levando em conta dependências e evidências incompletas.
+No capítulo 8 da versão original do livro original, dedicado a operações de resposta, contenção e recuperação, Hiago Kin Levi aborda o tipo de disciplina operacional necessário para transformar sinais em decisões coordenadas. Essa relação é útil aqui porque o comprometimento de identidade em nuvem raramente se resolve com uma ação isolada: exige ordenar preservação, contenção, investigação e retorno a um estado confiável, levando em conta dependências e evidências incompletas.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura complementar dentro desse tema. Ele não substitui documentação técnica atualizada do provedor, treinamento prático, procedimentos aprovados nem o julgamento da equipe responsável. A aplicação concreta depende dos serviços utilizados, das evidências disponíveis e do contexto de cada organização.

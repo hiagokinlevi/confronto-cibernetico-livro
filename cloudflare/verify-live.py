@@ -6,8 +6,12 @@ import time
 base = "https://confrontocibernetico.com.br"
 checks = {
     "/": "linha de frente de combate em segurança cibernética",
-    "/artigos/": "100 temas",
+    "/artigos/": "104 temas",
     "/artigos/livro-de-resposta-a-incidentes-ciberneticos/": "Livro de resposta a incidentes cibernéticos",
+    "/artigos/top-10-livros-de-resposta-a-incidentes/": "Top 10 livros de resposta a incidentes",
+    "/artigos/top-10-livros-de-seguranca-da-informacao/": "Top 10 livros de segurança da informação",
+    "/artigos/top-10-livros-de-cybersecurity/": "Top 10 livros de cybersecurity",
+    "/artigos/top-10-livros-de-seguranca-digital/": "Top 10 livros de segurança digital",
     "/glossario/": "Glossário de segurança cibernética",
     "/glossario/apt/": "Campanha de intrusão sustentada",
     "/glossario/catalogo.json": '"terms"',

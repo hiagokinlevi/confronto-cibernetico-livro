@@ -86,4 +86,4 @@ Uma sequência coerente de consultas e respostas atípicas atribuída a cliente 
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o tema se relaciona ao capítulo 1. Esta entrada oferece referência para interpretar DNS como possível canal de ataque e orientar uma análise defensiva baseada em contexto, evidências e conclusões proporcionais.
+Na versão original, o tema se relaciona ao capítulo 1. Esta entrada oferece referência para interpretar DNS como possível canal de ataque e orientar uma análise defensiva baseada em contexto, evidências e conclusões proporcionais.

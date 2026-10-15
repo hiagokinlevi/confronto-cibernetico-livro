@@ -91,4 +91,4 @@ Pode significar que ela não ocorreu, mas também que a fonte não coleta aquele
 
 ## Relação com o capítulo da versão original
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto ao qual este verbete se relaciona. A referência situa o RDP entre os elementos de infraestrutura que podem ser relevantes para compreender acessos remotos e sua análise. O verbete complementa esse contexto com distinções úteis para leitura defensiva: uma conexão observada deve ser descrita pelo evento realmente comprovado, correlacionada com identidade e finalidade, e avaliada sem presumir que o protocolo, por si só, indique legitimidade ou ataque.
+Na versão original, o capítulo 6 oferece o contexto ao qual este verbete se relaciona. A referência situa o RDP entre os elementos de infraestrutura que podem ser relevantes para compreender acessos remotos e sua análise. O verbete complementa esse contexto com distinções úteis para leitura defensiva: uma conexão observada deve ser descrita pelo evento realmente comprovado, correlacionada com identidade e finalidade, e avaliada sem presumir que o protocolo, por si só, indique legitimidade ou ataque.

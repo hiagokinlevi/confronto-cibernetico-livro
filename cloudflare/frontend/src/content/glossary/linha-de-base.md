@@ -78,4 +78,4 @@ Não. Isso apenas mostra que o evento se parece com o comportamento registrado n
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 6 situa a linha de base no contexto de detecção. O conceito oferece uma referência para reconhecer mudanças e organizar a investigação, sempre em conjunto com evidências, contexto operacional e validação humana. Sua aplicação defensiva depende tanto de construir um retrato confiável do comportamento usual quanto de lembrar que esse retrato é provisório e pode estar errado.
+Na versão original, o capítulo 6 situa a linha de base no contexto de detecção. O conceito oferece uma referência para reconhecer mudanças e organizar a investigação, sempre em conjunto com evidências, contexto operacional e validação humana. Sua aplicação defensiva depende tanto de construir um retrato confiável do comportamento usual quanto de lembrar que esse retrato é provisório e pode estar errado.

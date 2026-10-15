@@ -160,8 +160,8 @@ Somente dentro dos limites que o teste conseguiu avaliar. Documente método em t
 
 Os responsáveis pelo ambiente e pela operação precisam aprovar o escopo, junto com as funções de segurança e governança definidas pela organização. Devem estar claros sistemas, contas, janela, contatos, limites, critérios de interrupção, tratamento de dados e plano para incidentes acidentais. A autorização precisa ser adequada ao ambiente e aos terceiros envolvidos.
 
-## Relação com o capítulo 7 do manuscrito
+## Relação com o capítulo 7 da versão original
 
-A discussão se conecta ao capítulo 7 do manuscrito original, dedicado à estrutura, aos papéis e à coordenação do Black Team. Nesse contexto, priorizar ameaças é uma atividade de integração: inteligência transforma sinais em hipóteses; a equipe técnica verifica condições; operações e negócio explicam consequências; e a liderança arbitra decisões que envolvem risco e continuidade. O Black Team pode ajudar a organizar essa perspectiva e a propor avaliações, desde que trabalhe com escopo autorizado e evidência compartilhável com as equipes responsáveis.
+A discussão se conecta ao capítulo 7 da versão original, dedicado à estrutura, aos papéis e à coordenação do Black Team. Nesse contexto, priorizar ameaças é uma atividade de integração: inteligência transforma sinais em hipóteses; a equipe técnica verifica condições; operações e negócio explicam consequências; e a liderança arbitra decisões que envolvem risco e continuidade. O Black Team pode ajudar a organizar essa perspectiva e a propor avaliações, desde que trabalhe com escopo autorizado e evidência compartilhável com as equipes responsáveis.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como referência conceitual relacionada a esse capítulo e à coordenação de equipes. Uma obra não substitui documentação técnica atualizada, treino nem julgamento da equipe. Para uma decisão concreta, a organização deve consultar fontes atuais pertinentes ao produto, à arquitetura e às obrigações aplicáveis, e registrar como chegou à conclusão.

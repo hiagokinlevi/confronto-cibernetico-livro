@@ -90,4 +90,4 @@ Verifique se as conclusões estão ligadas a evidências, se as ações têm res
 
 ## Relação com o capítulo
 
-No capítulo 2 da versão original do manuscrito, o termo se relaciona à etapa em que a organização transforma a experiência de resposta em correções e aprendizado. Essa conexão destaca que a análise continua depois de restaurar os serviços: o valor defensivo aparece quando as observações se convertem em mudanças acompanhadas e verificadas.
+No capítulo 2 da versão original, o termo se relaciona à etapa em que a organização transforma a experiência de resposta em correções e aprendizado. Essa conexão destaca que a análise continua depois de restaurar os serviços: o valor defensivo aparece quando as observações se convertem em mudanças acompanhadas e verificadas.

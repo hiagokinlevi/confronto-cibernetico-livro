@@ -80,4 +80,4 @@ Preserve o que ainda existe, anote limitações e use fontes alternativas, como 
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o verbete situa evasão entre as fases do ataque e destaca seu valor para compreender como a atividade pode escapar à prevenção ou à detecção. A leitura defensiva complementa essa visão ao enfatizar contexto, qualidade das evidências e cautela ao distinguir uma tentativa deliberada de uma falha ou mudança legítima.
+No capítulo 1 da versão original, o verbete situa evasão entre as fases do ataque e destaca seu valor para compreender como a atividade pode escapar à prevenção ou à detecção. A leitura defensiva complementa essa visão ao enfatizar contexto, qualidade das evidências e cautela ao distinguir uma tentativa deliberada de uma falha ou mudança legítima.

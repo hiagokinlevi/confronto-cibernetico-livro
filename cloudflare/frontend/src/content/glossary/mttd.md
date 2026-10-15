@@ -68,4 +68,4 @@ Eles não têm um tempo final de detecção observado. Devem aparecer como casos
 
 ## Relação com o capítulo 9
 
-Na organização da versão original do manuscrito, o capítulo 9 é o ponto relacionado a esta métrica. O verbete oferece uma referência para ler qualquer número de MTTD com atenção às evidências, aos marcos temporais e às exclusões. Em uma discussão sobre capacidade defensiva, a pergunta produtiva não é somente “qual foi a média?”, mas também “o que foi contado, o que ficou de fora e em que etapa se perdeu tempo?”.
+Na organização da versão original, o capítulo 9 é o ponto relacionado a esta métrica. O verbete oferece uma referência para ler qualquer número de MTTD com atenção às evidências, aos marcos temporais e às exclusões. Em uma discussão sobre capacidade defensiva, a pergunta produtiva não é somente “qual foi a média?”, mas também “o que foi contado, o que ficou de fora e em que etapa se perdeu tempo?”.

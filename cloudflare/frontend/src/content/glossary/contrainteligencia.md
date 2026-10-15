@@ -164,4 +164,4 @@ Não. Os detalhes podem ser limitados a quem precisa deles, mas as áreas respon
 
 ## Relação com o capítulo 7
 
-Na versão original do manuscrito, o capítulo 7 é o ponto de referência para aprofundar a contrainteligência. O verbete estabelece o vocabulário para compreender observação e manipulação como capacidades adversárias e para manter evidência, autorização e continuidade operacional dentro da análise. A relação serve como contexto de estudo, sem substituir procedimentos aplicáveis a cada organização.
+Na versão original, o capítulo 7 é o ponto de referência para aprofundar a contrainteligência. O verbete estabelece o vocabulário para compreender observação e manipulação como capacidades adversárias e para manter evidência, autorização e continuidade operacional dentro da análise. A relação serve como contexto de estudo, sem substituir procedimentos aplicáveis a cada organização.

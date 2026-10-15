@@ -74,4 +74,4 @@ Registre o primeiro ponto confirmado como tal e expanda a busca a partir das ide
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o conceito se relaciona ao capítulo 1. Neste verbete, a movimentação lateral é tratada como uma lente para acompanhar a expansão do acesso entre recursos e para orientar a investigação defensiva. O número do capítulo situa o tema na estrutura daquela versão; não altera a definição nem substitui a análise das evidências de cada incidente.
+Na versão original, o conceito se relaciona ao capítulo 1. Neste verbete, a movimentação lateral é tratada como uma lente para acompanhar a expansão do acesso entre recursos e para orientar a investigação defensiva. O número do capítulo situa o tema na estrutura daquela versão; não altera a definição nem substitui a análise das evidências de cada incidente.

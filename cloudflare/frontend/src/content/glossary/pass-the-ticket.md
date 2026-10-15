@@ -89,4 +89,4 @@ Descreva a identidade, os sistemas de origem e destino, o tipo de autenticação
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, Pass-the-Ticket se relaciona ao capítulo 6. O conceito ajuda a compreender como material de autenticação pode ser abusado para acessar recursos e por que a investigação precisa ligar eventos de emissão e autenticação ao contexto da conta, do endpoint e do serviço. A referência ao capítulo situa o tema; a análise de cada incidente continua dependendo das evidências do ambiente observado.
+Na versão original, Pass-the-Ticket se relaciona ao capítulo 6. O conceito ajuda a compreender como material de autenticação pode ser abusado para acessar recursos e por que a investigação precisa ligar eventos de emissão e autenticação ao contexto da conta, do endpoint e do serviço. A referência ao capítulo situa o tema; a análise de cada incidente continua dependendo das evidências do ambiente observado.

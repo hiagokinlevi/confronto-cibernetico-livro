@@ -74,4 +74,4 @@ Confirme se a sessão está ativa, identifique a conta e o dispositivo, preserve
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 1 trata o contexto de infraestrutura em que caminhos de acesso remoto podem ser relevantes. Para a investigação, o ponto central é associar a sessão VPN a uma identidade, um dispositivo e uma sequência de ações, preservando os limites do que cada evidência permite concluir.
+Na versão original, o capítulo 1 trata o contexto de infraestrutura em que caminhos de acesso remoto podem ser relevantes. Para a investigação, o ponto central é associar a sessão VPN a uma identidade, um dispositivo e uma sequência de ações, preservando os limites do que cada evidência permite concluir.

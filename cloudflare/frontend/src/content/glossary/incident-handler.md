@@ -106,4 +106,4 @@ Registrar fontes e horários, separar observação de interpretação e buscar v
 
 ## Relação com o capítulo
 
-No capítulo 7 da versão original do manuscrito, o termo se relaciona à organização das equipes e à continuidade da resposta. Seu uso no glossário destaca a função de conduzir ou coordenar o tratamento segundo mandato definido e de manter contexto entre triagem, contenção, comunicação e recuperação.
+No capítulo 7 da versão original, o termo se relaciona à organização das equipes e à continuidade da resposta. Seu uso no glossário destaca a função de conduzir ou coordenar o tratamento segundo mandato definido e de manter contexto entre triagem, contenção, comunicação e recuperação.

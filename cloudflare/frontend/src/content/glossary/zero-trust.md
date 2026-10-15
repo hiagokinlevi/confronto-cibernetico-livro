@@ -80,4 +80,4 @@ Verifique se o acesso a recursos prioritários segue políticas explícitas, se 
 
 ## Relação com o capítulo 4
 
-No capítulo 4 da versão original do manuscrito, Zero Trust pode ser compreendido como uma abordagem defensiva para organizar decisões de acesso e limitar o alcance de uma intrusão. Seu valor está na combinação de identidade, condição do dispositivo, contexto, privilégio mínimo, segmentação e observabilidade. O conceito orienta perguntas sobre como uma conta chega a um recurso e quais controles podem interromper essa cadeia; não promete impedir todo comprometimento.
+No capítulo 4 da versão original, Zero Trust pode ser compreendido como uma abordagem defensiva para organizar decisões de acesso e limitar o alcance de uma intrusão. Seu valor está na combinação de identidade, condição do dispositivo, contexto, privilégio mínimo, segmentação e observabilidade. O conceito orienta perguntas sobre como uma conta chega a um recurso e quais controles podem interromper essa cadeia; não promete impedir todo comprometimento.

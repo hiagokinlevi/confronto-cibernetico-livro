@@ -84,4 +84,4 @@ Verifique quais dados a sustentam, qual regra ou análise a gerou, se o horário
 
 ## No contexto do capítulo
 
-No capítulo 6 da versão original do manuscrito, NDR se relaciona à discussão de detecção: a observação de comunicações pode revelar relações e desvios que complementam outras fontes defensivas. Seu valor prático depende de saber o que foi efetivamente observado, reconhecer os pontos cegos e tratar cada alerta como evidência a investigar, não como veredito.
+No capítulo 6 da versão original, NDR se relaciona à discussão de detecção: a observação de comunicações pode revelar relações e desvios que complementam outras fontes defensivas. Seu valor prático depende de saber o que foi efetivamente observado, reconhecer os pontos cegos e tratar cada alerta como evidência a investigar, não como veredito.

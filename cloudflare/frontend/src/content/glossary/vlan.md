@@ -135,4 +135,4 @@ Não. O ponto de captura pode estar em uma porta de acesso ou um sistema de capt
 
 ## Relação com o capítulo da versão original
 
-Na versão original do manuscrito, o capítulo 8 oferece o contexto relacionado a este verbete. A VLAN pode ser lida ali como elemento de infraestrutura cujo valor defensivo depende de fronteiras compreensíveis e políticas efetivas.
+Na versão original, o capítulo 8 oferece o contexto relacionado a este verbete. A VLAN pode ser lida ali como elemento de infraestrutura cujo valor defensivo depende de fronteiras compreensíveis e políticas efetivas.

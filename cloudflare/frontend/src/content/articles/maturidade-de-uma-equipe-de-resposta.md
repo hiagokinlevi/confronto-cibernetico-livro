@@ -269,4 +269,4 @@ Apresente evidências, limites, critérios e consequências operacionais. Não a
 
 ## Relação com o capítulo 7
 
-No capítulo 7 do manuscrito original, a discussão sobre estrutura, papéis e coordenação do Black Team oferece um ponto de partida para compreender por que a maturidade não reside em uma ferramenta ou numa pessoa. A estrutura define como a equipe se organiza; os papéis indicam quem conduz cada parte; a coordenação conecta decisões, operações e comunicação. Neste artigo, esses elementos foram tratados como evidências a verificar na prestação real do serviço.
+No capítulo 7 da versão original, a discussão sobre estrutura, papéis e coordenação do Black Team oferece um ponto de partida para compreender por que a maturidade não reside em uma ferramenta ou numa pessoa. A estrutura define como a equipe se organiza; os papéis indicam quem conduz cada parte; a coordenação conecta decisões, operações e comunicação. Neste artigo, esses elementos foram tratados como evidências a verificar na prestação real do serviço.

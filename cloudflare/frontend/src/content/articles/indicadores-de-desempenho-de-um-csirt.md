@@ -142,6 +142,6 @@ Apresente o que foi observado, o período, a dimensão afetada, o denominador e 
 
 ## Leitura complementar e responsabilidade profissional
 
-O capítulo 9 do manuscrito original, dedicado a métricas de resposta a incidentes, oferece um ponto de partida para relacionar medição ao trabalho do CSIRT. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ajudar o leitor a situar essa discussão no contexto mais amplo de resposta a incidentes. A leitura não substitui documentação técnica atualizada, treinamento, validação de procedimentos nem julgamento da equipe diante de um caso concreto.
+O capítulo 9 da versão original, dedicado a métricas de resposta a incidentes, oferece um ponto de partida para relacionar medição ao trabalho do CSIRT. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ajudar o leitor a situar essa discussão no contexto mais amplo de resposta a incidentes. A leitura não substitui documentação técnica atualizada, treinamento, validação de procedimentos nem julgamento da equipe diante de um caso concreto.
 
 Uma prática madura de medição explica o que cada número representa, quem pode agir sobre ele e que incerteza permanece. O CSIRT deve mostrar sua contribuição sem reivindicar controle sobre decisões alheias; as equipes atendidas precisam participar das definições e melhorias. Assim, os indicadores apoiam confiança e capacidade compartilhada.

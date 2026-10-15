@@ -71,4 +71,4 @@ Não necessariamente. Pode haver motivo suficiente para limitar um risco antes d
 
 ## Relação com o capítulo
 
-Na organização original do manuscrito, o capítulo 8 oferece o contexto de resposta a incidentes em que a contenção se encaixa: uma intervenção para limitar danos enquanto a investigação continua. O conceito é mais útil quando tratado como decisão revisável, apoiada por evidências e vinculada a um risco específico, em vez de uma declaração genérica de que o incidente terminou.
+Na organização original do livro, o capítulo 8 oferece o contexto de resposta a incidentes em que a contenção se encaixa: uma intervenção para limitar danos enquanto a investigação continua. O conceito é mais útil quando tratado como decisão revisável, apoiada por evidências e vinculada a um risco específico, em vez de uma declaração genérica de que o incidente terminou.

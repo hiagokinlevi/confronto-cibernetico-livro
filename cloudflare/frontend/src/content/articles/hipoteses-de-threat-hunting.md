@@ -134,6 +134,6 @@ Quando os critérios definidos pela organização forem atingidos, especialmente
 
 ## Relação com o capítulo sobre o Black Team
 
-O capítulo 7 do manuscrito de Hiago Kin Levi aborda estrutura, papéis e coordenação do Black Team. A relação com hipóteses de hunting está na organização do trabalho: perguntas relevantes precisam de responsáveis, fontes acessíveis, limites de atuação e um caminho claro entre análise, validação e escalonamento. Uma equipe bem coordenada pode preservar a distinção entre inteligência, observação técnica e decisão operacional, além de registrar de onde veio cada conclusão.
+O capítulo 7 da versão original de Confronto Cibernético, de Hiago Kin Levi aborda estrutura, papéis e coordenação do Black Team. A relação com hipóteses de hunting está na organização do trabalho: perguntas relevantes precisam de responsáveis, fontes acessíveis, limites de atuação e um caminho claro entre análise, validação e escalonamento. Uma equipe bem coordenada pode preservar a distinção entre inteligência, observação técnica e decisão operacional, além de registrar de onde veio cada conclusão.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como referência para refletir sobre esse arranjo de papéis e sobre a coordenação discutida no capítulo. A leitura não substitui documentação técnica atualizada dos produtos, treinamento prático autorizado nem julgamento da equipe diante do ambiente real. A hipótese continua sendo uma ferramenta para perguntar com precisão, observar com cuidado e comunicar limites com honestidade.

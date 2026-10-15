@@ -80,4 +80,4 @@ Ao encerrar, avalie ajustes de cobertura, regras, registros e capacidade. Confir
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto para relacionar IPS à detecção e à prevenção dentro de uma estratégia defensiva. Este verbete detalha como interpretar a função do controle, suas evidências e seus limites durante a operação e a resposta a incidentes.
+Na versão original, o capítulo 6 oferece o contexto para relacionar IPS à detecção e à prevenção dentro de uma estratégia defensiva. Este verbete detalha como interpretar a função do controle, suas evidências e seus limites durante a operação e a resposta a incidentes.

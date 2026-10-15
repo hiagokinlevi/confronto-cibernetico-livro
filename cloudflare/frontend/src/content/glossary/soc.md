@@ -72,4 +72,4 @@ A conclusão exige cautela. É preciso estabelecer quais fontes estavam integrad
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o termo se relaciona ao capítulo 7. Nesse contexto, SOC ajuda a descrever a capacidade organizacional que observa sinais de segurança, separa alertas de incidentes e encaminha casos com contexto para quem conduz a resposta. O foco permanece na função e nas responsabilidades: a presença de uma equipe ou plataforma, isoladamente, não prova que a operação tenha cobertura, autoridade, dados e fluxos suficientes para tratar um incidente.
+Na versão original, o termo se relaciona ao capítulo 7. Nesse contexto, SOC ajuda a descrever a capacidade organizacional que observa sinais de segurança, separa alertas de incidentes e encaminha casos com contexto para quem conduz a resposta. O foco permanece na função e nas responsabilidades: a presença de uma equipe ou plataforma, isoladamente, não prova que a operação tenha cobertura, autoridade, dados e fluxos suficientes para tratar um incidente.

@@ -181,7 +181,7 @@ A organização precisa de critérios definidos para o incidente: condições de
 
 ## A leitura do capítulo de Hiago Kin Levi
 
-O livro de Hiago Kin Levi, da Editora Brasport, pode ser situado nesse percurso a partir do capítulo 1, dedicado a APTs, persistência e ciclo de ataque. A proposta de estudo aqui é relacionar esse recorte às perguntas da própria organização, sem presumir detalhes do manuscrito ou reproduzir seus trechos. O capítulo oferece o tema de partida; o aproveitamento profissional depende do trabalho crítico que o leitor faz ao redor dele.
+O livro de Hiago Kin Levi, da Editora Brasport, pode ser situado nesse percurso a partir do capítulo 1, dedicado a APTs, persistência e ciclo de ataque. A proposta de estudo aqui é relacionar esse recorte às perguntas da própria organização, sem presumir detalhes da versão original ou reproduzir seus trechos. O capítulo oferece o tema de partida; o aproveitamento profissional depende do trabalho crítico que o leitor faz ao redor dele.
 
 Durante a leitura, desenhe acesso inicial, persistência, movimentação lateral e exfiltração como possibilidades investigativas. Para cada uma, registre quais sinais seriam observáveis, em que fonte estariam e quem poderia verificá-los. Marque também o que não é visível. Escolha então uma relação de confiança importante e discuta como a equipe reconheceria seu uso indevido, conteria a exposição e verificaria o resultado.
 

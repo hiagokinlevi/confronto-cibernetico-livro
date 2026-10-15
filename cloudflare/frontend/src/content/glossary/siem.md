@@ -78,7 +78,7 @@ Confirme que as fontes estão saudáveis, que os campos usados têm o significad
 
 ## Relação com o capítulo
 
-No capítulo 6 da versão original do manuscrito, SIEM se relaciona ao trabalho de detecção porque conecta eventos dispersos a perguntas investigáveis. A contribuição prática não está em acumular registros, mas em preservar contexto suficiente para que sinais possam ser avaliados, relacionados e encaminhados com critério. Essa relação só se sustenta quando campos consistentes, retenção adequada e casos de uso testados acompanham a centralização.
+No capítulo 6 da versão original, SIEM se relaciona ao trabalho de detecção porque conecta eventos dispersos a perguntas investigáveis. A contribuição prática não está em acumular registros, mas em preservar contexto suficiente para que sinais possam ser avaliados, relacionados e encaminhados com critério. Essa relação só se sustenta quando campos consistentes, retenção adequada e casos de uso testados acompanham a centralização.
 
 ### Operação cotidiana
 

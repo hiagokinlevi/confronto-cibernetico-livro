@@ -150,7 +150,7 @@ Observe a experiência de triagem: alertas contêm campos úteis, a classificaç
 
 ## Relação com Black Teams e resposta a incidentes
 
-A melhoria contínua de detecção está ligada à identificação e resposta a incidentes porque uma regra determina quais sinais chegam à equipe, com que contexto e sob que prioridade. O capítulo 6 do manuscrito original aborda Black Teams nesse ciclo: equipes que examinam a capacidade defensiva, desafiam pressupostos e ajudam a revelar lacunas entre a regra descrita e o comportamento observado. Para o tema deste artigo, essa perspectiva é útil ao perguntar se um ajuste remove apenas ruído conhecido ou se também elimina caminhos que uma investigação precisaria enxergar.
+A melhoria contínua de detecção está ligada à identificação e resposta a incidentes porque uma regra determina quais sinais chegam à equipe, com que contexto e sob que prioridade. O capítulo 6 da versão original aborda Black Teams nesse ciclo: equipes que examinam a capacidade defensiva, desafiam pressupostos e ajudam a revelar lacunas entre a regra descrita e o comportamento observado. Para o tema deste artigo, essa perspectiva é útil ao perguntar se um ajuste remove apenas ruído conhecido ou se também elimina caminhos que uma investigação precisaria enxergar.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura relacionada ao capítulo sobre Black Teams, identificação e resposta a incidentes. Ele não substitui documentação técnica atualizada das plataformas, treinamento prático autorizado, validação local nem julgamento da equipe. A aplicação concreta depende das fontes, dos controles e do risco aceito em cada organização.
 

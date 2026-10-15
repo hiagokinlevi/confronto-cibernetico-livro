@@ -202,6 +202,6 @@ Verifique o artefato, a configuração, as identidades, os segredos relevantes, 
 
 ## Leitura relacionada ao capítulo 8
 
-O capítulo 8 do manuscrito original, dedicado a operações de resposta, contenção e recuperação, oferece o contexto editorial para aprofundar a sequência de decisões discutida aqui: preservar o que pode desaparecer, limitar o impacto, erradicar a causa conhecida e recuperar a partir de bases confiáveis. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode apoiar essa reflexão ao apresentar o tema no contexto mais amplo de resposta a incidentes.
+O capítulo 8 da versão original, dedicado a operações de resposta, contenção e recuperação, oferece o contexto editorial para aprofundar a sequência de decisões discutida aqui: preservar o que pode desaparecer, limitar o impacto, erradicar a causa conhecida e recuperar a partir de bases confiáveis. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode apoiar essa reflexão ao apresentar o tema no contexto mais amplo de resposta a incidentes.
 
 A leitura deve ser combinada com a documentação técnica atualizada da distribuição Kubernetes e dos serviços utilizados, com exercícios autorizados e com o julgamento da equipe que conhece o ambiente. Uma obra não substitui esses recursos nem determina a ação correta para um cluster específico. Cabe à organização adaptar procedimentos à sua arquitetura, às obrigações aplicáveis e às evidências disponíveis.

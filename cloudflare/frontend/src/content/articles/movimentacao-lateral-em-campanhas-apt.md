@@ -182,6 +182,6 @@ Quando a combinação de risco, criticidade e evidência justificar reduzir a po
 
 ## Relação com o capítulo sobre resposta tradicional a APTs
 
-No capítulo 4 do manuscrito original, sobre limitações da resposta tradicional diante de APTs, a movimentação lateral permite observar por que uma sequência de alertas locais pode esconder uma campanha. Um processo de resposta que acompanha somente o host inicial corre o risco de perder relações entre credenciais, sessões e sistemas críticos. Construir a cronologia e o grafo amplia a pergunta defensiva: além de remover um artefato, é preciso entender que caminhos de acesso foram usados e quais permanecem disponíveis.
+No capítulo 4 da versão original, sobre limitações da resposta tradicional diante de APTs, a movimentação lateral permite observar por que uma sequência de alertas locais pode esconder uma campanha. Um processo de resposta que acompanha somente o host inicial corre o risco de perder relações entre credenciais, sessões e sistemas críticos. Construir a cronologia e o grafo amplia a pergunta defensiva: além de remover um artefato, é preciso entender que caminhos de acesso foram usados e quais permanecem disponíveis.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura de contexto para essa discussão específica. Ele não substitui documentação técnica atualizada, treinamento prático nem julgamento da equipe diante das evidências e dependências de seu próprio ambiente.

@@ -59,4 +59,4 @@ Em geral, metadados podem indicar horário, origem, destino, duração e volume,
 ### Um envio por funcionário é sempre exfiltração?
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, este verbete se relaciona ao capítulo 1. A conexão é conceitual: tratar a saída de informações como uma etapa possível do confronto ajuda a formular perguntas e ordenar evidências. O capítulo não substitui a análise do caso concreto; a confirmação depende de registros, contexto de autorização e limites de cobertura disponíveis para cada ambiente.
+Na organização da versão original, este verbete se relaciona ao capítulo 1. A conexão é conceitual: tratar a saída de informações como uma etapa possível do confronto ajuda a formular perguntas e ordenar evidências. O capítulo não substitui a análise do caso concreto; a confirmação depende de registros, contexto de autorização e limites de cobertura disponíveis para cada ambiente.

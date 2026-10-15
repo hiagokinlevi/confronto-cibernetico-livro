@@ -72,4 +72,4 @@ Recusar a solicitação e reportá-la pelo canal de segurança conhecido. Não c
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 4 oferece o contexto de leitura para este verbete. MFA deve ser entendido ali como uma camada de defesa ligada à identidade, cujo efeito depende dos métodos aceitos, das sessões que ela protege e dos caminhos de recuperação que podem contorná-la. Essa relação ajuda a avaliar o controle de forma concreta: o que ele exige, quais evidências deixa e até onde reduz o risco.
+Na versão original, o capítulo 4 oferece o contexto de leitura para este verbete. MFA deve ser entendido ali como uma camada de defesa ligada à identidade, cujo efeito depende dos métodos aceitos, das sessões que ela protege e dos caminhos de recuperação que podem contorná-la. Essa relação ajuda a avaliar o controle de forma concreta: o que ele exige, quais evidências deixa e até onde reduz o risco.

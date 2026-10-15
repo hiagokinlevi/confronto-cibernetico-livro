@@ -79,7 +79,7 @@ def prose_length(html):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--strict-content', action='store_true', help='exigir os 100 artigos e 120 verbetes longos no HTML final')
+    parser.add_argument('--strict-content', action='store_true', help='exigir os 104 artigos e 120 verbetes longos no HTML final')
     args = parser.parse_args()
     check((ROOT / "favicon.png").is_file(), "Favicon ausente")
     check((ROOT / "assets" / "capa-confronto-cibernetico.jpeg").is_file(), "Capa ausente")
@@ -91,7 +91,7 @@ def main():
     check(book and book["image"]["url"] == COVER, "Imagem do Book JSON-LD incorreta")
 
     article_dirs = sorted((ROOT / "artigos").glob("*/index.html"))
-    check(len(article_dirs) == 100, f"Esperados 100 artigos; encontrados {len(article_dirs)}")
+    check(len(article_dirs) == 104, f"Esperados 104 artigos; encontrados {len(article_dirs)}")
     for path in article_dirs:
         url = f"{DOMAIN}/artigos/{path.parent.name}/"
         html, schema = parse_page(path, url)
@@ -119,7 +119,7 @@ def main():
 
     sitemap = ET.parse(ROOT / "sitemap.xml")
     urls = [item.text for item in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-    check(len(urls) == 236 and len(set(urls)) == 236, f"Sitemap incorreto: {len(urls)} URLs")
+    check(len(urls) == 240 and len(set(urls)) == 240, f"Sitemap incorreto: {len(urls)} URLs")
     titles = {}
     for path in article_dirs:
         check(f"{DOMAIN}/artigos/{path.parent.name}/" in urls, f"Artigo ausente no sitemap: {path}")
@@ -140,7 +140,7 @@ def main():
         check(len(parsed.og_titles) == 1 and len(parsed.og_titles[0]) <= 60, f"Open Graph title longo ou ausente: {url}")
         check(title not in titles, f"Title duplicado: {title} em {titles.get(title)} e {url}")
         titles[title] = url
-    print("OK: home, capa, favicon, 100 artigos, 120 verbetes, catálogo JSON, llms.txt, metadados e 236 URLs estáticas no sitemap.")
+    print("OK: home, capa, favicon, 104 artigos, 120 verbetes, catálogo JSON, llms.txt, metadados e 240 URLs estáticas no sitemap.")
 
 
 if __name__ == "__main__":

@@ -88,4 +88,4 @@ Não por si só. Um protocolo ou porta pode apoiar a hipótese, mas precisa ser 
 
 ## Relação com o capítulo
 
-No capítulo 8 da versão original do manuscrito, o termo serve para situar sistemas digitais ligados a processos físicos. Seu uso no glossário destaca que uma investigação nesse domínio precisa relacionar ativos e tráfego à operação e às consequências para pessoas e disponibilidade, sem presumir que controles corporativos possam ser aplicados sem adaptação.
+No capítulo 8 da versão original, o termo serve para situar sistemas digitais ligados a processos físicos. Seu uso no glossário destaca que uma investigação nesse domínio precisa relacionar ativos e tráfego à operação e às consequências para pessoas e disponibilidade, sem presumir que controles corporativos possam ser aplicados sem adaptação.

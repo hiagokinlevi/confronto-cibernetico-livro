@@ -96,4 +96,4 @@ Confirme se segue ligado a um objetivo, se os dados são confiáveis, se alguém
 
 ## Relação com o capítulo 9
 
-Na versão original do manuscrito, o capítulo 9 oferece o contexto relacionado a este verbete. A aplicação prática do KPI depende de explicitar objetivo, fórmula, fonte, periodicidade e interpretação, e de tratar a medida como apoio à revisão do processo. Essa disciplina ajuda profissionais de defesa a reconhecer o que um número mostra, o que deixa em aberto e que evidência adicional é necessária antes de agir ou concluir.
+Na versão original, o capítulo 9 oferece o contexto relacionado a este verbete. A aplicação prática do KPI depende de explicitar objetivo, fórmula, fonte, periodicidade e interpretação, e de tratar a medida como apoio à revisão do processo. Essa disciplina ajuda profissionais de defesa a reconhecer o que um número mostra, o que deixa em aberto e que evidência adicional é necessária antes de agir ou concluir.

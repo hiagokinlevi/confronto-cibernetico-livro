@@ -177,4 +177,4 @@ Explicite os fatos compartilhados, as incertezas e as consequências de cada op�
 
 ## Leitura relacionada ao capítulo 7
 
-O capítulo 7 do manuscrito original aborda a estrutura, os papéis e a coordenação do Black Team. Para quem deseja aprofundar esse enquadramento no contexto do livro de Hiago Kin Levi, publicado pela Editora Brasport, a leitura pode complementar a reflexão sobre organização da equipe e coordenação. A obra não substitui documentação técnica atualizada, treino, conhecimento do ambiente nem julgamento da equipe; a matriz e os procedimentos precisam ser adaptados e exercitados na realidade de cada organização.
+O capítulo 7 da versão original aborda a estrutura, os papéis e a coordenação do Black Team. Para quem deseja aprofundar esse enquadramento no contexto do livro de Hiago Kin Levi, publicado pela Editora Brasport, a leitura pode complementar a reflexão sobre organização da equipe e coordenação. A obra não substitui documentação técnica atualizada, treino, conhecimento do ambiente nem julgamento da equipe; a matriz e os procedimentos precisam ser adaptados e exercitados na realidade de cada organização.

@@ -78,4 +78,4 @@ Preserve o alerta e os eventos brutos relacionados, anote o horário e o fuso, i
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o tema se relaciona ao capítulo 4. Essa associação ajuda a localizar o verbete no percurso do livro; a análise prática continua dependendo da telemetria, do contexto operacional e da sequência observada em cada ambiente.
+Na organização da versão original, o tema se relaciona ao capítulo 4. Essa associação ajuda a localizar o verbete no percurso do livro; a análise prática continua dependendo da telemetria, do contexto operacional e da sequência observada em cada ambiente.

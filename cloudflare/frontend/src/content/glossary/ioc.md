@@ -74,4 +74,4 @@ Inclua o valor em formato claro, o tipo, a fonte, as datas relevantes, a confian
 
 ## Relação com a investigação do capítulo 6
 
-No capítulo 6 da versão original do manuscrito, o tema dos IOCs pode ser relacionado à passagem da observação para a busca defensiva: reconhecer um artefato, situá-lo no tempo e no ambiente, e testar o que ele permite concluir. O ponto prático é preservar essa cadeia de raciocínio. Um indicador ajuda a encontrar evidências e a orientar decisões de resposta, desde que permaneça ligado à sua origem, às incertezas e ao prazo em que sua associação foi considerada válida.
+No capítulo 6 da versão original, o tema dos IOCs pode ser relacionado à passagem da observação para a busca defensiva: reconhecer um artefato, situá-lo no tempo e no ambiente, e testar o que ele permite concluir. O ponto prático é preservar essa cadeia de raciocínio. Um indicador ajuda a encontrar evidências e a orientar decisões de resposta, desde que permaneça ligado à sua origem, às incertezas e ao prazo em que sua associação foi considerada válida.

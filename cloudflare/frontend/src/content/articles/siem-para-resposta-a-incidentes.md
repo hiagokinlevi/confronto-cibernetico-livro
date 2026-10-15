@@ -148,7 +148,7 @@ Somente quando escopo, autoridade, condições, efeitos colaterais e reversão e
 
 Não. Essas capacidades podem complementar-se. Ferramentas de endpoint oferecem observações específicas do dispositivo; sistemas de caso organizam tarefas e decisões; procedimentos forenses preservam e analisam evidências conforme a necessidade. O SIEM agrega e relaciona eventos, mas não substitui as funções e controles das demais ferramentas.
 
-## Relação com o capítulo 6 do manuscrito
+## Relação com o capítulo 6 da versão original
 
 No capítulo 6, “Black Teams na identificação e resposta a incidentes”, a discussão se relaciona à preparação de equipes para reconhecer sinais, investigar e responder de forma coordenada. Neste artigo, o SIEM aparece como uma capacidade de apoio a esse trabalho: reúne evidências distribuídas e ajuda a construir perguntas verificáveis, enquanto o julgamento continua dependente de contexto, papéis e fontes confiáveis. O livro de Hiago Kin Levi, publicado pela Editora Brasport, oferece o contexto editorial mais amplo do capítulo relacionado. A obra não substitui documentação técnica atualizada, treinamento, procedimentos da organização nem o julgamento da equipe diante de um caso concreto.
 

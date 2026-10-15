@@ -83,4 +83,4 @@ Depende do propósito do ambiente e dos riscos operacionais. Uma restrição pod
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 1 oferece o contexto relacionado a este verbete. Tor deve ser entendido ali como infraestrutura que altera a visibilidade da origem de uma conexão, e não como evidência automática de intenção. Essa distinção ajuda o leitor a interpretar observações de rede com precisão e a formular perguntas defensivas proporcionais.
+Na versão original, o capítulo 1 oferece o contexto relacionado a este verbete. Tor deve ser entendido ali como infraestrutura que altera a visibilidade da origem de uma conexão, e não como evidência automática de intenção. Essa distinção ajuda o leitor a interpretar observações de rede com precisão e a formular perguntas defensivas proporcionais.

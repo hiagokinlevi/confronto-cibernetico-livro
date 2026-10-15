@@ -65,4 +65,4 @@ Depois da recuperação, monitoramento reforçado ajuda a detectar recorrência.
 
 ## Relação com o capítulo original
 
-No capítulo 1 da versão original do manuscrito, o verbete serve como referência para interpretar a ocultação em camadas profundas do sistema e suas consequências para a confiança na observação. A conexão prática é direta: reconhecer a possibilidade de uma visão local manipulada ajuda a orientar a coleta, a análise e a decisão de reconstrução, sem transformar qualquer alerta isolado em prova de comprometimento.
+No capítulo 1 da versão original, o verbete serve como referência para interpretar a ocultação em camadas profundas do sistema e suas consequências para a confiança na observação. A conexão prática é direta: reconhecer a possibilidade de uma visão local manipulada ajuda a orientar a coleta, a análise e a decisão de reconstrução, sem transformar qualquer alerta isolado em prova de comprometimento.

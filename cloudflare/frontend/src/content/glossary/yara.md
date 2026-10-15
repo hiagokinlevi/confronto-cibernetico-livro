@@ -70,4 +70,4 @@ Registre qual regra e versão foram usadas, qual objeto e escopo foram examinado
 
 ## Relação com o capítulo
 
-No capítulo 6 da versão original do manuscrito, YARA se relaciona ao trabalho forense de transformar características observadas em buscas repetíveis. Seu valor está em ajudar a encontrar e comparar artefatos dentro de um escopo definido; a interpretação final depende da validação e do contexto da investigação.
+No capítulo 6 da versão original, YARA se relaciona ao trabalho forense de transformar características observadas em buscas repetíveis. Seu valor está em ajudar a encontrar e comparar artefatos dentro de um escopo definido; a interpretação final depende da validação e do contexto da investigação.

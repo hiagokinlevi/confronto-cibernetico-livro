@@ -242,6 +242,6 @@ Não existe número universal. Um único host pode justificar investigação se 
 
 Documente observações, fontes e janelas consultadas, explicações consideradas, dados ausentes, decisões e motivo da disposição. Indique se a conclusão é provisória e quais condições fariam reabrir o caso. “Não confirmado com a visibilidade disponível” é mais preciso do que afirmar que a atividade era segura ou maliciosa sem suporte.
 
-## Relação com o capítulo 6 do manuscrito
+## Relação com o capítulo 6 da versão original
 
 No capítulo 6, “Black Teams na identificação e resposta a incidentes”, o tema se conecta ao trabalho de reconhecer sinais, organizar investigação e coordenar resposta. Beaconing ajuda a ilustrar como uma pista de rede ganha significado quando relacionada a endpoint, identidade e contexto operacional. A leitura do livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer contexto editorial sobre identificação e resposta a incidentes.

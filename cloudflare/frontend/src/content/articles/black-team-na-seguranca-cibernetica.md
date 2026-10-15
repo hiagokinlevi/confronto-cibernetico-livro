@@ -4,7 +4,7 @@
 
 Quando profissionais pesquisam “black team na segurança cibernética”, a dúvida costuma ser menos sobre uma sigla e mais sobre desenho organizacional: trata-se de uma equipe nova, de um modelo de coordenação ou de outro nome para atividades que já existem? A resposta depende do contexto em que a expressão aparece.
 
-Neste artigo, o sentido adotado é o conceito apresentado no capítulo 5 do manuscrito de Confronto Cibernético: uma integração de defesa, inteligência e operações coordenadas diante de ameaças persistentes. Essa formulação descreve uma capacidade de articulação, e não uma licença para realizar qualquer atividade ofensiva, nem necessariamente uma caixa nova no organograma.
+Neste artigo, o sentido adotado é o conceito apresentado no capítulo 5 da versão original de Confronto Cibernético: uma integração de defesa, inteligência e operações coordenadas diante de ameaças persistentes. Essa formulação descreve uma capacidade de articulação, e não uma licença para realizar qualquer atividade ofensiva, nem necessariamente uma caixa nova no organograma.
 
 A resposta começa pelo trabalho real a realizar. Uma organização pode ter um centro de operações de segurança, resposta a incidentes, inteligência de ameaças, engenharia de segurança, gestão de vulnerabilidades, continuidade, risco, privacidade e equipes de produto.
 
@@ -204,7 +204,7 @@ Faça um exercício de mesa com hipóteses explícitas, sem alterar produção. 
 
 A coordenação deve se conectar aos processos de incidentes, gestão de mudanças, inteligência, risco e continuidade. Após cada uso significativo, reveja se o acionamento foi adequado, se a autoridade funcionou e se os dados foram suficientes.
 
-## O papel do manuscrito e do capítulo 5
+## O papel da versão original e do capítulo 5
 
 No capítulo 5 de Confronto Cibernético, Hiago Kin Levi aborda o conceito de black team como integração de defesa, inteligência e operações coordenadas diante de ameaças persistentes. Essa formulação ajuda a fazer uma pergunta organizacional: que competências e decisões precisam se encontrar para que a resposta seja coerente?
 

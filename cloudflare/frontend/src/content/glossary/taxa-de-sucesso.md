@@ -79,4 +79,4 @@ Registre-os como inconclusivos e informe como entram no cálculo. Não transform
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, este verbete se relaciona ao capítulo 9. A métrica ajuda a transformar objetivos de contenção e recuperação em resultados verificáveis, desde que o escopo, os critérios e as limitações permaneçam explícitos.
+Na versão original, este verbete se relaciona ao capítulo 9. A métrica ajuda a transformar objetivos de contenção e recuperação em resultados verificáveis, desde que o escopo, os critérios e as limitações permaneçam explícitos.

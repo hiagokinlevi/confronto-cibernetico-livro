@@ -78,4 +78,4 @@ Descreva quais eventos foram relacionados, quais atributos sustentam o vínculo,
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto de leitura relacionado a este verbete. A correlação de eventos conecta observações parciais e ajuda a compreender como a detecção defensiva pode reconhecer relações que nenhum registro isolado revela. A aplicação rigorosa depende de qualidade de dados, contexto e validação cuidadosa.
+Na versão original, o capítulo 6 oferece o contexto de leitura relacionado a este verbete. A correlação de eventos conecta observações parciais e ajuda a compreender como a detecção defensiva pode reconhecer relações que nenhum registro isolado revela. A aplicação rigorosa depende de qualidade de dados, contexto e validação cuidadosa.

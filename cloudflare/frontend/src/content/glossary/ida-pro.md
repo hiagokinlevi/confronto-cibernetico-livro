@@ -78,4 +78,4 @@ Identifique o binário e a área examinada, descreva o indício concreto, expliq
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 7 é o capítulo relacionado a este verbete. O IDA Pro se encaixa no estudo de ferramentas de análise de binários: sua contribuição é tornar o código compilado navegável e apoiar hipóteses técnicas que devem ser confrontadas com evidências do ambiente e, quando possível, com a execução observada.
+Na versão original, o capítulo 7 é o capítulo relacionado a este verbete. O IDA Pro se encaixa no estudo de ferramentas de análise de binários: sua contribuição é tornar o código compilado navegável e apoiar hipóteses técnicas que devem ser confrontadas com evidências do ambiente e, quando possível, com a execução observada.

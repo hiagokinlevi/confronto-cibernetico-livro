@@ -88,4 +88,4 @@ Não necessariamente. A definição inclui coordenação de capacidades ofensiva
 
 ## Relação com o capítulo da obra
 
-Na versão original do manuscrito, o capítulo 5 é o ponto de referência para compreender o Black Team no modelo proposto pelo livro. O conceito deve ser lido com a definição específica apresentada nesta entrada: coordenação de defesa, inteligência e capacidades ofensivas autorizadas diante de ameaças persistentes. A aplicação prática exige explicitar mandato, autoridade, escopo e limites no contexto de cada organização, pois o nome, isoladamente, não padroniza essas condições.
+Na versão original, o capítulo 5 é o ponto de referência para compreender o Black Team no modelo proposto pelo livro. O conceito deve ser lido com a definição específica apresentada nesta entrada: coordenação de defesa, inteligência e capacidades ofensivas autorizadas diante de ameaças persistentes. A aplicação prática exige explicitar mandato, autoridade, escopo e limites no contexto de cada organização, pois o nome, isoladamente, não padroniza essas condições.

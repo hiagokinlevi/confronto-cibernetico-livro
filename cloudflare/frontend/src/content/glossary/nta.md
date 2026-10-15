@@ -78,4 +78,4 @@ Descreva o que foi observado, em quais fontes e intervalos, e registre as lacuna
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, a NTA se relaciona ao capítulo 6 por integrar a detecção: padrões e metadados de rede podem revelar relações e mudanças que merecem investigação. Seu valor está em orientar perguntas e conectar evidências, mantendo explícitos o ponto de observação, a cobertura e os limites impostos pela criptografia.
+Na organização da versão original, a NTA se relaciona ao capítulo 6 por integrar a detecção: padrões e metadados de rede podem revelar relações e mudanças que merecem investigação. Seu valor está em orientar perguntas e conectar evidências, mantendo explícitos o ponto de observação, a cobertura e os limites impostos pela criptografia.

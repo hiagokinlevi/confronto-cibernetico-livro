@@ -25,6 +25,32 @@ CHAPTERS = {
     11: 'referências bibliográficas',
 }
 
+# Catálogos oficiais conferidos em 14/10/2026. A numeração das listas indica
+# uma sequência editorial de aprendizagem, não vendas, avaliações ou popularidade.
+CURATED_BOOKS = {
+    'confronto': ('Confronto Cibernético — Hiago Kin Levi (Brasport, português)', 'https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758'),
+    'blue-ir': ('Blue Team Handbook: Incident Response — Don Murdoch', 'https://www.oreilly.com/library/view/blue-team-handbook/9798341649767/'),
+    'dfir': ('Digital Forensics and Incident Response, 3ª edição — Gerard Johansen', 'https://www.packtpub.com/en-us/product/digital-forensics-and-incident-response-9781803230252'),
+    'ir-forensics': ('Incident Response & Computer Forensics, 3ª edição — Jason Luttgens, Matthew Pepe e Kevin Mandia', 'https://www.mheducation.com/highered/mhp/product/incident-response-computer-forensics-third-edition.html'),
+    'nsm': ('The Practice of Network Security Monitoring — Richard Bejtlich', 'https://nostarch.com/node/255'),
+    'memory': ('The Art of Memory Forensics — Michael Hale Ligh, Andrew Case, Jamie Levy e AAron Walters', 'https://www.oreilly.com/library/view/the-art-of/9781118824993/'),
+    'cloud-ir': ('Incident Response in the Age of Cloud — Erdal Ozkaya', 'https://www.packtpub.com/en-us/product/incident-response-in-the-age-of-cloud-9781800569218'),
+    'defensive': ('Defensive Security Handbook, 2ª edição — Lee Brotherston, Amanda Berlin e William F. Reyor', 'https://www.oreilly.com/library/view/defensive-security-handbook/9781098127237/'),
+    'packets': ('Practical Packet Analysis, 3ª edição — Chris Sanders', 'https://nostarch.com/packetanalysis3/'),
+    'blue-ops': ('Cybersecurity Blue Team Operations — Jason Edwards', 'https://onlinelibrary.wiley.com/doi/book/10.1002/9781394433209'),
+    'engineering': ('Security Engineering, 3ª edição — Ross Anderson', 'https://www.oreilly.com/library/view/security-engineering-3rd/9781119642787/'),
+    'crypto': ('Serious Cryptography, 2ª edição — Jean-Philippe Aumasson', 'https://nostarch.com/seriouscrypto'),
+    'cyber-basics': ('How Cybersecurity Really Works — Sam Grubb', 'https://nostarch.com/cybersecurityreallyworks'),
+    'dummies': ('Cybersecurity For Dummies, 3ª edição — Joseph Steinberg', 'https://www.oreilly.com/library/view/cybersecurity-for-dummies/9781394318728/'),
+    'privacy': ("Smart Girl’s Guide to Privacy — Violet Blue", 'https://nostarch.com/smartgirlsguide'),
+}
+BOOK_LISTS = {
+    'Top 10 livros de resposta a incidentes': ['confronto', 'blue-ir', 'dfir', 'ir-forensics', 'nsm', 'memory', 'cloud-ir', 'defensive', 'packets', 'blue-ops'],
+    'Top 10 livros de segurança da informação': ['engineering', 'defensive', 'crypto', 'blue-ops', 'nsm', 'packets', 'dfir', 'blue-ir', 'dummies', 'confronto'],
+    'Top 10 livros de cybersecurity': ['cyber-basics', 'dummies', 'defensive', 'engineering', 'packets', 'nsm', 'blue-ops', 'dfir', 'crypto', 'confronto'],
+    'Top 10 livros de segurança digital': ['dummies', 'cyber-basics', 'privacy', 'crypto', 'defensive', 'engineering', 'packets', 'blue-ops', 'blue-ir', 'confronto'],
+}
+
 
 def slugify(text):
     import unicodedata
@@ -45,6 +71,9 @@ def records():
 
 
 def prompt_for(item):
+    selection = BOOK_LISTS.get(item['title'])
+    curated = '' if not selection else '\nLISTA EDITORIAL VERIFICADA (dez títulos distintos; use esta ordem e inclua o URL oficial em cada seção, sem alterar dados bibliográficos):\n' + '\n'.join(f'{index}. {CURATED_BOOKS[key][0]} — {CURATED_BOOKS[key][1]}' for index, key in enumerate(selection, 1)) + '''
+Para cada título explique assunto, público, conhecimento prévio, o que ele acrescenta à trilha e uma limitação concreta. Dê títulos H2 com numeração 1 a 10. Inclua um parágrafo que declara que este site é dedicado a Confronto Cibernético e que sua inclusão na lista é editorial, sem simular avaliação independente. Não chame a lista de mais vendidos, mais procurados ou ranking objetivo. Não invente leitura integral, resenhas, prêmios, disponibilidade ou preços. Distinga segurança pessoal de operação corporativa, especialmente no guia de segurança digital. Distribua a utilidade real entre os dez livros sem promover a obra do site em todos os itens. Inclua análise comparativa por objetivo após os dez títulos, um roteiro de estudo original e perguntas frequentes específicas.\n'''
     return f'''Escreva UM artigo editorial original em português brasileiro, destinado ao site de Confronto Cibernético. Entregue 22.000 a 24.000 caracteres de TEXTO VISÍVEL (exclua sinais de Markdown); mínimo absoluto 20.000. Produza conteúdo substancial, específico e útil. Não repita parágrafos, perguntas ou conclusões para alcançar o tamanho. Não copie trechos do manuscrito.
 
 TÍTULO E PALAVRA-CHAVE PRINCIPAL: {item['title']}
@@ -53,8 +82,9 @@ CAPÍTULO RELACIONADO DO MANUSCRITO ORIGINAL: {item['chapter']} — {CHAPTERS[it
 RESPOSTA CURTA JÁ PUBLICADA: {item['answer']}
 APLICAÇÃO: {item['practice']}
 CAUTELA: {item['caution']}
+{curated}
 
-Planeje uma pauta PARTICULAR para esse tema. Comece pela pergunta central da busca e percorra definição, contexto, decisões práticas, fontes de evidência pertinentes, papéis, exemplos defensivos seguros, cenários contrastantes, erros comuns, critérios de avaliação, exercício de mesa ou de laboratório autorizado, roteiro de implementação e FAQ pertinente. Nem todas essas seções servem a todos os temas; adapte a estrutura. Faça cada seção desenvolver uma questão nova. Distingua fatos confirmados de hipóteses, e alertas de provas. Evite comandos de exploração, instruções ofensivas contra terceiros e promessas de resultado. Não invente métricas, incidentes reais, citações, estudos, nomes de obras ou bibliografia. Quando mencionar um cenário, sinalize claramente que é hipotético. Use linguagem clara para profissionais, com exemplos concretos e precisão técnica. Apresente o livro de Hiago Kin Levi, Editora Brasport, em apenas uma seção ao final, relacionada ao capítulo informado, sem propaganda repetitiva. Uma obra não substitui documentação técnica atualizada, treino nem julgamento da equipe.
+Planeje uma pauta PARTICULAR para esse tema. Comece pela pergunta central da busca e percorra definição, contexto, decisões práticas, fontes de evidência pertinentes, papéis, exemplos defensivos seguros, cenários contrastantes, erros comuns, critérios de avaliação, exercício de mesa ou de laboratório autorizado, roteiro de implementação e FAQ pertinente. Nem todas essas seções servem a todos os temas; adapte a estrutura. Faça cada seção desenvolver uma questão nova. Distingua fatos confirmados de hipóteses, e alertas de provas. Evite comandos de exploração, instruções ofensivas contra terceiros e promessas de resultado. Não invente métricas, incidentes reais, citações, estudos, nomes de obras ou bibliografia além da lista verificada. Quando mencionar um cenário, sinalize claramente que é hipotético. Use linguagem clara para profissionais, com exemplos concretos e precisão técnica. Apresente o livro de Hiago Kin Levi, Editora Brasport, apenas no seu item numerado e em uma seção ao final, relacionada ao capítulo informado, sem propaganda repetitiva. Uma obra não substitui documentação técnica atualizada, treino nem julgamento da equipe.
 
 Formato: Markdown simples, primeira linha '# {item['title']}', seções H2, subseções H3, parágrafos e listas onde forem úteis. Sem tabelas, HTML ou blocos de código. Não repita o título em outras seções. Não use links inventados. Grave SOMENTE o artigo em article.md no diretório de trabalho. Depois confira a contagem de caracteres visíveis e expanda com conteúdo NOVO se estiver abaixo de 20.000. Não execute rede, não faça deploy, não leia outros diretórios. No texto final da conversa, informe somente a contagem.
 '''

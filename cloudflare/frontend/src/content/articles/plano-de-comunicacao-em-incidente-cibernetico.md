@@ -140,6 +140,6 @@ Planeje formatos que alcancem públicos com diferentes necessidades de idioma, a
 
 Confiança depende também de coerência entre mensagem e experiência. Se funcionários são orientados a usar um portal que está indisponível, a instrução perde utilidade. Se clientes recebem um horário de atualização que não é cumprido, devem receber um aviso explicando a alteração e uma nova referência. Reconhecer uma limitação observável é melhor que repetir uma garantia genérica. O objetivo é que cada destinatário saiba o que foi confirmado, o que fazer agora e onde encontrar o próximo informe confiável.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
 No capítulo 8 de *Confronto Cibernético*, de Hiago Kin Levi, publicado pela Editora Brasport, operações de resposta, contenção e recuperação oferecem o contexto para pensar como equipes coordenam ações durante um incidente. A comunicação se encaixa nesse trabalho porque torna explícitos responsáveis, mudanças de estado, dependências e decisões necessárias enquanto a resposta evolui. A leitura pode servir como ponto de partida para discutir essa coordenação com a equipe, sem substituir documentação técnica atualizada, treinamento prático ou julgamento profissional diante das evidências e do contexto de cada organização.

@@ -129,4 +129,4 @@ Informe a fonte da evidência, o horário e o fuso, o ativo, o processo quando c
 
 ## Relação com o capítulo original
 
-No capítulo 1 da versão original do manuscrito, HTTP se relaciona à infraestrutura que sustenta a comunicação entre aplicações. Para o glossário, a ideia central é manter protocolo e intenção separados: HTTP estrutura a troca; o contexto técnico e operacional determina se aquele uso é esperado, suspeito ou parte de uma atividade de C2.
+No capítulo 1 da versão original, HTTP se relaciona à infraestrutura que sustenta a comunicação entre aplicações. Para o glossário, a ideia central é manter protocolo e intenção separados: HTTP estrutura a troca; o contexto técnico e operacional determina se aquele uso é esperado, suspeito ou parte de uma atividade de C2.

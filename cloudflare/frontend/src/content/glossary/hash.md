@@ -114,4 +114,4 @@ Se o objeto ainda estiver disponível e puder ser lido com autorização, calcul
 
 ## Relação com o capítulo
 
-No capítulo 8 da versão original do manuscrito, o termo pode ser lido como parte do vocabulário de preservação e análise de evidências. Seu uso rigoroso começa por declarar qual conjunto de bytes foi resumido e termina por limitar a conclusão ao que a comparação permite afirmar. Essa disciplina torna a verificação reproduzível e ajuda a equipe a explicar o peso da evidência sem atribuir ao hash garantias que dependem de outros controles.
+No capítulo 8 da versão original, o termo pode ser lido como parte do vocabulário de preservação e análise de evidências. Seu uso rigoroso começa por declarar qual conjunto de bytes foi resumido e termina por limitar a conclusão ao que a comparação permite afirmar. Essa disciplina torna a verificação reproduzível e ajuda a equipe a explicar o peso da evidência sem atribuir ao hash garantias que dependem de outros controles.

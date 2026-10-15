@@ -137,7 +137,7 @@ import MobileNav from '../components/MobileNav.astro';
 
     <section class="section home-articles" id="artigos">
       <div class="section-label"><span class="line"></span> GUIAS TEMÁTICOS</div>
-      <div class="home-articles-heading"><div><h2>Encontre o assunto<br>que você procura.</h2><p>100 artigos sobre resposta a incidentes, APTs, investigação, contenção e inteligência. Cada tema aponta para um capítulo do livro e para uma referência técnica.</p></div><a class="text-link" href="/artigos/">Explorar todos os artigos <span aria-hidden="true">↗</span></a></div>
+      <div class="home-articles-heading"><div><h2>Encontre o assunto<br>que você procura.</h2><p>104 artigos sobre resposta a incidentes, APTs, investigação, contenção, inteligência e livros para estudar. Cada tema aponta para um capítulo do livro e para uma referência técnica.</p></div><a class="text-link" href="/artigos/">Explorar todos os artigos <span aria-hidden="true">↗</span></a></div>
       <div class="home-articles-grid">
         {articles.filter((article) => ['Livro de resposta a incidentes cibernéticos', 'Ciclo de ataque de uma APT', 'Como usar MITRE ATT&CK na defesa', 'Resposta a ransomware em empresas'].includes(article.keyword)).map((article) => <a href={articleUrl(article)}><span>{article.category.toUpperCase()}</span><strong>{article.keyword}</strong><span>Ler artigo ↗</span></a>)}
       </div>

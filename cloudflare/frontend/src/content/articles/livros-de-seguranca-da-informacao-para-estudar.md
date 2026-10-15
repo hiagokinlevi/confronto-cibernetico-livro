@@ -163,7 +163,7 @@ Uma leitura pode sugerir uma melhoria, mas a implementação depende de avaliaç
 
 Em uma bibliografia de segurança, referências podem cumprir funções diferentes: introduzir conceitos, oferecer uma visão de domínio, detalhar método, apresentar casos ou servir como consulta. Ao consultar um capítulo, anote a pergunta que ele responde e os limites do que oferece. Não é necessário resumir cada página. Uma síntese original deve explicar a ideia com suas próprias palavras e atribuir claramente a obra quando discutir uma formulação específica.
 
-Manter um caderno de leitura também ajuda a identificar conexões entre capítulos sem copiar trechos. Registre conceitos, relação com outra fonte, aplicação imaginada e dúvida. Trechos literais devem ser usados com moderação e referência adequada, respeitando direitos autorais. Para este artigo, a orientação é elaborar uma pauta e raciocínio próprios; portanto, as explicações devem ser originais, sem transcrever o manuscrito ou usar parágrafos de livros como substituto de análise.
+Manter um caderno de leitura também ajuda a identificar conexões entre capítulos sem copiar trechos. Registre conceitos, relação com outra fonte, aplicação imaginada e dúvida. Trechos literais devem ser usados com moderação e referência adequada, respeitando direitos autorais. Para este artigo, a orientação é elaborar uma pauta e raciocínio próprios; portanto, as explicações devem ser originais, sem transcrever a versão original ou usar parágrafos de livros como substituto de análise.
 
 ## Perguntas frequentes
 
@@ -192,9 +192,9 @@ A acessibilidade técnica não equivale a autorização. Use laboratórios e pro
 Não existe número ideal. Para muitos leitores, uma obra central por vez facilita acompanhar o argumento, com documentação técnica consultada sob demanda. Leitores experientes podem manter mais de uma trilha se souberem separar objetivos e registrar contexto. Se as leituras se acumulam sem síntese ou aplicação, reduza o conjunto e retome a pergunta inicial.
 
 
-## O capítulo de referências e a continuidade do manuscrito
+## O capítulo de referências e a continuidade da versão original
 
-No capítulo 11, dedicado às referências bibliográficas, o livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser apresentado como parte do repertório bibliográfico do manuscrito e como ponto de partida para localizar leituras relacionadas. A seção de referências é útil quando deixa claro o papel de cada fonte e permite ao leitor seguir uma trilha de aprofundamento, em vez de sugerir que uma única obra encerra o tema.
+No capítulo 11, dedicado às referências bibliográficas, o livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser apresentado como parte do repertório bibliográfico da versão original e como ponto de partida para localizar leituras relacionadas. A seção de referências é útil quando deixa claro o papel de cada fonte e permite ao leitor seguir uma trilha de aprofundamento, em vez de sugerir que uma única obra encerra o tema.
 
 ## Fechamento: escolha uma pergunta e construa continuidade
 

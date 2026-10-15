@@ -88,4 +88,4 @@ Não por si só. Ela é parte da recuperação quando a chave foi exposta, mas o
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto para relacionar Golden Ticket à falsificação de identidade Kerberos e ao comprometimento do domínio. Neste verbete, o ponto central é interpretar o tíquete como evidência de uma falha na raiz de confiança, investigar sua origem e planejar recuperação coordenada.
+Na versão original, o capítulo 6 oferece o contexto para relacionar Golden Ticket à falsificação de identidade Kerberos e ao comprometimento do domínio. Neste verbete, o ponto central é interpretar o tíquete como evidência de uma falha na raiz de confiança, investigar sua origem e planejar recuperação coordenada.

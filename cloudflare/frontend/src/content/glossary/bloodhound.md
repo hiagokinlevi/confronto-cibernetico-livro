@@ -88,4 +88,4 @@ Entenda a necessidade e o responsável, reduza o alcance quando possível e apli
 
 ## Relação com o capítulo
 
-No capítulo 7 da versão original do manuscrito, BloodHound pode ser situado como ferramenta para compreender caminhos de acesso em ambientes de identidade. O ponto essencial para a leitura técnica é usar essa representação para localizar privilégios excessivos, validar as relações nas fontes correspondentes e orientar correções. A descoberta de um caminho é um achado de exposição; por si só, não demonstra que ele tenha sido percorrido.
+No capítulo 7 da versão original, BloodHound pode ser situado como ferramenta para compreender caminhos de acesso em ambientes de identidade. O ponto essencial para a leitura técnica é usar essa representação para localizar privilégios excessivos, validar as relações nas fontes correspondentes e orientar correções. A descoberta de um caminho é um achado de exposição; por si só, não demonstra que ele tenha sido percorrido.

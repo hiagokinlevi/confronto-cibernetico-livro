@@ -204,6 +204,6 @@ Controle acesso conforme necessidade, mantenha versões e anexos protegidos e ev
 
 ### O que fazer quando os fatos mudam?
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
-O capítulo 2 do manuscrito original aborda fases da resposta a incidentes e o modelo NIST. Um plano prático conecta esse ciclo a pessoas, critérios, evidências e autoridade da organização. Para aprofundar a discussão editorial sobre resposta e preparação, o livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser consultado em relação a esse capítulo. A obra oferece contexto de leitura, mas não substitui documentação técnica atualizada, treino, políticas aplicáveis nem o julgamento da equipe diante de evidências concretas.
+O capítulo 2 da versão original aborda fases da resposta a incidentes e o modelo NIST. Um plano prático conecta esse ciclo a pessoas, critérios, evidências e autoridade da organização. Para aprofundar a discussão editorial sobre resposta e preparação, o livro de Hiago Kin Levi, publicado pela Editora Brasport, pode ser consultado em relação a esse capítulo. A obra oferece contexto de leitura, mas não substitui documentação técnica atualizada, treino, políticas aplicáveis nem o julgamento da equipe diante de evidências concretas.

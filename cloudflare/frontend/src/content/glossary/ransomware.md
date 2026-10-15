@@ -72,4 +72,4 @@ Não há resposta universal. Desconectar da rede pode impedir novas ações e pr
 
 ## Relação com o capítulo original
 
-No capítulo 8 da versão original do manuscrito, o verbete pode ser usado como ponto de ligação entre a manifestação visível do ataque e as decisões de investigação e recuperação. O enquadramento mais útil mantém juntos bloqueio de dados, possível exfiltração, abuso de credenciais, propagação e validação dos backups. Essa leitura evita tratar ransomware como um problema isolado de descriptografia e ajuda a organizar perguntas sobre o que foi afetado, o que pode persistir e quais evidências ainda faltam.
+No capítulo 8 da versão original, o verbete pode ser usado como ponto de ligação entre a manifestação visível do ataque e as decisões de investigação e recuperação. O enquadramento mais útil mantém juntos bloqueio de dados, possível exfiltração, abuso de credenciais, propagação e validação dos backups. Essa leitura evita tratar ransomware como um problema isolado de descriptografia e ajuda a organizar perguntas sobre o que foi afetado, o que pode persistir e quais evidências ainda faltam.

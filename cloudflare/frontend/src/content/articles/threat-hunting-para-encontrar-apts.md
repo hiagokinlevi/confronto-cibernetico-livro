@@ -190,7 +190,7 @@ Depende da necessidade de validação, do risco de alertar alguém mal-intencion
 
 Inclua a pergunta, o escopo e período, as fontes e limitações, o método reproduzível, fatos observados, inferências separadas, alternativas avaliadas e decisão. Registre resultados negativos relevantes, cobertura ausente, encaminhamentos e melhorias com responsáveis. A conclusão deve dizer o que os dados sustentam e o que continua desconhecido.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
 No capítulo 4, dedicado às limitações da resposta tradicional diante de APTs, Hiago Kin Levi discute por que depender exclusivamente de alertas e regras conhecidas pode deixar lacunas. A caça a ameaças se relaciona a esse problema ao criar uma investigação orientada por hipótese sobre a telemetria disponível, com atenção às limitações de cobertura e à passagem de achados para o processo de resposta. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode oferecer um contexto editorial para essa discussão. Ele não substitui documentação técnica atualizada, treino, fontes confiáveis nem o julgamento da equipe que conhece o ambiente.
 

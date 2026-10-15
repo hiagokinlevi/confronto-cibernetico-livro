@@ -76,4 +76,4 @@ Depende da pergunta. A média representa a duração total distribuída pelo nú
 
 ## Relação com o capítulo da versão original
 
-Na versão original do manuscrito, o MTTR se relaciona ao capítulo 9. Nesse contexto, a sigla deve ser lida como métrica cujo sentido depende de uma definição explícita da equipe. Ao aplicar o conceito, registre os marcos de início e fim e compare somente casos construídos sob a mesma regra. Essa disciplina permite discutir tempos de resposta e recuperação sem confundir rapidez aparente com resolução efetiva.
+Na versão original, o MTTR se relaciona ao capítulo 9. Nesse contexto, a sigla deve ser lida como métrica cujo sentido depende de uma definição explícita da equipe. Ao aplicar o conceito, registre os marcos de início e fim e compare somente casos construídos sob a mesma regra. Essa disciplina permite discutir tempos de resposta e recuperação sem confundir rapidez aparente com resolução efetiva.

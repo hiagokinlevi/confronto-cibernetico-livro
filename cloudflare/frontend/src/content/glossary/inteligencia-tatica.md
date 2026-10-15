@@ -83,4 +83,4 @@ Pode ser um componente, mas raramente é suficiente por si só. Para orientar um
 
 ## Relação com o capítulo da versão original
 
-Na versão original do manuscrito, o capítulo 7 é o ponto de referência para este verbete.
+Na versão original, o capítulo 7 é o ponto de referência para este verbete.

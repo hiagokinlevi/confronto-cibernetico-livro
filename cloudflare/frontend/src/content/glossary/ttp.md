@@ -130,7 +130,7 @@ Descreva o comportamento diretamente e explique por que as categorias existentes
 
 ## Relação com o capítulo original
 
-No capítulo 1 da versão original do manuscrito, TTP pode ser entendido como uma lente para descrever o comportamento de um adversário ao longo da atividade, conectando finalidade, abordagem e execução.
+No capítulo 1 da versão original, TTP pode ser entendido como uma lente para descrever o comportamento de um adversário ao longo da atividade, conectando finalidade, abordagem e execução.
 A boa descrição mantém os níveis relacionados sem misturá-los. “Obter acesso” indica uma finalidade geral; uma forma de autenticação ou execução pode representar uma técnica; a ordem, os parâmetros e o recurso particular vistos no ambiente compõem o procedimento. Essa decomposição é útil porque permite comparar casos em níveis diferentes. Mesmo quando só há evidência suficiente para classificar uma técnica, a equipe pode conservar os detalhes do procedimento em notas investigativas sem afirmar que conhece toda a cadeia.
 
 ## Comparação e compartilhamento de inteligência

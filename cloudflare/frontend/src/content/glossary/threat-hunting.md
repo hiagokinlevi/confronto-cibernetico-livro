@@ -113,4 +113,4 @@ Observe se hipóteses eram testáveis, fontes e lacunas foram registradas, o rac
 
 ## Relação com o capítulo original
 
-Na versão original do manuscrito, o capítulo 3 oferece o contexto editorial relacionado a este verbete. A ligação é temática: Threat Hunting ajuda a entender como uma defesa procura sinais de atividade adversária ainda sem alerta conclusivo. Este texto desenvolve o conceito de forma independente, sem reproduzir trechos do capítulo; a aplicação concreta depende das fontes, procedimentos e lacunas de cada ambiente.
+Na versão original, o capítulo 3 oferece o contexto editorial relacionado a este verbete. A ligação é temática: Threat Hunting ajuda a entender como uma defesa procura sinais de atividade adversária ainda sem alerta conclusivo. Este texto desenvolve o conceito de forma independente, sem reproduzir trechos do capítulo; a aplicação concreta depende das fontes, procedimentos e lacunas de cada ambiente.

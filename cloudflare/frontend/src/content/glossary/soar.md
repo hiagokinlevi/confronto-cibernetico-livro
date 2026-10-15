@@ -86,4 +86,4 @@ Localize a chamada e a resposta registradas, identifique o sistema de destino e 
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o tema se relaciona ao capítulo 8 por tratar da coordenação da resposta. O ponto prático é reconhecer que o SOAR transforma procedimentos em fluxos executáveis e auditáveis. Seu benefício depende de limites claros, evidências preservadas e aprovação proporcional ao impacto das ações.
+Na organização da versão original, o tema se relaciona ao capítulo 8 por tratar da coordenação da resposta. O ponto prático é reconhecer que o SOAR transforma procedimentos em fluxos executáveis e auditáveis. Seu benefício depende de limites claros, evidências preservadas e aprovação proporcional ao impacto das ações.

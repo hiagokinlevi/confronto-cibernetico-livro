@@ -38,7 +38,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--strict', action='store_true', help='falhar se qualquer texto estiver abaixo do mínimo')
     args = parser.parse_args()
-    articles = audit('Artigos', ROOT / 'data' / 'articles.txt', ROOT / 'content' / 'articles', 20_000, 100)
+    articles = audit('Artigos', ROOT / 'data' / 'articles.txt', ROOT / 'content' / 'articles', 20_000, 104)
     glossary = audit('Glossário', ROOT / 'data' / 'glossary.txt', ROOT / 'content' / 'glossary', 10_000, 120)
     if args.strict and not (articles and glossary):
         raise SystemExit(1)

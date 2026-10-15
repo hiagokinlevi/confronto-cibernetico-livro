@@ -208,4 +208,4 @@ Descreva fatos observados, hipóteses, fontes consultadas e lacunas que impedem 
 
 ## Leitura relacionada ao capítulo de resposta e recuperação
 
-O capítulo 8 do manuscrito original, dedicado a operações de resposta, contenção e recuperação, oferece contexto para pensar como equipes transformam sinais técnicos em decisões coordenadas. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura relacionada a esse tema.
+O capítulo 8 da versão original, dedicado a operações de resposta, contenção e recuperação, oferece contexto para pensar como equipes transformam sinais técnicos em decisões coordenadas. O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como leitura relacionada a esse tema.

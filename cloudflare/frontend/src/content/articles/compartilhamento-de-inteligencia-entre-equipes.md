@@ -168,8 +168,8 @@ Pode haver automação quando a organização definiu critérios, escopo, autori
 
 ### Como saber se a colaboração está funcionando?
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
-No capítulo 7 do manuscrito original, dedicado à estrutura, aos papéis e à coordenação do Black Team, a troca de inteligência se conecta à clareza de responsabilidades: alguém observa, alguém interpreta, alguém autoriza a circulação e alguém decide como agir no contexto receptor. Essa relação ajuda a compreender por que compartilhar não é apenas transmitir um indicador. É coordenar pessoas e decisões com rastreabilidade, limites e possibilidade de correção.
+No capítulo 7 da versão original, dedicado à estrutura, aos papéis e à coordenação do Black Team, a troca de inteligência se conecta à clareza de responsabilidades: alguém observa, alguém interpreta, alguém autoriza a circulação e alguém decide como agir no contexto receptor. Essa relação ajuda a compreender por que compartilhar não é apenas transmitir um indicador. É coordenar pessoas e decisões com rastreabilidade, limites e possibilidade de correção.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como referência introdutória para refletir sobre essa estrutura e coordenação. A leitura não substitui documentação técnica atualizada, treinamento, políticas aplicáveis nem o julgamento da equipe diante das evidências e do ambiente concreto.

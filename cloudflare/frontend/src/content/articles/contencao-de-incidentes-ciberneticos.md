@@ -193,7 +193,7 @@ Pelo período necessário para controlar o risco que a justificou, com revisões
 
 Não. Pode indicar que a atividade cessou, mas também que a telemetria foi interrompida, que o comportamento mudou ou que a atividade migrou. Confirme a saúde dos sensores, examine fontes independentes e procure evidências no escopo relacionado. O encerramento depende de investigação e recuperação, além da contenção.
 
-## Relação com o capítulo 8 do manuscrito
+## Relação com o capítulo 8 da versão original
 
 O capítulo 8, dedicado a operações de resposta, contenção e recuperação, situa a contenção como parte de um ciclo operacional: reduzir a capacidade de dano enquanto a equipe preserva informações úteis, decide com base no risco imediato e atualiza o plano à medida que surgem evidências. A aplicação prática começa por classificar ativos críticos, escolher controles reversíveis quando isso for adequado e registrar a justificativa de cada bloqueio. A cautela central é que isolar tudo sem priorização pode interromper serviços essenciais e eliminar visibilidade sobre a atividade investigada.
 

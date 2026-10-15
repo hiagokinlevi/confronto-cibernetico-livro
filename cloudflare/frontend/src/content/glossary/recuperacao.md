@@ -100,4 +100,4 @@ Relacionar o alerta ao estado anterior, às ações de recuperação e às hipó
 
 ## Relação com o capítulo original
 
-Na versão original do manuscrito, o tema se relaciona ao capítulo 8. Neste verbete, recuperação é tratada como uma decisão operacional baseada em confiança verificável: backups confiáveis, credenciais revistas, validação de integridade e monitoramento reforçado formam critérios para um retorno responsável, e não garantias abstratas de que todo risco desapareceu.
+Na versão original, o tema se relaciona ao capítulo 8. Neste verbete, recuperação é tratada como uma decisão operacional baseada em confiança verificável: backups confiáveis, credenciais revistas, validação de integridade e monitoramento reforçado formam critérios para um retorno responsável, e não garantias abstratas de que todo risco desapareceu.

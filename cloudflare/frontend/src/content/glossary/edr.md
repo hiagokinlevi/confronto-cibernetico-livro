@@ -88,4 +88,4 @@ O isolamento pode conter certas comunicações do dispositivo, conforme a implem
 
 ## Relação com o capítulo 6
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto relacionado a este verbete. O EDR ajuda a transformar sinais do endpoint em evidência investigável e em opções de resposta. Seu uso exige que a equipe verifique a cobertura e as lacunas de coleta antes de interpretar a ausência de alertas como evidência de segurança.
+Na versão original, o capítulo 6 oferece o contexto relacionado a este verbete. O EDR ajuda a transformar sinais do endpoint em evidência investigável e em opções de resposta. Seu uso exige que a equipe verifique a cobertura e as lacunas de coleta antes de interpretar a ausência de alertas como evidência de segurança.

@@ -218,7 +218,7 @@ Descreva o fato observado, o escopo conhecido, o período, as fontes consultadas
 
 ## Relação com o capítulo sobre identificação e resposta a incidentes
 
-A detecção na nuvem conecta identificação e resposta porque converte eventos distribuídos em uma cronologia que permite decidir com contexto. No capítulo 6 do manuscrito original, a atuação de Black Teams na identificação e resposta a incidentes oferece uma referência para pensar coordenação, validação de sinais e passagem entre observação e ação. Aplicada a ambientes de nuvem, essa perspectiva pede que a equipe conheça as identidades, as APIs, a configuração e o estado de execução, e que trate evidências com rigor antes de afirmar causa ou impacto.
+A detecção na nuvem conecta identificação e resposta porque converte eventos distribuídos em uma cronologia que permite decidir com contexto. No capítulo 6 da versão original, a atuação de Black Teams na identificação e resposta a incidentes oferece uma referência para pensar coordenação, validação de sinais e passagem entre observação e ação. Aplicada a ambientes de nuvem, essa perspectiva pede que a equipe conheça as identidades, as APIs, a configuração e o estado de execução, e que trate evidências com rigor antes de afirmar causa ou impacto.
 
 
 

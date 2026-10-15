@@ -134,6 +134,6 @@ Resuma serviços afetados, consequências, estado da recuperação, decisões ne
 
 Em geral, a comparação direta é frágil. Diferenças de tamanho, criticidade, arquitetura, fornecedores, cobertura de detecção e obrigações alteram tanto o risco quanto o tempo necessário. Comparações podem ser úteis se normalizadas por escopo relevante e acompanhadas das premissas, mas um ranking simples tende a apagar fatores decisivos. Para melhorar, compare processos internos e objetivos próprios, usando referências externas apenas quando a metodologia for compatível e verificável.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
 No capítulo 9, dedicado a métricas de resposta a incidentes, a obra de Hiago Kin Levi, publicada pela Editora Brasport, oferece um ponto de referência para pensar como evidências e tempos ajudam a avaliar a resposta. Aplicada ao ransomware, essa perspectiva precisa incluir alcance, impacto nos serviços, recuperação de dados e segurança do retorno, em vez de reduzir o resultado a uma duração única. Uma obra pode apoiar a reflexão, mas não substitui documentação técnica atualizada, treino nem julgamento da equipe diante das condições concretas de cada incidente.

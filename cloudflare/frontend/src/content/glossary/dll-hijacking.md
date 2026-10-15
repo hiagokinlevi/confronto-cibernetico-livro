@@ -76,4 +76,4 @@ Declare a limitação e busque evidências complementares: memória coletada, ra
 
 ## Relação com o capítulo
 
-Na organização original do manuscrito, o termo se relaciona ao capítulo 1 como vocabulário para compreender uma via de execução de código por meio de aplicações e bibliotecas. Sua utilidade no glossário está em conectar o comportamento observado ao mecanismo que precisa ser confirmado: o caminho efetivo de carregamento e a integridade das bibliotecas. Essa formulação permite que equipes descrevam o risco com precisão sem presumir, apenas pelo nome do processo ou pela presença de um arquivo, que houve sequestro.
+Na organização original do livro, o termo se relaciona ao capítulo 1 como vocabulário para compreender uma via de execução de código por meio de aplicações e bibliotecas. Sua utilidade no glossário está em conectar o comportamento observado ao mecanismo que precisa ser confirmado: o caminho efetivo de carregamento e a integridade das bibliotecas. Essa formulação permite que equipes descrevam o risco com precisão sem presumir, apenas pelo nome do processo ou pela presença de um arquivo, que houve sequestro.

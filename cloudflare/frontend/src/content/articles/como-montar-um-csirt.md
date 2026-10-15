@@ -146,6 +146,6 @@ Apoio externo pode ser apropriado quando faltam especialidades, capacidade de es
 
 ## O capítulo relacionado e o limite de uma referência
 
-O capítulo 7 do manuscrito original, dedicado à estrutura, aos papéis e à coordenação do Black Team, oferece um ponto de conexão para refletir sobre responsabilidades e colaboração entre funções de segurança. Essa relação é útil quando a organização está definindo como a equipe de resposta se integra a uma estrutura mais ampla e como evita lacunas de autoridade.
+O capítulo 7 da versão original, dedicado à estrutura, aos papéis e à coordenação do Black Team, oferece um ponto de conexão para refletir sobre responsabilidades e colaboração entre funções de segurança. Essa relação é útil quando a organização está definindo como a equipe de resposta se integra a uma estrutura mais ampla e como evita lacunas de autoridade.
 
 O livro de Hiago Kin Levi, publicado pela Editora Brasport, pode servir como referência complementar para esse contexto. A leitura não substitui documentação técnica atualizada, treinamento, acordos formais nem julgamento da equipe diante das condições concretas de um incidente. O CSIRT precisa manter seus procedimentos alinhados ao ambiente e revisá-los quando mudam serviços, riscos, pessoas e obrigações.

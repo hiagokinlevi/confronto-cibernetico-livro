@@ -62,4 +62,4 @@ Confirmação exige evidência de que a permissão ou capacidade aumentou, ou de
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o termo se relaciona ao capítulo 1 e às fases do ataque. Essa ligação oferece um ponto de orientação para acompanhar como uma intrusão pode ampliar seu alcance após a entrada inicial. A leitura deve preservar a distinção entre a sequência didática e a variedade de trajetórias observadas em ambientes reais: a fase ajuda a organizar a análise, enquanto a evidência determina o que pode ser afirmado sobre cada incidente.
+Na organização da versão original, o termo se relaciona ao capítulo 1 e às fases do ataque. Essa ligação oferece um ponto de orientação para acompanhar como uma intrusão pode ampliar seu alcance após a entrada inicial. A leitura deve preservar a distinção entre a sequência didática e a variedade de trajetórias observadas em ambientes reais: a fase ajuda a organizar a análise, enquanto a evidência determina o que pode ser afirmado sobre cada incidente.

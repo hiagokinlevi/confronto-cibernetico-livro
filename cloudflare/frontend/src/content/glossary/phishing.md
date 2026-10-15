@@ -78,6 +78,6 @@ A aparência não é prova. Confirme o domínio e o contexto por um canal conhec
 
 O encerramento depende do objetivo e do procedimento de resposta. Deve haver uma justificativa para o escopo considerado: destinatários identificados, interações avaliadas, recursos possivelmente afetados, medidas tomadas e lacunas relevantes. Se a origem ou o uso posterior não puderem ser confirmados, registre essa incerteza em vez de converter a falta de evidência em certeza.
 
-## Relação com o capítulo do manuscrito
+## Relação com o capítulo da versão original
 
-Na versão original do manuscrito, o capítulo 6 é o ponto de referência indicado para este conceito. No glossário, a entrada funciona como consulta independente: define a técnica e oferece critérios para distinguir a tentativa do impacto efetivamente demonstrado durante uma investigação.
+Na versão original, o capítulo 6 é o ponto de referência indicado para este conceito. No glossário, a entrada funciona como consulta independente: define a técnica e oferece critérios para distinguir a tentativa do impacto efetivamente demonstrado durante uma investigação.

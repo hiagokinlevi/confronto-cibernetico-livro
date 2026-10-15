@@ -95,4 +95,4 @@ A confirmação vem da convergência de evidências e da validação do contexto
 
 ## Relação com o capítulo
 
-No capítulo 3 da versão original do manuscrito, o termo pode ser lido como uma lente de detecção: a repetição ajuda a localizar comunicações que merecem exame, mas ganha significado somente quando ligada ao sistema de origem, ao destino e ao restante da atividade observada. Essa perspectiva preserva a diferença entre pista, hipótese e conclusão.
+No capítulo 3 da versão original, o termo pode ser lido como uma lente de detecção: a repetição ajuda a localizar comunicações que merecem exame, mas ganha significado somente quando ligada ao sistema de origem, ao destino e ao restante da atividade observada. Essa perspectiva preserva a diferença entre pista, hipótese e conclusão.

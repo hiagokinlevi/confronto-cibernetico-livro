@@ -60,4 +60,4 @@ Antes de um incidente, organizações e comunidades atendidas podem tornar a cap
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o CSIRT se relaciona ao capítulo 7. O termo oferece uma lente para compreender quem recebe uma ocorrência, como a coordenação se estrutura e onde começam e terminam as responsabilidades durante a resposta. Ao analisar um caso, a pergunta útil não é apenas “qual equipe aparece?”, mas qual público ela atende, que autoridade recebeu, quais serviços prestou e como articulou as pessoas capazes de proteger e recuperar os sistemas.
+Na organização da versão original, o CSIRT se relaciona ao capítulo 7. O termo oferece uma lente para compreender quem recebe uma ocorrência, como a coordenação se estrutura e onde começam e terminam as responsabilidades durante a resposta. Ao analisar um caso, a pergunta útil não é apenas “qual equipe aparece?”, mas qual público ela atende, que autoridade recebeu, quais serviços prestou e como articulou as pessoas capazes de proteger e recuperar os sistemas.

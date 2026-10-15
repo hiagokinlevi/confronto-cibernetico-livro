@@ -72,4 +72,4 @@ Não. A ferramenta tem usos legítimos em desenvolvimento, auditoria e resposta 
 
 ## Relação com o capítulo da obra
 
-Na organização da versão original do manuscrito, o capítulo 7 oferece o contexto relacionado a este verbete. A referência serve para orientar a leitura dentro da obra; a explicação aqui permanece autônoma e deve ser interpretada segundo o escopo autorizado de cada avaliação. Na prática, a recomendação central é simples: uma falha identificada em teste deve ser reproduzida de forma controlada e encaminhada ao responsável.
+Na organização da versão original, o capítulo 7 oferece o contexto relacionado a este verbete. A referência serve para orientar a leitura dentro da obra; a explicação aqui permanece autônoma e deve ser interpretada segundo o escopo autorizado de cada avaliação. Na prática, a recomendação central é simples: uma falha identificada em teste deve ser reproduzida de forma controlada e encaminhada ao responsável.

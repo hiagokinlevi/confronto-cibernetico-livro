@@ -86,4 +86,4 @@ Descreva o mecanismo suspeito, os fatos que o sustentam, as explicações legít
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 1 oferece o contexto para situar o backdoor entre os mecanismos de ataque que podem sustentar acesso após a intrusão. O verbete complementa esse enquadramento ao destacar a leitura defensiva: reconhecer evidências, investigar caminhos alternativos e tratar a remoção como parte de uma recuperação mais ampla.
+Na versão original, o capítulo 1 oferece o contexto para situar o backdoor entre os mecanismos de ataque que podem sustentar acesso após a intrusão. O verbete complementa esse enquadramento ao destacar a leitura defensiva: reconhecer evidências, investigar caminhos alternativos e tratar a remoção como parte de uma recuperação mais ampla.

@@ -92,4 +92,4 @@ Um indício é compatível com uma hipótese, mas admite explicações alternati
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o tema se relaciona ao capítulo 1. No glossário, a entrada complementa esse contexto ao tratar reconhecimento como uma atividade que pode ocorrer antes ou durante uma intrusão e ao enfatizar como a defesa interpreta sinais e limites de visibilidade.
+Na organização da versão original, o tema se relaciona ao capítulo 1. No glossário, a entrada complementa esse contexto ao tratar reconhecimento como uma atividade que pode ocorrer antes ou durante uma intrusão e ao enfatizar como a defesa interpreta sinais e limites de visibilidade.

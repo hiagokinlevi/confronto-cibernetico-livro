@@ -74,4 +74,4 @@ Relacione a atividade ao resultado que produz e às consequências da indisponib
 
 ## Relação com o capítulo 10
 
-Na versão original do manuscrito, o capítulo 10 é o ponto de referência deste verbete. A leitura do conceito deve manter no centro as funções essenciais e as condições concretas para mantê-las ou restaurá-las durante uma interrupção cibernética. Dependências, tempo de recuperação e operação degradada conectam a defesa técnica à continuidade da missão, sem presumir que um controle isolado ou o retorno rápido de um sistema, por si só, representem resiliência.
+Na versão original, o capítulo 10 é o ponto de referência deste verbete. A leitura do conceito deve manter no centro as funções essenciais e as condições concretas para mantê-las ou restaurá-las durante uma interrupção cibernética. Dependências, tempo de recuperação e operação degradada conectam a defesa técnica à continuidade da missão, sem presumir que um controle isolado ou o retorno rápido de um sistema, por si só, representem resiliência.

@@ -96,4 +96,4 @@ Verifique quais entidades e fontes estão cobertas, como identidades são resolv
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 6 oferece o contexto para situar UEBA entre as capacidades de detecção. O verbete detalha o princípio comportamental: observar desvios com referência contextual, investigar as evidências que os sustentam e revisar a linha de base quando a rotina legítima muda. Essa leitura evita tratar o alerta como conclusão e mantém o foco no trabalho defensivo de validação.
+Na versão original, o capítulo 6 oferece o contexto para situar UEBA entre as capacidades de detecção. O verbete detalha o princípio comportamental: observar desvios com referência contextual, investigar as evidências que os sustentam e revisar a linha de base quando a rotina legítima muda. Essa leitura evita tratar o alerta como conclusão e mantém o foco no trabalho defensivo de validação.

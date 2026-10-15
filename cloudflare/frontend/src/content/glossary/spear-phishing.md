@@ -74,4 +74,4 @@ A cópia original sustenta análise de cabeçalhos, conteúdo, destinatários e 
 
 ## Relação com o capítulo
 
-Na organização da versão original do manuscrito, o capítulo 6 é o ponto de referência relacionado a este verbete. A leitura do termo deve apoiar a identificação de uma abordagem direcionada e a distinção entre recebimento da mensagem, interação e comprometimento confirmado; a classificação, por si só, não determina o resultado do incidente.
+Na organização da versão original, o capítulo 6 é o ponto de referência relacionado a este verbete. A leitura do termo deve apoiar a identificação de uma abordagem direcionada e a distinção entre recebimento da mensagem, interação e comprometimento confirmado; a classificação, por si só, não determina o resultado do incidente.

@@ -89,4 +89,4 @@ Um plano útil corresponde a contatos e sistemas reais, pode ser localizado dura
 
 ## Relação com o capítulo 2
 
-No capítulo 2 da versão original do manuscrito, a ISO/IEC 27035 pode ser entendida como referência para práticas estruturadas de gestão de incidentes. Seu valor está em oferecer um modo de organizar preparação, avaliação, resposta e aprendizagem; a execução concreta ainda depende de responsáveis definidos, procedimentos adequados ao ambiente e exercícios que revelem se o processo funciona. Essa leitura mantém a norma no papel de orientação e evita confundi-la com garantia de prevenção ou resposta automática.
+No capítulo 2 da versão original, a ISO/IEC 27035 pode ser entendida como referência para práticas estruturadas de gestão de incidentes. Seu valor está em oferecer um modo de organizar preparação, avaliação, resposta e aprendizagem; a execução concreta ainda depende de responsáveis definidos, procedimentos adequados ao ambiente e exercícios que revelem se o processo funciona. Essa leitura mantém a norma no papel de orientação e evita confundi-la com garantia de prevenção ou resposta automática.

@@ -72,4 +72,4 @@ Somente quando houver base para confiar que a fonte observava aquele tipo de eve
 
 ## Relação com o capítulo 6
 
-Na versão original do manuscrito, o capítulo 6 é o ponto de referência para este verbete. A função dos logs na detecção pode ser entendida como a preservação de observações que sustentam alertas, cronologias e investigação posterior. O termo reúne uma prática técnica cotidiana e uma condição de qualidade: os registros só ajudam quando a organização consegue explicar sua origem, seu tempo, sua cobertura e seus limites.
+Na versão original, o capítulo 6 é o ponto de referência para este verbete. A função dos logs na detecção pode ser entendida como a preservação de observações que sustentam alertas, cronologias e investigação posterior. O termo reúne uma prática técnica cotidiana e uma condição de qualidade: os registros só ajudam quando a organização consegue explicar sua origem, seu tempo, sua cobertura e seus limites.

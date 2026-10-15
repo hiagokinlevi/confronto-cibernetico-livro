@@ -76,4 +76,4 @@ Em geral, não com base apenas nesse uso. A ferramenta pode ser compartilhada, c
 
 ## Relação com o capítulo 7
 
-Na versão original do manuscrito, o capítulo 7 oferece o contexto relacionado a este verbete. A leitura do conceito com foco defensivo ajuda a interpretar referências à plataforma sem confundir capacidade técnica, autorização e intenção. Para o glossário, a regra prática permanece: artefatos semelhantes podem ter usos distintos; confirme o escopo autorizado e o contexto antes de atribuir um incidente.
+Na versão original, o capítulo 7 oferece o contexto relacionado a este verbete. A leitura do conceito com foco defensivo ajuda a interpretar referências à plataforma sem confundir capacidade técnica, autorização e intenção. Para o glossário, a regra prática permanece: artefatos semelhantes podem ter usos distintos; confirme o escopo autorizado e o contexto antes de atribuir um incidente.

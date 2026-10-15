@@ -90,4 +90,4 @@ Descreva o objeto e sua procedência, os passos de preservação e análise, as 
 
 ## Relação com o capítulo
 
-No capítulo 1 da versão original do manuscrito, o conceito pode ser situado entre as formas de ocultar comunicação e os desafios de reconhecê-la durante uma investigação. Para o glossário, o ponto prático é manter juntas duas ideias: o arquivo pode parecer comum e, ainda assim, exigir exame técnico; a suspeita só ganha força quando a análise do objeto é relacionada ao fluxo de transferência e ao contexto do sistema.
+No capítulo 1 da versão original, o conceito pode ser situado entre as formas de ocultar comunicação e os desafios de reconhecê-la durante uma investigação. Para o glossário, o ponto prático é manter juntas duas ideias: o arquivo pode parecer comum e, ainda assim, exigir exame técnico; a suspeita só ganha força quando a análise do objeto é relacionada ao fluxo de transferência e ao contexto do sistema.

@@ -81,4 +81,4 @@ Não. É motivo para triagem, sobretudo quando a interação parte de ativo inte
 
 ## Relação com o capítulo
 
-Na versão original do manuscrito, o capítulo 7 oferece o contexto relacionado a este verbete. O honeypot se insere na inteligência como meio controlado de produzir observações sobre interações dirigidas a alvos simulados.
+Na versão original, o capítulo 7 oferece o contexto relacionado a este verbete. O honeypot se insere na inteligência como meio controlado de produzir observações sobre interações dirigidas a alvos simulados.

@@ -82,4 +82,4 @@ Porque o efeito de uma contenção depende do papel da conexão ou do ativo no p
 
 ## Relação com o capítulo original
 
-No capítulo 8 da versão original do manuscrito, SCADA funciona como referência para discutir sistemas que ligam observação digital a processos físicos. Este verbete aprofunda o vocabulário necessário para reconhecer componentes, interpretar evidências e coordenar decisões defensivas com as equipes responsáveis pela operação.
+No capítulo 8 da versão original, SCADA funciona como referência para discutir sistemas que ligam observação digital a processos físicos. Este verbete aprofunda o vocabulário necessário para reconhecer componentes, interpretar evidências e coordenar decisões defensivas com as equipes responsáveis pela operação.

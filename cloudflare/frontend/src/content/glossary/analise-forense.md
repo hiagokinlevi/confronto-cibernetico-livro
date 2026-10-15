@@ -117,4 +117,4 @@ Não necessariamente. A busca pode ter sido estreita, a fonte pode não registra
 
 ## Aplicação no capítulo relacionado
 
-Na organização original do manuscrito, este verbete se relaciona ao capítulo 8. A análise forense transforma sinais técnicos em afirmações avaliáveis: delimita a pergunta, preserva vestígios e explicita incertezas. No confronto cibernético, ajuda a evitar atribuições precipitadas e orienta decisões defensivas.
+Na organização original do livro, este verbete se relaciona ao capítulo 8. A análise forense transforma sinais técnicos em afirmações avaliáveis: delimita a pergunta, preserva vestígios e explicita incertezas. No confronto cibernético, ajuda a evitar atribuições precipitadas e orienta decisões defensivas.
