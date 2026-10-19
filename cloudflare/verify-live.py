@@ -29,7 +29,11 @@ checks = {
     "/en/mttd-mttr-calculator/": 'Calculate metrics',
     "/metric-report.mjs": 'createMetricsReport',
     "/feed.xml": '<rss',
+    "/imprensa/": 'Referências para pesquisa e resenhas',
 }
+for edition, isbn in [('impresso', '9786560961135'), ('ebook', '9786560961128')]:
+    for extension in ['ris', 'bib', 'json']:
+        checks[f'/referencias/confronto-cibernetico-{edition}.{extension}'] = isbn
 for language in ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']:
     checks[f'/autor/{language}/'] = 'data-hiago-inventor'
 for path, expected in checks.items():
