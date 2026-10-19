@@ -1,3 +1,5 @@
+import { articleFocus, glossaryFocus } from './editorial';
+
 const MAX_TITLE_LENGTH = 55;
 const BRAND = 'Confronto Cibernético';
 
@@ -25,6 +27,7 @@ function compactTitle(subject: string, section: string): string {
 }
 
 export function articlePageTitle(slug: string, keyword: string): string {
+  if (articleFocus[slug]) return articleFocus[slug].title;
   return compactTitle(articleOverrides[slug] ?? keyword, 'Artigo');
 }
 
@@ -32,7 +35,8 @@ export function chapterPageTitle(slug: string, searchTitle: string): string {
   return compactTitle(chapterOverrides[slug] ?? searchTitle, 'Capítulo');
 }
 
-export function glossaryPageTitle(name: string): string {
+export function glossaryPageTitle(name: string, slug?: string): string {
+  if (slug && glossaryFocus[slug]) return glossaryFocus[slug].title;
   const subject = name.length <= 44 ? `${name}: definição` : name;
   return compactTitle(subject, 'Glossário');
 }

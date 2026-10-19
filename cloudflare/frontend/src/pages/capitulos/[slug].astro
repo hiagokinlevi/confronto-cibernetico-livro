@@ -3,6 +3,9 @@ import { chapters, chapterUrl, type Chapter } from '../../data/chapters';
 import BrandMeta from '../../components/BrandMeta.astro';
 import MobileNav from '../../components/MobileNav.astro';
 import { chapterPageTitle } from '../../data/pageTitles';
+import { articles, articleUrl } from '../../data/articles';
+import { priorityArticlesForChapter } from '../../data/editorial';
+const relatedArticles = priorityArticlesForChapter(Astro.props.chapter.number, articles);
 
 export function getStaticPaths() {
   return chapters.map((chapter) => ({ params: { slug: chapter.slug }, props: { chapter } }));
@@ -54,6 +57,7 @@ const ld = {
       </article>
       <aside class="chapter-aside" aria-label="Sobre o livro"><p class="aside-label">O LIVRO</p><a href="/"><img src="/assets/capa-confronto-cibernetico.jpeg" alt="Capa do livro Confronto Cibernético" width="1100" height="1600" loading="lazy"></a><h2>Confronto Cibernético</h2><p>Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas.</p><span>Hiago Kin Levi · Editora Brasport</span><a class="aside-buy" href="/#comprar">Onde encontrar ↗</a></aside>
     </div>
+    <section class="article-related"><h2>Estude os temas deste capítulo</h2><div>{relatedArticles.map(article => <a href={articleUrl(article)}>{article.keyword} <span aria-hidden="true">↗</span></a>)}</div></section>
     <section class="chapter-next" aria-label="Outras leituras"><p class="eyebrow">CONTINUE A LEITURA</p><div>{prev && <a href={chapterUrl(prev)}><small>← TRECHO ANTERIOR</small><strong>{prev.searchTitle}</strong></a>}{next && <a href={chapterUrl(next)}><small>PRÓXIMO TRECHO →</small><strong>{next.searchTitle}</strong></a>}</div></section>
   </main>
   <a class="back-to-top" href="#top" aria-label="Voltar ao topo">↑</a>

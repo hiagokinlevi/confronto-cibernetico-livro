@@ -1,0 +1,22 @@
+---
+import { articles, articleUrl } from '../data/articles';
+import { readingPaths } from '../data/editorial';
+const { compact = false } = Astro.props;
+const selected = compact ? readingPaths.slice(0, 3) : readingPaths;
+---
+<section class="reading-paths" aria-labelledby="percursos-titulo">
+  <div class="section-label"><span class="line"></span>PERCURSOS DE LEITURA</div>
+  <h2 id="percursos-titulo">Comece pelo que você precisa resolver.</h2>
+  <p class="reading-paths-intro">Siga uma sequência de guias para escolher livros, preparar sua equipe ou aprofundar uma investigação.</p>
+  <div class="reading-path-grid">
+    {selected.map(path => <article id={path.id}>
+      <h3>{path.title}</h3><p>{path.description}</p>
+      <ol>{path.slugs.map(slug => {
+        const article = articles.find(item => item.slug === slug);
+        if (!article) throw new Error(`Artigo de percurso inexistente: ${slug}`);
+        return <li><a href={articleUrl(article)}>{article.keyword}</a></li>;
+      })}</ol>
+    </article>)}
+  </div>
+  {compact && <a class="text-link" href="/artigos/#percursos-titulo">Veja todos os percursos de leitura ↗</a>}
+</section>

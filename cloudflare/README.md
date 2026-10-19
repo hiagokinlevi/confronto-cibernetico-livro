@@ -54,6 +54,30 @@ Os verbetes longos ficam em `frontend/src/content/glossary/<slug>.md` e têm pis
 
 ## Indexação
 
+### Revisão editorial e navegação — 19/10/2026
+
+`frontend/src/data/editorial.ts` define 20 guias prioritários com título curto,
+descrição e apresentação próprios, além de 16 snippets de glossário escolhidos
+por relevância e pelas primeiras impressões observadas no Search Console.
+Os seis percursos em `/artigos/` ligam objetivos de leitura a guias existentes;
+a home destaca três deles. Recomendações dos artigos consideram o percurso,
+capítulo e proximidade de assunto. Capítulos agora apontam também para os guias
+do seu tema. As URLs originais e o total de 248 páginas no sitemap são mantidos.
+
+As descrições de artigos e verbetes são completas ou abreviadas no limite de
+palavra, com o mesmo texto em meta description e Open Graph. `lastmod` indica
+a data desta revisão somente nas páginas selecionadas; não é gerado pela data
+do build. Os títulos personalizados continuam sujeitos ao limite local de
+55 caracteres. A definição de prioridades não representa pesquisa de volumes
+de busca ou garantia de posição.
+
+`python3 cloudflare/verify-seo-navigation.py` confere destinos e âncoras internas
+nas 248 páginas, os snippets, os 20 resumos e os seis percursos. A verificação
+integra o publicador local. `/seo-release.json` identifica o commit do build;
+`verify-live.py` exige o mesmo recibo no domínio após o deploy. O espelho do
+GitHub é atualizado com `python3 cloudflare/sync-github-pages.py` após validar
+o build e permanece com canônicas para o domínio oficial.
+
 O sitemap principal é https://confrontocibernetico.com.br/sitemap.xml e está declarado em `robots.txt`. A propriedade de domínio foi verificada no Google Search Console e o sitemap foi enviado em 14/10/2026. O Search Console pode demorar para exibir cobertura e tráfego; publicação e envio do sitemap não garantem indexação nem posição nas buscas. Os 100 temas iniciais foram escolhidos por relevância e intenção de busca, sem dados de volume do Planejador do Google Ads ou plataformas comerciais; quatro guias de livros foram acrescidos após pesquisa em catálogos oficiais. Revise impressões, consultas e páginas indexadas no Search Console para priorizar melhorias editoriais.
 
 Para mecanismos participantes do IndexNow, execute depois do deploy e da verificação ao vivo `python3 cloudflare/submit-indexnow-local.py --changed-ref HEAD^ --submit` para enviar as páginas HTML alteradas no último commit. Use outra referência Git em `--changed-ref` quando uma implantação abranger vários commits. Sem esse parâmetro, o script valida ou envia apenas as seis URLs iniciais desta atualização. O arquivo de validação do protocolo é publicado na raiz; o script confere o sitemap, o arquivo e o HTTP 200 de cada página antes do envio. Um HTTP 200 ou 202 no retorno significa recebimento, não inclusão no índice. Envie somente URLs novas ou efetivamente alteradas.
