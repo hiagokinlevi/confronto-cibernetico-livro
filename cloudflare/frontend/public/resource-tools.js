@@ -1,7 +1,7 @@
-import { parseDurations, statistics } from './metric-core.mjs';
+import { createMetricsReport } from './metric-report.mjs';
 
 const documents = new Map();
-const fmt = value => new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(value);
+const language = document.documentElement.lang || 'pt-BR';
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));
   const link = document.createElement('a');
@@ -18,24 +18,22 @@ if (metricsForm) metricsForm.addEventListener('submit', event => {
   const button = document.querySelector('[data-download="metrics"]');
   result.replaceChildren(); error.hidden = true; button.hidden = true; documents.delete('metrics');
   try {
-    const rows = parseDurations(document.querySelector('#metrics-data').value);
-    const labels = ['MTTD: início até detecção', 'Detecção até contenção', 'MTTR definido aqui: detecção até recuperação'];
-    const columns = labels.map((label, index) => ({ label, ...statistics(rows.map(row => row[index])) }));
+    const report = createMetricsReport(document.querySelector('#metrics-data').value, language);
     const summary = document.createElement('p');
-    summary.textContent = `${rows.length} incidentes. Valores em minutos; P90 pelo posto mais próximo.`;
+    summary.textContent = report.summary;
     result.append(summary);
     const wrapper = document.createElement('div'); wrapper.className = 'tool-table-scroll';
     const table = document.createElement('table');
-    const caption = table.createCaption(); caption.textContent = 'Tempos da amostra em minutos';
+    const caption = table.createCaption(); caption.textContent = report.caption;
     const header = table.createTHead().insertRow();
-    for (const label of ['Marco', 'Média', 'Mediana', 'P90']) { const cell = document.createElement('th'); cell.scope = 'col'; cell.textContent = label; header.append(cell); }
+    for (const label of report.headers) { const cell = document.createElement('th'); cell.scope = 'col'; cell.textContent = label; header.append(cell); }
     const body = table.createTBody();
-    for (const column of columns) { const row = body.insertRow(); [column.label, fmt(column.mean), fmt(column.median), fmt(column.p90)].forEach(value => { const cell = row.insertCell(); cell.textContent = value; }); }
+    for (const values of report.displayRows) { const row = body.insertRow(); values.forEach(value => { const cell = row.insertCell(); cell.textContent = value; }); }
     wrapper.append(table); result.append(wrapper);
     const note = document.createElement('p'); note.className = 'resource-note';
-    note.textContent = rows.length < 10 ? 'Amostra pequena: os percentis são descritivos e podem variar muito com um único caso.' : 'Compare amostras de escopo semelhante e documente exclusões, casos em aberto e incertezas de horário.';
+    note.textContent = report.note;
     result.append(note);
-    documents.set('metrics', `Resumo de tempos de resposta — ${rows.length} incidentes\nUnidade: minutos.\nP90: método do posto mais próximo.\n\n${columns.map(column => `${column.label}: média ${fmt(column.mean)}; mediana ${fmt(column.median)}; P90 ${fmt(column.p90)}`).join('\n')}\n\nContenção e recuperação são medidas desde a detecção. O início deve ser conhecido ou ter incerteza registrada. Uma média menor não comprova melhor resposta.\nFonte da ferramenta: https://confrontocibernetico.com.br/recursos/calculadora-mttd-mttr/\n`);
+    documents.set('metrics', report.text);
     button.hidden = false;
   } catch (reason) { error.textContent = reason.message; error.hidden = false; }
 });
@@ -54,7 +52,7 @@ if (planForm) planForm.addEventListener('submit', event => {
 
 document.querySelectorAll('[data-download]').forEach(button => button.addEventListener('click', () => {
   const text = documents.get(button.dataset.download);
-  if (text) download(button.dataset.download === 'plan' ? 'modelo-plano-resposta.md' : 'resumo-mttd-mttr.txt', text);
+  if (text) download(button.dataset.download === 'plan' ? 'modelo-plano-resposta.md' : (language.startsWith('en') ? 'mttd-mttr-summary.txt' : 'resumo-mttd-mttr.txt'), text);
 }));
 
 const scenarioSelect = document.querySelector('#scenario-select');

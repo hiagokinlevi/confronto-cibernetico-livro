@@ -12,7 +12,18 @@ Os deploys partem deste computador. GitHub Actions não é usado. Antes de publi
 
 Se for a primeira execução local, instale as dependências com `cd cloudflare/frontend && npm ci`. O comando de publicação deve ser executado a partir da raiz deste repositório. Os arquivos do backend não são alterados pelo script.
 
-O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele confere a frase da home, favicon, capa, JSON-LD, canônicas, 104 artigos, 120 verbetes, oito biografias e 253 URLs no sitemap.
+O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele confere a frase da home, favicon, capa, JSON-LD, canônicas, 104 artigos, 120 verbetes, oito biografias e 254 URLs no sitemap.
+
+### Calculadora em inglês — 19/10/2026
+
+`/en/mttd-mttr-calculator/` traduz instruções, validação, resultados e relatório
+baixado. `metric-report.mjs` produz a apresentação e o relatório a partir do
+mesmo cálculo puro. Os sete testes em `metric-core.test.mjs` verificam números,
+marcos, separadores decimais, amostras pequenas e erros nos dois idiomas.
+PT/EN têm URLs próprias e alternates recíprocos para a mesma ferramenta. A
+central em inglês aponta para ela; plano e exercícios continuam em português.
+A página nova eleva o sitemap de 253 para 254 URLs. O RSS mantém 23 recursos e
+guias: a tradução não é anunciada como um novo recurso independente no feed.
 
 ## Recursos gratuitos — 19/10/2026
 

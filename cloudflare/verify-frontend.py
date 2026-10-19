@@ -119,7 +119,15 @@ def main():
 
     sitemap = ET.parse(ROOT / "sitemap.xml")
     urls = [item.text for item in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-    check(len(urls) == 253 and len(set(urls)) == 253, f"Sitemap incorreto: {len(urls)} URLs")
+    check(len(urls) == 254 and len(set(urls)) == 254, f"Sitemap incorreto: {len(urls)} URLs")
+    calculator_routes = {'pt-BR': '/recursos/calculadora-mttd-mttr/', 'en': '/en/mttd-mttr-calculator/'}
+    for language, route in calculator_routes.items():
+        page, _ = parse_page(ROOT / route.strip('/') / 'index.html', DOMAIN + route)
+        check(f'lang="{language}"' in page, f'Idioma incorreto na calculadora: {route}')
+        check('id="metrics-form"' in page and 'id="metrics-data"' in page and 'src="/resource-tools.js"' in page, f'Formulário ou módulo ausente: {route}')
+        for alternate, destination in calculator_routes.items():
+            check(f'hreflang="{alternate}" href="{DOMAIN}{destination}"' in page, f'Alternativa incorreta: {route}/{alternate}')
+    check((ROOT / 'metric-report.mjs').is_file(), 'Módulo de relatório ausente')
     languages = ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']
     for language in languages:
         page, schemas = parse_page(ROOT / 'autor' / language / 'index.html', f'{DOMAIN}/autor/{language}/')
@@ -149,7 +157,7 @@ def main():
         check(len(parsed.og_titles) == 1 and len(parsed.og_titles[0]) <= 60, f"Open Graph title longo ou ausente: {url}")
         check(title not in titles, f"Title duplicado: {title} em {titles.get(title)} e {url}")
         titles[title] = url
-    print("OK: home, capa, favicon, 104 artigos, 120 verbetes, oito biografias, recursos, catálogo JSON, llms.txt, metadados e 253 URLs estáticas no sitemap.")
+    print("OK: home, capa, favicon, 104 artigos, 120 verbetes, oito biografias, calculadora PT/EN, recursos, catálogo JSON, llms.txt, metadados e 254 URLs estáticas no sitemap.")
 
 
 if __name__ == "__main__":

@@ -1,18 +1,18 @@
 ---
-const { showShortcut = true } = Astro.props;
+const { showShortcut = true, english = false } = Astro.props;
 ---
 {showShortcut && <a class="resource-nav-shortcut" href="/recursos/">Recursos grátis ↗</a>}
 <details class="mobile-menu">
   <summary>Menu <span aria-hidden="true">☰</span></summary>
-  <nav aria-label="Navegação móvel">
-    <a href="/">Página do livro</a>
-    <a href="/capitulos/">Trechos por capítulo</a>
-    <a href="/artigos/">Todos os artigos</a>
-    <a href="/glossario/">Glossário técnico</a>
-    <a href="/recursos/">Ferramentas e recursos gratuitos</a>
-    <a href="/feed.xml">Acompanhar pelo RSS</a>
-    <a href="/#autor">Sobre o autor</a>
-    <a href="/#comprar">Onde comprar</a>
-    <a href="/imprensa/">Imprensa e contato</a>
+  <nav aria-label={english ? 'Mobile navigation' : 'Navegação móvel'}>
+    <a href="/">{english ? 'The book (Portuguese)' : 'Página do livro'}</a>
+    <a href="/capitulos/">{english ? 'Chapter excerpts (Portuguese)' : 'Trechos por capítulo'}</a>
+    <a href="/artigos/">{english ? 'Articles (Portuguese)' : 'Todos os artigos'}</a>
+    <a href="/glossario/">{english ? 'Technical glossary (Portuguese)' : 'Glossário técnico'}</a>
+    <a href={english ? '/en/incident-response-resources/' : '/recursos/'}>{english ? 'Free resources' : 'Ferramentas e recursos gratuitos'}</a>
+    <a href="/feed.xml">{english ? 'Follow the RSS feed' : 'Acompanhar pelo RSS'}</a>
+    <a href={english ? '/autor/en/' : '/#autor'}>{english ? 'About the author' : 'Sobre o autor'}</a>
+    <a href="/#comprar">{english ? 'Book editions' : 'Onde comprar'}</a>
+    <a href="/imprensa/">{english ? 'Press and contact (Portuguese)' : 'Imprensa e contato'}</a>
   </nav>
 </details>

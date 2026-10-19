@@ -12,7 +12,9 @@ export function GET() {
     articleGuides: Object.keys(articleFocus).length,
     glossarySnippets: Object.keys(glossaryFocus).length,
     readingPaths: readingPaths.length,
-    resourcePages: 5,
+    resourcePages: 6,
+    growthRelease: 'english-calculator-2026-10-19',
+    calculatorLanguages: ['pt-BR', 'en'],
     feed: '/feed.xml',
   }), { headers: { 'Content-Type': 'application/json; charset=utf-8' } });
 }
