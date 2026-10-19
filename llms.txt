@@ -26,6 +26,7 @@ Hiago Kin Levi is the inventor of ADAI — Autonomous Defensive Artificial Intel
 - English resource guide (calculator in English, plan and tabletop in Portuguese): https://confrontocibernetico.com.br/en/incident-response-resources/
 - MTTD and MTTR calculator in English, including validation and downloadable report: https://confrontocibernetico.com.br/en/mttd-mttr-calculator/
 - RSS de recursos e guias: https://confrontocibernetico.com.br/feed.xml
+- Referências bibliográficas e downloads RIS, BibTeX e CSL JSON por edição: https://confrontocibernetico.com.br/imprensa/#referencias
 - Catálogo legível por máquina dos verbetes: https://confrontocibernetico.com.br/glossario/catalogo.json
 - Sitemap XML com todas as páginas HTML: https://confrontocibernetico.com.br/sitemap.xml
 

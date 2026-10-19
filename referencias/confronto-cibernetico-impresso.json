@@ -1,0 +1,27 @@
+[
+  {
+    "id": "confronto-cibernetico-9786560961135",
+    "type": "book",
+    "title": "Confronto Cibernético: Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs)",
+    "author": [
+      {
+        "family": "Levi",
+        "given": "Hiago Kin"
+      }
+    ],
+    "publisher": "Brasport",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "language": "pt-BR",
+    "ISBN": "9786560961135",
+    "URL": "https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758",
+    "number-of-pages": "300",
+    "edition": "1",
+    "note": "Formato: Livro impresso. Dados conferidos no catálogo da editora em 19/10/2026."
+  }
+]
