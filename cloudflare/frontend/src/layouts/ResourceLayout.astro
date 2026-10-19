@@ -1,0 +1,20 @@
+---
+import BrandMeta from '../components/BrandMeta.astro';
+import MobileNav from '../components/MobileNav.astro';
+const { title, description, path, english = false, application = false } = Astro.props;
+const canonical = `https://confrontocibernetico.com.br${path}`;
+const schema = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'WebPage', '@id': canonical, name: title, description, url: canonical, inLanguage: english ? 'en' : 'pt-BR', isPartOf: { '@id': 'https://confrontocibernetico.com.br/#website' }, ...(application ? { mainEntity: { '@type': 'WebApplication', name: title, url: canonical, applicationCategory: 'EducationalApplication', operatingSystem: 'Any', browserRequirements: 'Requires JavaScript', isAccessibleForFree: true } } : {}) },
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: english ? 'Home' : 'Início', item: 'https://confrontocibernetico.com.br/' }, { '@type': 'ListItem', position: 2, name: english ? 'Resources' : 'Recursos', item: 'https://confrontocibernetico.com.br/recursos/' }, ...(path !== '/recursos/' ? [{ '@type': 'ListItem', position: 3, name: title, item: canonical }] : [])] },
+] };
+---
+<!doctype html><html lang={english ? 'en' : 'pt-BR'}><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{title}</title><meta name="description" content={description}>
+  <link rel="canonical" href={canonical}><meta property="og:type" content="website"><meta property="og:locale" content={english ? 'en_US' : 'pt_BR'}><meta property="og:title" content={title}><meta property="og:description" content={description}><meta property="og:url" content={canonical}><BrandMeta />
+  {(path === '/recursos/' || english) && <><link rel="alternate" hreflang="pt-BR" href="https://confrontocibernetico.com.br/recursos/"><link rel="alternate" hreflang="en" href="https://confrontocibernetico.com.br/en/incident-response-resources/"></>}
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/resources.css"><script src="/site-effects.js" defer></script><script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</head><body id="top"><a class="skip" href="#conteudo">{english ? 'Skip to content' : 'Ir para o conteúdo'}</a>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">CC</span><span>CONFRONTO<br>CIBERNÉTICO</span></a><nav aria-label={english ? 'Main navigation' : 'Navegação principal'}><a href="/">{english ? 'The book' : 'O livro'}</a><a href="/artigos/">{english ? 'Articles (PT)' : 'Artigos'}</a><a href="/glossario/">{english ? 'Glossary (PT)' : 'Glossário'}</a><a href="/recursos/" aria-current="page">{english ? 'Resources' : 'Recursos'}</a><a class="nav-cta" href="/#comprar">{english ? 'Book editions' : 'Onde comprar'} ↗</a></nav><MobileNav showShortcut={false} /></header>
+  <main id="conteudo" class="resources-page"><nav class="breadcrumbs" aria-label={english ? 'Breadcrumb' : 'Trilha de navegação'}><a href="/">{english ? 'Home' : 'Início'}</a><span>/</span><a href="/recursos/">{english ? 'Resources' : 'Recursos'}</a></nav><slot /></main>
+  <footer><div class="footer-brand">CONFRONTO<br>CIBERNÉTICO</div><p>Hiago Kin Levi · Editora Brasport</p><div><a href="/feed.xml">RSS ↗</a> · <a href="/imprensa/">{english ? 'Contact' : 'Contato'} ↗</a></div></footer>
+</body></html>

@@ -21,6 +21,12 @@ checks = {
     "/sitemap.xml": "/artigos/resposta-a-ransomware-em-empresas/",
     "/favicon.png": None,
     "/seo-release.json": 'seo-reading-paths-2026-10-19',
+    "/recursos/": 'Conhecimento que vira',
+    "/recursos/calculadora-mttd-mttr/": 'metrics-form',
+    "/recursos/modelo-plano-resposta-incidentes/": 'plan-form',
+    "/recursos/simulador-tabletop-ransomware/": 'tabletop-scenario',
+    "/en/incident-response-resources/": 'Incident response',
+    "/feed.xml": '<rss',
 }
 for language in ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']:
     checks[f'/autor/{language}/'] = 'data-hiago-inventor'

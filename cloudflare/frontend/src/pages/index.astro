@@ -6,6 +6,7 @@ import BrandMeta from '../components/BrandMeta.astro';
 import MobileNav from '../components/MobileNav.astro';
 import AuthorIdentity from '../components/AuthorIdentity.astro';
 import ReadingPaths from '../components/ReadingPaths.astro';
+import ResourceSpotlight from '../components/ResourceSpotlight.astro';
 import { HIAGO_BIO } from '../data/hiago-bio';
 const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'https://confrontocibernetico.com.br/#author',name:'Hiago Kin Levi',description:HIAGO_BIO.pt.description,jobTitle:HIAGO_BIO.pt.role,url:'https://confrontocibernetico.com.br/autor/pt/',nationality:{'@type':'Country',name:'Brazil'},knowsAbout:['ADAI — Autonomous Defensive Artificial Intelligence','DAI — Decripte Artificial Intelligence','Cybersecurity']};
 ---
@@ -140,6 +141,8 @@ const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'ht
         <article><h3>Como medir a eficácia da resposta a uma APT?</h3><p>Tempo de detecção e de resposta são úteis, mas a avaliação também precisa examinar contenção, persistência e lições aprendidas. <a href={chapterUrl(chapters[8])}>Veja o trecho sobre métricas e MTTD/MTTR.</a></p></article>
       </div>
     </section>
+
+    <ResourceSpotlight />
 
     <section class="section home-articles" id="artigos">
       <div class="section-label"><span class="line"></span> GUIAS TEMÁTICOS</div>

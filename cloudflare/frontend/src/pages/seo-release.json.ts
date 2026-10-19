@@ -12,5 +12,7 @@ export function GET() {
     articleGuides: Object.keys(articleFocus).length,
     glossarySnippets: Object.keys(glossaryFocus).length,
     readingPaths: readingPaths.length,
+    resourcePages: 5,
+    feed: '/feed.xml',
   }), { headers: { 'Content-Type': 'application/json; charset=utf-8' } });
 }

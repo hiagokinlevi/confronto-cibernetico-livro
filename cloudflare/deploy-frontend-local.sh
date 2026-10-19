@@ -24,6 +24,7 @@ fi
 export CLOUDFLARE_ACCOUNT_ID="$expected_account"
 
 npm run build
+node --test "$project_dir/metric-core.test.mjs"
 python3 "$project_dir/verify-content.py" --strict
 python3 "$project_dir/verify-frontend.py" --strict-content
 python3 "$project_dir/verify-seo-navigation.py"
