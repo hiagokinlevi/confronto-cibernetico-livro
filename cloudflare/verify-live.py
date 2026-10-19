@@ -26,6 +26,8 @@ checks = {
     "/recursos/modelo-plano-resposta-incidentes/": 'plan-form',
     "/recursos/simulador-tabletop-ransomware/": 'tabletop-scenario',
     "/en/incident-response-resources/": 'Incident response',
+    "/en/mttd-mttr-calculator/": 'Calculate metrics',
+    "/metric-report.mjs": 'createMetricsReport',
     "/feed.xml": '<rss',
 }
 for language in ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']:

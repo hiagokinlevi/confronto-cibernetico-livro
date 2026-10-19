@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseDurations, statistics } from './frontend/public/metric-core.mjs';
+import { createMetricsReport } from './frontend/public/metric-report.mjs';
 
 test('calculates separate clocks and a median for a skewed sample', () => {
   const rows = parseDurations('60;20;120\n180;45;240\n30;10;60');
@@ -25,4 +26,24 @@ test('rejects inconsistent response clocks and invalid aggregate input', () => {
 });
 test('uses nearest-rank P90 for ten observations', () => {
   assert.equal(statistics([10,9,8,7,6,5,4,3,2,1]).p90, 9);
+});
+test('English and Portuguese reports preserve calculations, units and clock definitions', () => {
+  const input = '60;20;120\n180;45;240\n30;10;60';
+  const en = createMetricsReport(input, 'en');
+  const pt = createMetricsReport(input, 'pt-BR');
+  assert.deepEqual(en.columns.map(({mean,median,p90})=>({mean,median,p90})), pt.columns.map(({mean,median,p90})=>({mean,median,p90})));
+  assert.match(en.text, /detection to recovery: mean 140; median 120; P90 240/);
+  assert.match(en.text, /Unit: minutes/);
+  assert.match(en.text, /Small sample/);
+  assert.match(en.text, /\/en\/mttd-mttr-calculator\//);
+  assert.match(pt.text, /\/recursos\/calculadora-mttd-mttr\//);
+  assert.equal(createMetricsReport('1,5;2,5;3,5', 'en').displayRows[0][1], '1.5');
+  assert.equal(createMetricsReport('1.5;2.5;3.5', 'pt-BR').displayRows[0][1], '1,5');
+});
+test('English validation rejects bad clocks, unsafe text and oversized input with readable errors', () => {
+  assert.throws(() => createMetricsReport('', 'en'), /Enter at least/);
+  assert.throws(() => createMetricsReport('1;30;20', 'en'), /recovery cannot precede containment/);
+  assert.throws(() => createMetricsReport('<script>;1;2', 'en'), /Row 1/);
+  assert.throws(() => createMetricsReport('999999999;1;2', 'en'), /accepted range/);
+  assert.throws(() => createMetricsReport('1;2;3\n'.repeat(10001), 'en'), /10,000/);
 });

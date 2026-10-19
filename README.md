@@ -10,6 +10,7 @@ O livro discute resposta a incidentes cibernéticos, APTs, análise forense, int
 - [Glossário técnico com 120 verbetes](https://confrontocibernetico.com.br/glossario/)
 - [Recursos gratuitos para equipes e estudantes](https://confrontocibernetico.com.br/recursos/)
 - [Calculadora de MTTD e MTTR](https://confrontocibernetico.com.br/recursos/calculadora-mttd-mttr/)
+- [MTTD and MTTR calculator in English](https://confrontocibernetico.com.br/en/mttd-mttr-calculator/)
 - [Modelo editável de plano de resposta](https://confrontocibernetico.com.br/recursos/modelo-plano-resposta-incidentes/)
 - [Exercícios de mesa com cenários fictícios](https://confrontocibernetico.com.br/recursos/simulador-tabletop-ransomware/)
 - [RSS de recursos e guias](https://confrontocibernetico.com.br/feed.xml)
@@ -24,13 +25,14 @@ Contato para imprensa: formulário em https://confrontocibernetico.com.br/impren
 
 O site principal é gerado com Astro e publicado no Cloudflare Workers. A API de metadados usa Python Workers. O conteúdo deste repositório também é sincronizado para GitHub Pages; as páginas indicam o domínio principal como URL canônica.
 
-O frontend inclui favicon, imagem de capa em Open Graph, dados estruturados `WebSite`, `Book`, `Article`, `DefinedTermSet` e `DefinedTerm`, além de um sitemap com 253 URLs. Cada um dos 104 artigos tem pelo menos 20.000 caracteres visíveis e cada um dos 120 verbetes tem pelo menos 10.000. As páginas têm URLs estáticas, canônicas e links internos; `robots.txt`, `/llms.txt` e `/glossario/catalogo.json` facilitam a descoberta. A seleção de temas foi feita por relevância e intenção de busca; não há medição de volume de palavras-chave. Publicar o sitemap não garante indexação ou posição nas buscas.
+O frontend inclui favicon, imagem de capa em Open Graph, dados estruturados `WebSite`, `Book`, `Article`, `DefinedTermSet` e `DefinedTerm`, além de um sitemap com 254 URLs. Cada um dos 104 artigos tem pelo menos 20.000 caracteres visíveis e cada um dos 120 verbetes tem pelo menos 10.000. As páginas têm URLs estáticas, canônicas e links internos; `robots.txt`, `/llms.txt` e `/glossario/catalogo.json` facilitam a descoberta. A seleção de temas foi feita por relevância e intenção de busca; não há medição de volume de palavras-chave. Publicar o sitemap não garante indexação ou posição nas buscas.
 
 As ferramentas gratuitas processam os campos no navegador e geram arquivos locais,
 sem cadastro. Os modelos e roteiros originais identificados permitem adaptação
 interna ou para ensino com atribuição; a autorização não abrange o livro, sua
 capa ou materiais de terceiros. A introdução em inglês apresenta os recursos;
-as interfaces das ferramentas e o livro estão em português. Sugestões e erros
+a calculadora tem interface, erros e relatório em inglês e português. O livro,
+o plano e os exercícios estão em português. Sugestões e erros
 podem ser encaminhados pelo formulário de contato, com um exemplo fictício.
 
 O formulário de contato da página inicial e do kit usa Cloudflare Turnstile e envia mensagens pelo Worker em Python. O Worker valida o token antes de usar o Resend. As configurações privadas `TURNSTILE_SECRET`, `RESEND_API_KEY` e `CONTACT_TO_EMAIL` ficam como secrets no Worker; os valores não pertencem ao código nem ao Git. O site aceita envios nas origens do domínio principal, Workers e GitHub Pages.
