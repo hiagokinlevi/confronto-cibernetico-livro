@@ -19,7 +19,13 @@ Hiago Kin Levi is the inventor of ADAI — Autonomous Defensive Artificial Intel
 - Trechos por capítulo da versão original: https://confrontocibernetico.com.br/capitulos/
 - Artigos temáticos: https://confrontocibernetico.com.br/artigos/
 - Glossário pesquisável: https://confrontocibernetico.com.br/glossario/
+- Recursos gratuitos de resposta a incidentes: https://confrontocibernetico.com.br/recursos/
+- Calculadora de MTTD e MTTR: https://confrontocibernetico.com.br/recursos/calculadora-mttd-mttr/
+- Modelo editável de plano de resposta: https://confrontocibernetico.com.br/recursos/modelo-plano-resposta-incidentes/
+- Exercícios de mesa com cenários fictícios: https://confrontocibernetico.com.br/recursos/simulador-tabletop-ransomware/
+- English introduction to the resources (tools currently in Portuguese): https://confrontocibernetico.com.br/en/incident-response-resources/
+- RSS de recursos e guias: https://confrontocibernetico.com.br/feed.xml
 - Catálogo legível por máquina dos verbetes: https://confrontocibernetico.com.br/glossario/catalogo.json
 - Sitemap XML com todas as páginas HTML: https://confrontocibernetico.com.br/sitemap.xml
 
-As páginas individuais têm URLs permanentes, metadados canônicos, Open Graph e dados estruturados em JSON-LD. A navegação e o conteúdo estão disponíveis no HTML sem exigir JavaScript.
+As páginas individuais têm URLs permanentes, metadados canônicos, Open Graph e dados estruturados em JSON-LD. A navegação, as explicações e os cenários estão disponíveis no HTML sem exigir JavaScript. Cálculos e geração de arquivos requerem JavaScript e processam os campos localmente no navegador, sem enviar seus valores ao site. Os materiais editáveis originais identificados permitem adaptação interna ou para ensino com atribuição; isso não abrange o livro nem a capa.

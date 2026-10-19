@@ -12,7 +12,30 @@ Os deploys partem deste computador. GitHub Actions não é usado. Antes de publi
 
 Se for a primeira execução local, instale as dependências com `cd cloudflare/frontend && npm ci`. O comando de publicação deve ser executado a partir da raiz deste repositório. Os arquivos do backend não são alterados pelo script.
 
-O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele confere a frase da home, favicon, capa, JSON-LD, canônicas, 104 artigos, 120 verbetes, oito biografias e 248 URLs no sitemap.
+O teste independente do build é `python3 cloudflare/verify-frontend.py`. Ele confere a frase da home, favicon, capa, JSON-LD, canônicas, 104 artigos, 120 verbetes, oito biografias e 253 URLs no sitemap.
+
+## Recursos gratuitos — 19/10/2026
+
+`/recursos/` reúne a calculadora de MTTD/MTTR, o gerador de plano editável e três
+exercícios de mesa fictícios. Explicações e rodadas estão no HTML estático;
+interatividade e downloads rodam no navegador e não enviam os campos ao servidor.
+Os marcos de contenção e recuperação são medidos desde a detecção. O MTTR é
+explicitamente definido como recuperação; valores e amostras têm validação em
+`metric-core.mjs`. Execute `node --test cloudflare/metric-core.test.mjs`.
+
+A central, três ferramentas e a apresentação em inglês acrescentam cinco URLs
+ao sitemap. A página inglesa descreve os recursos; interfaces e livro permanecem
+em português. `/feed.xml` publica os recursos e os 20 guias revisados, com datas
+da alteração real. A autorização de adaptação identificada vale só para os
+modelos e roteiros originais, sem abranger livro, capa ou material de terceiros.
+
+`book-analytics-local.mjs` consulta exclusivamente a zona do livro na conta
+DECRIPTE e confirma o destino antes de qualquer operação. A credencial deve ser
+injetada pelo adaptador Keychain da skill `decripte-secrets`, nunca por arquivo
+de ambiente ou argumento. O diagnóstico grava apenas campos permitidos em
+`/private/tmp/confronto-analytics-status.json`; o identificador do beacon é
+público. O Web Analytics já estava configurado com instalação automática. Não
+instalar outro beacon sem evidência de falha ou risco de contagem duplicada.
 
 ## Biografia do autor — 15/10/2026
 

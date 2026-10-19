@@ -1,0 +1,8 @@
+---
+import { resources, resourceUrl } from '../data/resources';
+---
+<section class="section home-articles resource-spotlight" id="recursos">
+  <div class="section-label"><span class="line"></span>RECURSOS GRATUITOS</div>
+  <div class="home-articles-heading"><div><h2>Da leitura para<br>a prática.</h2><p>Calcule indicadores, adapte um plano e conduza um exercício de mesa com sua equipe. Sem cadastro.</p></div><a class="text-link" href="/recursos/">Explorar os recursos ↗</a></div>
+  <div class="home-articles-grid">{resources.map(resource=><a href={resourceUrl(resource)}><span>{resource.kind}</span><strong>{resource.title}</strong><p>{resource.description}</p><span>Usar gratuitamente ↗</span></a>)}</div>
+</section>

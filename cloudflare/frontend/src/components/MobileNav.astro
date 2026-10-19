@@ -1,3 +1,7 @@
+---
+const { showShortcut = true } = Astro.props;
+---
+{showShortcut && <a class="resource-nav-shortcut" href="/recursos/">Recursos grátis ↗</a>}
 <details class="mobile-menu">
   <summary>Menu <span aria-hidden="true">☰</span></summary>
   <nav aria-label="Navegação móvel">
@@ -5,6 +9,8 @@
     <a href="/capitulos/">Trechos por capítulo</a>
     <a href="/artigos/">Todos os artigos</a>
     <a href="/glossario/">Glossário técnico</a>
+    <a href="/recursos/">Ferramentas e recursos gratuitos</a>
+    <a href="/feed.xml">Acompanhar pelo RSS</a>
     <a href="/#autor">Sobre o autor</a>
     <a href="/#comprar">Onde comprar</a>
     <a href="/imprensa/">Imprensa e contato</a>

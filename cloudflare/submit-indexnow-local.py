@@ -47,7 +47,7 @@ def changed_paths_from_git(reference):
         path = Path(filename)
         if path == Path("index.html"):
             paths.add("/")
-        elif path.name == "index.html" and path.parts[0] in ("artigos", "glossario", "capitulos"):
+        elif path.name == "index.html" and path.parts[0] in ("artigos", "glossario", "capitulos", "recursos", "en"):
             paths.add("/" + "/".join(path.parts[:-1]) + "/")
     assert paths, "Nenhuma página alterada encontrada no commit"
     return tuple(sorted(paths))
