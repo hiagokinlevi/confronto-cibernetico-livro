@@ -16,6 +16,7 @@ O livro discute resposta a incidentes cibernéticos, APTs, análise forense, int
 - [RSS de recursos e guias](https://confrontocibernetico.com.br/feed.xml)
 - [English introduction to the resources](https://confrontocibernetico.com.br/en/incident-response-resources/)
 - [Kit de imprensa](https://confrontocibernetico.com.br/imprensa/)
+- [Referências bibliográficas para importar em gerenciadores](https://confrontocibernetico.com.br/imprensa/#referencias): RIS, BibTeX e CSL JSON para impresso e e-book, com ISBNs próprios.
 - [Espelho no GitHub Pages](https://hiagokinlevi.github.io/confronto-cibernetico-livro/)
 - [Livro impresso na Brasport](https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758)
 - [E-book no Google Play](https://play.google.com/store/books/details?id=jSwXEgAAQBAJ)
