@@ -189,6 +189,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #ffae83;outline-offset:4p
 .article-toc a{color:#e3cdbf;text-decoration:none}
 .article-toc a:hover,.article-prose a:hover{color:#ffb68e;text-decoration:underline}
 .reading-paths{padding:36px 0 48px;border-top:1px solid var(--line)}
+#percursos-titulo{scroll-margin-top:110px}
 .reading-paths h2{font-size:clamp(28px,3.3vw,42px);line-height:1.16;letter-spacing:-.04em;max-width:760px}
 .reading-paths-intro{max-width:760px;color:#cbbab0;line-height:1.7}
 .reading-path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0}
