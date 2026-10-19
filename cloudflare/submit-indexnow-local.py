@@ -4,6 +4,8 @@ import argparse
 import json
 from pathlib import Path
 import subprocess
+import time
+from concurrent.futures import ThreadPoolExecutor
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -22,8 +24,16 @@ CHANGED_PATHS = (
 
 def read_url(url):
     request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; ConfrontoCibernetico/1.0; +https://confrontocibernetico.com.br/)"})
-    with urllib.request.urlopen(request, timeout=20) as response:
-        return response.status, response.read()
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                return response.status, response.read()
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
+            if isinstance(error, urllib.error.HTTPError) and error.code < 500:
+                raise
+            if attempt == 2:
+                raise RuntimeError(f'Falha de acesso após três tentativas: {url}') from error
+            time.sleep(attempt + 1)
 
 
 def changed_paths_from_git(reference):
@@ -37,7 +47,7 @@ def changed_paths_from_git(reference):
         path = Path(filename)
         if path == Path("index.html"):
             paths.add("/")
-        elif path.name == "index.html" and path.parts[0] in ("artigos", "glossario"):
+        elif path.name == "index.html" and path.parts[0] in ("artigos", "glossario", "capitulos"):
             paths.add("/" + "/".join(path.parts[:-1]) + "/")
     assert paths, "Nenhuma página alterada encontrada no commit"
     return tuple(sorted(paths))
@@ -60,16 +70,19 @@ def main():
     changed_paths = changed_paths_from_git(args.changed_ref) if args.changed_ref else CHANGED_PATHS
     urls = [BASE + path for path in changed_paths]
     assert all(url in indexed_urls for url in urls), "URL alterada ausente do sitemap"
-    print(f"Verificação local: {len(urls)} URLs alteradas no sitemap; destino api.indexnow.org.")
+    print(f"Verificação local: {len(urls)} URLs alteradas no sitemap; destino api.indexnow.org.", flush=True)
     if not args.submit:
         return
 
     key_location = f"{BASE}/{key_file.name}"
     status, body = read_url(key_location)
     assert status == 200 and body.decode("utf-8").strip() == key, "Arquivo de verificação indisponível no domínio"
-    for url in urls:
-        status, _ = read_url(url)
-        assert status == 200, f"URL indisponível: {url}"
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        for index, (url, result) in enumerate(zip(urls, executor.map(read_url, urls)), 1):
+            status, _ = result
+            assert status == 200, f"URL indisponível: {url}"
+            if index % 25 == 0 or index == len(urls):
+                print(f'HTTP 200 confirmado: {index}/{len(urls)} URLs.', flush=True)
 
     payload = json.dumps({"host": "confrontocibernetico.com.br", "key": key, "keyLocation": key_location, "urlList": urls}).encode("utf-8")
     request = urllib.request.Request("https://api.indexnow.org/indexnow", data=payload, headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": "ConfrontoCibernetico/1.0"}, method="POST")

@@ -7,6 +7,7 @@ import MobileNav from '../../components/MobileNav.astro';
 import MarkdownIt from 'markdown-it';
 import { articlesForTerm } from '../../data/relations';
 import { glossaryPageTitle } from '../../data/pageTitles';
+import { glossaryFocus, summaryDescription, EDITORIAL_REVIEW_DATE } from '../../data/editorial';
 
 const termFiles = import.meta.glob('../../content/glossary/*.md', { query: '?raw', import: 'default', eager: true });
 const slugifyHeading = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -17,14 +18,14 @@ export function getStaticPaths() {
 
 const { term } = Astro.props as { term: Term };
 const canonical = `https://confrontocibernetico.com.br${termUrl(term)}`;
-const pageTitle = glossaryPageTitle(term.name);
+const pageTitle = glossaryPageTitle(term.name, term.slug);
 const chapter = chapters[term.chapterNumber - 1];
 const related = terms.filter((item) => item.category === term.category && item.slug !== term.slug).slice(0, 4);
 const relatedArticles = articlesForTerm(term, articles);
 const position = terms.findIndex((item) => item.slug === term.slug);
 const previous = terms[position - 1];
 const next = terms[position + 1];
-const description = `${term.name}: ${term.definition}`;
+const description = glossaryFocus[term.slug]?.description ?? summaryDescription(`${term.name}: ${term.definition}`);
 const editorialText = termFiles[`../../content/glossary/${term.slug}.md`] as string | undefined;
 const visibleLength = editorialText ? editorialText.replace(/[#*_`\[\]()>-]/g, '').length : 0;
 if (editorialText && visibleLength < 10000) throw new Error(`Verbete com menos de 10.000 caracteres: ${term.slug} (${visibleLength})`);
@@ -45,7 +46,7 @@ for (let i = 0; i < tokens.length; i++) {
 const editorialHtml = editorialText ? markdown.renderer.render(tokens, markdown.options, {}) : '';
 const ld = { '@context': 'https://schema.org', '@graph': [
   { '@type': 'DefinedTerm', '@id': `${canonical}#termo`, name: term.name, description: term.definition, url: canonical, inDefinedTermSet: 'https://confrontocibernetico.com.br/glossario/', alternateName: term.aliases, termCode: term.name, inLanguage: 'pt-BR' },
-  { '@type': 'Article', '@id': `${canonical}#artigo`, headline: `${term.name}: definição e contexto`, description: term.definition, url: canonical, inLanguage: 'pt-BR', articleSection: term.category, datePublished: '2026-10-14', dateModified: '2026-10-14', author: { '@type': 'Organization', name: 'Confronto Cibernético', url: 'https://confrontocibernetico.com.br/' }, image: 'https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg', mainEntity: { '@id': `${canonical}#termo` } },
+  { '@type': 'Article', '@id': `${canonical}#artigo`, headline: `${term.name}: definição e contexto`, description, url: canonical, mainEntityOfPage: canonical, inLanguage: 'pt-BR', articleSection: term.category, datePublished: '2026-10-14', dateModified: glossaryFocus[term.slug] ? EDITORIAL_REVIEW_DATE : '2026-10-14', author: { '@type': 'Organization', name: 'Confronto Cibernético', url: 'https://confrontocibernetico.com.br/' }, image: 'https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg', mainEntity: { '@id': `${canonical}#termo` } },
   { '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://confrontocibernetico.com.br/' },
     { '@type': 'ListItem', position: 2, name: 'Glossário', item: 'https://confrontocibernetico.com.br/glossario/' },
@@ -54,6 +55,6 @@ const ld = { '@context': 'https://schema.org', '@graph': [
 ] };
 ---
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{pageTitle}</title><meta name="description" content={description.slice(0, 240)}><link rel="canonical" href={canonical}><meta property="og:type" content="article"><meta property="og:title" content={pageTitle}><meta property="og:description" content={term.definition}><meta property="og:url" content={canonical}><BrandMeta /><script type="application/ld+json" set:html={JSON.stringify(ld)} /><link rel="stylesheet" href="/styles.css"><script src="/site-effects.js" defer></script></head>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{pageTitle}</title><meta name="description" content={description}><link rel="canonical" href={canonical}><meta property="og:type" content="article"><meta property="og:title" content={pageTitle}><meta property="og:description" content={description}><meta property="og:url" content={canonical}><BrandMeta /><script type="application/ld+json" set:html={JSON.stringify(ld)} /><link rel="stylesheet" href="/styles.css"><script src="/site-effects.js" defer></script></head>
 <body id="top"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><a class="brand" href="/"><span class="brand-mark">CC</span><span>CONFRONTO<br>CIBERNÉTICO</span></a><nav aria-label="Navegação principal"><a href="/">O livro</a><a href="/capitulos/">Capítulos</a><a href="/artigos/">Artigos</a><a href="/glossario/" aria-current="page">Glossário</a><a class="nav-cta" href="/#comprar">Onde comprar <span aria-hidden="true">↗</span></a></nav><MobileNav /></header>
 <main id="conteudo" class="article-page"><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href="/">Início</a><span aria-hidden="true">/</span><a href="/glossario/">Glossário</a><span aria-hidden="true">/</span><span>{term.name}</span></nav><div class="article-layout"><article class="article-body glossary-body"><header><p class="eyebrow">GLOSSÁRIO · {term.category.toUpperCase()}</p><h1>{term.name}</h1><p class="article-lead">{term.definition}</p>{term.aliases.length > 0 && <p class="glossary-aliases"><strong>Também chamado de:</strong> {term.aliases.join(', ')}.</p>}</header>{editorialText ? <><nav class="article-toc" aria-label="Neste verbete"><strong>Neste verbete</strong><ol>{toc.map((item) => <li><a href={`#${item.id}`}>{item.title}</a></li>)}</ol></nav><div class="article-prose" set:html={editorialHtml} /></> : <section><h2>Na prática</h2><p>{term.note}</p></section>}<section class="article-book"><p class="eyebrow">NO CONTEXTO DO LIVRO</p><h2>Confronto Cibernético</h2><p>Este conceito se relaciona ao <strong>capítulo {chapter.number} da versão original</strong>, “{chapter.title}”. {editorialText ? 'Leia o trecho identificado na página do capítulo.' : chapter.overview}</p><a class="text-link" href={chapterUrl(chapter)}>Explore o capítulo relacionado ↗</a></section>{relatedArticles.length > 0 && <section class="glossary-articles"><h2>Artigos relacionados</h2><ul>{relatedArticles.map((article) => <li><a href={articleUrl(article)}>{article.keyword} ↗</a></li>)}</ul></section>}</article><aside class="article-aside"><a href="/"><img src="/assets/capa-confronto-cibernetico.jpeg" alt="Capa do livro Confronto Cibernético" width="1100" height="1600" loading="lazy"></a><p>Hiago Kin Levi · Editora Brasport</p><a href="/#comprar">Conheça as edições ↗</a></aside></div><nav class="article-pagination" aria-label="Navegar entre termos">{previous && <a href={termUrl(previous)}><small>← TERMO ANTERIOR</small><strong>{previous.name}</strong></a>}{next && <a href={termUrl(next)}><small>PRÓXIMO TERMO →</small><strong>{next.name}</strong></a>}</nav><section class="article-related"><h2>Termos relacionados</h2><div>{related.map((item) => <a href={termUrl(item)}>{item.name} <span aria-hidden="true">↗</span></a>)}</div></section></main><a class="back-to-top" href="#top" aria-label="Voltar ao topo">↑</a><footer><div class="footer-brand">CONFRONTO<br>CIBERNÉTICO</div><p>Hiago Kin Levi · Editora Brasport</p><a href="/glossario/">Todos os termos ↑</a></footer></body></html>

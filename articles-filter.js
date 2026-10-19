@@ -6,10 +6,12 @@
   const count = document.querySelector('#article-result-count');
   const empty = document.querySelector('#article-no-results');
   const reset = document.querySelector('#article-search-reset');
+  const paths = document.querySelector('.reading-paths');
   const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
 
   const update = () => {
     const words = normalize(input.value.trim()).split(/\s+/).filter(Boolean);
+    if (paths) paths.hidden = words.length > 0;
     let visible = 0;
     for (const card of cards) {
       const matches = words.every((word) => normalize(card.textContent).includes(word));

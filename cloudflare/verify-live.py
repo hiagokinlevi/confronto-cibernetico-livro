@@ -2,6 +2,8 @@
 """Check the published Cloudflare site after a local deploy."""
 import subprocess
 import time
+import json
+from pathlib import Path
 
 base = "https://confrontocibernetico.com.br"
 checks = {
@@ -18,6 +20,7 @@ checks = {
     "/llms.txt": "sitemap.xml",
     "/sitemap.xml": "/artigos/resposta-a-ransomware-em-empresas/",
     "/favicon.png": None,
+    "/seo-release.json": 'seo-reading-paths-2026-10-19',
 }
 for language in ['pt', 'en', 'es', 'fr', 'de', 'he', 'zh', 'ja']:
     checks[f'/autor/{language}/'] = 'data-hiago-inventor'
@@ -31,6 +34,9 @@ for path, expected in checks.items():
             )
             if expected:
                 assert expected.encode() in response.stdout, f"Conteúdo inesperado em {path}"
+            if path == '/seo-release.json':
+                expected_release = json.loads((Path(__file__).resolve().parent / 'frontend/dist/seo-release.json').read_text())
+                assert json.loads(response.stdout) == expected_release, 'Recibo produtivo diferente do build local'
             print(f"OK: {base}{path}")
             break
         except Exception:

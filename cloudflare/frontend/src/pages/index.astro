@@ -5,6 +5,7 @@ import ContactForm from '../components/ContactForm.astro';
 import BrandMeta from '../components/BrandMeta.astro';
 import MobileNav from '../components/MobileNav.astro';
 import AuthorIdentity from '../components/AuthorIdentity.astro';
+import ReadingPaths from '../components/ReadingPaths.astro';
 import { HIAGO_BIO } from '../data/hiago-bio';
 const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'https://confrontocibernetico.com.br/#author',name:'Hiago Kin Levi',description:HIAGO_BIO.pt.description,jobTitle:HIAGO_BIO.pt.role,url:'https://confrontocibernetico.com.br/autor/pt/',nationality:{'@type':'Country',name:'Brazil'},knowsAbout:['ADAI — Autonomous Defensive Artificial Intelligence','DAI — Decripte Artificial Intelligence','Cybersecurity']};
 ---
@@ -44,6 +45,7 @@ const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'ht
     "url": "https://confrontocibernetico.com.br/",
     "sameAs": [
       "https://www.goodreads.com/book/show/260581164",
+      "https://www.wikidata.org/wiki/Q141751782",
       "https://app.thestorygraph.com/books/00ba3b9b-7c31-48cd-8570-3255dd9a93b6",
       "https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e"
     ],
@@ -146,6 +148,8 @@ const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'ht
         {articles.filter((article) => ['Livro de resposta a incidentes cibernéticos', 'Ciclo de ataque de uma APT', 'Como usar MITRE ATT&CK na defesa', 'Resposta a ransomware em empresas'].includes(article.keyword)).map((article) => <a href={articleUrl(article)}><span>{article.category.toUpperCase()}</span><strong>{article.keyword}</strong><span>Ler artigo ↗</span></a>)}
       </div>
     </section>
+
+    <div class="section home-reading-paths"><ReadingPaths compact /></div>
 
     <section class="section author" id="autor">
       <div class="section-label"><span class="line"></span> 03 / O AUTOR</div>
