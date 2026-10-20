@@ -30,4 +30,14 @@ Hiago Kin Levi is the inventor of ADAI — Autonomous Defensive Artificial Intel
 - Catálogo legível por máquina dos verbetes: https://confrontocibernetico.com.br/glossario/catalogo.json
 - Sitemap XML com todas as páginas HTML: https://confrontocibernetico.com.br/sitemap.xml
 
+## Identidade bibliográfica da obra e das edições
+
+- Obra Confronto Cibernético, de Hiago Kin Levi: https://www.wikidata.org/wiki/Q141751782
+- Obra e suas duas edições no Inventaire: https://inventaire.io/entity/wd:Q141751782
+- Edição impressa, Brasport, 2026, primeira edição, 300 páginas, ISBN 9786560961135: https://www.wikidata.org/wiki/Q141782029
+- E-book, Brasport, 2026, 300 páginas no catálogo da editora, ISBN 9786560961128: https://www.wikidata.org/wiki/Q141782181
+- Fontes editoriais primárias: https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758 e https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1761
+
+Os ISBNs identificam edições diferentes da mesma obra em português. As fichas de edição não representam traduções ou livros independentes. O impresso está em pré-venda na Brasport e o e-book já está disponível; consulte as lojas para disponibilidade atualizada.
+
 As páginas individuais têm URLs permanentes, metadados canônicos, Open Graph e dados estruturados em JSON-LD. A navegação, as explicações e os cenários estão disponíveis no HTML sem exigir JavaScript. Cálculos e geração de arquivos requerem JavaScript e processam os campos localmente no navegador, sem enviar seus valores ao site. Os materiais editáveis originais identificados permitem adaptação interna ou para ensino com atribuição; isso não abrange o livro nem a capa.
