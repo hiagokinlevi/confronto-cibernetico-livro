@@ -1,8 +1,8 @@
 // Bibliographic facts checked against the two Brasport edition pages on 2026-10-19.
 export const bookTitle = 'Confronto Cibernético: Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs)';
 export const citationEditions = [
-  { key: 'impresso', label: 'Livro impresso', isbn: '9786560961135', productId: 1758, edition: '1' },
-  { key: 'ebook', label: 'E-book', isbn: '9786560961128', productId: 1761, edition: undefined },
+  { key: 'impresso', label: 'Livro impresso', isbn: '9786560961135', productId: 1758, edition: '1', wikidataId: 'Q141782029' },
+  { key: 'ebook', label: 'E-book', isbn: '9786560961128', productId: 1761, edition: undefined, wikidataId: 'Q141782181' },
 ] as const;
 
 export const citationFormats = [

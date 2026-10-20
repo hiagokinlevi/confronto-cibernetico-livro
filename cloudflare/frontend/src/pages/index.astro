@@ -45,14 +45,40 @@ const authorSchema = {'@context':'https://schema.org','@type':'Person','@id':'ht
     "image": {"@type":"ImageObject","url":"https://confrontocibernetico.com.br/assets/capa-confronto-cibernetico.jpeg","width":1100,"height":1600},
     "url": "https://confrontocibernetico.com.br/",
     "sameAs": [
-      "https://www.goodreads.com/book/show/260581164",
       "https://www.wikidata.org/wiki/Q141751782",
-      "https://app.thestorygraph.com/books/00ba3b9b-7c31-48cd-8570-3255dd9a93b6",
-      "https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e"
+      "https://inventaire.io/entity/wd:Q141751782"
     ],
     "workExample": [
-      {"@type":"Book","bookFormat":"https://schema.org/Paperback","isbn":"9786560961135","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758","offers":{"@type":"Offer","availability":"https://schema.org/PreOrder","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758"}},
-      {"@type":"Book","bookFormat":"https://schema.org/EBook","isbn":"9786560961128","url":"https://play.google.com/store/books/details?id=jSwXEgAAQBAJ"}
+      {
+        "@type":"Book",
+        "@id":"https://confrontocibernetico.com.br/#edicao-impressa",
+        "name":"Confronto Cibernético: Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs)",
+        "exampleOfWork":{"@id":"https://confrontocibernetico.com.br/#livro"},
+        "author":{"@id":"https://confrontocibernetico.com.br/#author"},
+        "publisher":{"@type":"Organization","name":"Editora Brasport","url":"https://www.editorabrasport.com.br/"},
+        "inLanguage":"pt-BR",
+        "bookEdition":"1",
+        "numberOfPages":300,
+        "bookFormat":"https://schema.org/Paperback",
+        "isbn":"9786560961135",
+        "url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758",
+        "sameAs":["https://www.wikidata.org/wiki/Q141782029","https://app.thestorygraph.com/books/00ba3b9b-7c31-48cd-8570-3255dd9a93b6"],
+        "offers":{"@type":"Offer","availability":"https://schema.org/PreOrder","url":"https://www.editorabrasport.com.br/index.php?route=product/product&product_id=1758"}
+      },
+      {
+        "@type":"Book",
+        "@id":"https://confrontocibernetico.com.br/#edicao-ebook",
+        "name":"Confronto Cibernético: Técnicas e táticas de enfrentamento e resposta a ameaças persistentes avançadas (APTs)",
+        "exampleOfWork":{"@id":"https://confrontocibernetico.com.br/#livro"},
+        "author":{"@id":"https://confrontocibernetico.com.br/#author"},
+        "publisher":{"@type":"Organization","name":"Editora Brasport","url":"https://www.editorabrasport.com.br/"},
+        "inLanguage":"pt-BR",
+        "numberOfPages":300,
+        "bookFormat":"https://schema.org/EBook",
+        "isbn":"9786560961128",
+        "url":"https://play.google.com/store/books/details?id=jSwXEgAAQBAJ",
+        "sameAs":["https://www.wikidata.org/wiki/Q141782181","https://app.thestorygraph.com/books/62f7cd74-98ad-4195-8ab1-70ed803f3c6e"]
+      }
     ]}
     ]
   }
